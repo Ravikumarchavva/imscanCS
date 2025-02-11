@@ -21,7 +21,7 @@ setup(
     version="0.0.1",
     author="ravikumar",
     author_email="chavvaravikumarreddy2004@gmail.com",
-    packages=find_packages(include=["invoice_processing_system", "config"]),
+    packages=find_packages(),
     install_requires=get_requirements("requirements.txt"),
     setup_requires=["setuptools>=64"],
 )
