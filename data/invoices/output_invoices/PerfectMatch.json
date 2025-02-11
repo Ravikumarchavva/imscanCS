@@ -1,0 +1,51 @@
+{
+    "line_items": [
+        {
+            "product_code": "K37F/40mm Punnets + \"100% PAPER\" Black Soak Pad",
+            "description": "K37F/40mm Punnets + \"100% PAPER\" Black Soak Pad",
+            "quantity": "288.00",
+            "price_per_unit": "45.39",
+            "vat_percent": "20.00",
+            "total_price": "13,072.32"
+        }
+    ],
+    "total_amount": {
+        "total_items": 1,
+        "total_tax": "2,614.46",
+        "total_price": "15,686.78"
+    },
+    "due_date": "2023-09-29",
+    "payment_date": null,
+    "invoice_date": "2023-08-30",
+    "invoice_number": "1025991",
+    "purchase_order": "MK69",
+    "reference_numbers": [],
+    "locale": null,
+    "country": null,
+    "currency": null,
+    "payment_details": {
+        "iban": "GB20 BARC 2022 7550 7848 34",
+        "swift": "BARCGB22",
+        "bic": null,
+        "account_number": "50784834"
+    },
+    "vat_number": "700088278",
+    "supplier_name": "Infia UK Limited",
+    "taxes_details": [
+        {
+            "rate": "20.00",
+            "amount": "2,614.46"
+        }
+    ],
+    "total_amount_including_taxes": "15,686.78",
+    "total_net_amount_excluding_taxes": "13,072.32",
+    "customer_address": "Triple Ash Nursery\n75A Lockgate Road\nSidlesham Common\nWest Sussex\nPO20 7QQ",
+    "shipping_address": null,
+    "billing_address": null,
+    "customer_company_registrations": {
+        "vat_number": null
+    },
+    "customer_name": null,
+    "supplier_address": "Beech Gate\nPeterborough Road\nWhittlesey\nCambridgeshire\nPE7 1PD",
+    "payment_terms": "30 Days"
+}

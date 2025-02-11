@@ -3,6 +3,12 @@ fastapi
 uvicorn
 python-multipart
 transformers
+pdfplumber
+torch
+bitsandbytes
+accelerate
+polars
+pandas
 
 # Optional
 ipython

@@ -1,1 +1,0 @@
-from invoice_processing_system.components.data_ingestion import DataIngestion

@@ -5,7 +5,7 @@ import logging  # added logging import
 from tqdm.auto import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, pipeline  # added pipeline
 from utils.post_processing import extract_json_objects
-from config.purpose.dps_qc_report_config import get_qc_prompt, MAX_MODEL_TOKENS  # imported new constant
+from config.invoice_config import get_prompt
 from config.settings import DATA_DIR
 
 logging.basicConfig(level=logging.INFO)  # basic configuration
@@ -36,7 +36,7 @@ class ModelInference:
             model=self.model,
             tokenizer=self.tokenizer,
             device_map="auto",
-            max_new_tokens=MAX_MODEL_TOKENS  # applied max tokens from config
+            # max_new_tokens=MAX_MODEL_TOKENS  # applied max tokens from config
         )
         
         logging.info("Model loaded successfully!")  # replaced print
@@ -59,7 +59,7 @@ class ModelInference:
         return json_response
     
     def get_prompt(self, item):
-        return get_qc_prompt(item)
+        return get_prompt(item)
 
     def process_items(self, items, output_folder=None):
         """Processes a list of extracted items and saves JSON output for each."""
@@ -69,7 +69,7 @@ class ModelInference:
 
         responses = []
         for i, item in enumerate(tqdm(items, desc="Processing Items", unit="item")):
-            prompt = get_qc_prompt(item)
+            prompt = self.get_prompt(item)
             response = self.generate_json(prompt)
             responses.append(response)
 
