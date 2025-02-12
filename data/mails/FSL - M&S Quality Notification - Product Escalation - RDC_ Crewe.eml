@@ -1,0 +1,426 @@
+Received: from LO4P123MB6927.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:349::8)
+ by LO2P123MB5717.GBRP123.PROD.OUTLOOK.COM with HTTPS; Wed, 14 Aug 2024
+ 13:08:17 +0000
+Received: from LO4P123CA0645.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:296::16)
+ by LO4P123MB6927.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:349::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7849.22; Wed, 14 Aug
+ 2024 13:08:15 +0000
+Received: from LO4GBR01FT004.eop-gbr01.prod.protection.outlook.com
+ (2603:10a6:600:296:cafe::fc) by LO4P123CA0645.outlook.office365.com
+ (2603:10a6:600:296::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7849.23 via Frontend
+ Transport; Wed, 14 Aug 2024 13:08:15 +0000
+Received: from eu-smtp-inbound-delivery-1.mimecast.com (195.130.217.221) by
+ LO4GBR01FT004.mail.protection.outlook.com (10.118.182.99) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7875.18 via
+ Frontend Transport; Wed, 14 Aug 2024 13:08:14 +0000
+Received: from a7-34.smtp-out.eu-west-1.amazonses.com
+ (a7-34.smtp-out.eu-west-1.amazonses.com [54.240.7.34]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.3,
+ cipher=TLS_AES_256_GCM_SHA384) id uk-mta-106-ku4uhSeXP6uSylSUzoHmUQ-1; Wed,
+ 14 Aug 2024 14:08:11 +0100
+From: "quality@food-surveys.com" <quality@food-surveys.com>
+To: MandSTechnical <MandStechnical@dpsltd.com>
+Subject: FSL - M&S Quality Notification - Product Escalation - RDC: Crewe
+Thread-Topic: FSL - M&S Quality Notification - Product Escalation - RDC: Crewe
+Thread-Index: AQHa7ksHg/LBXUx51kaX2u7kM59J0w==
+Date: Wed, 14 Aug 2024 13:08:11 +0000
+Message-ID: <010201915100c733-d1d63c91-5a79-464d-adca-84c814ffc6a8-000000@eu-west-1.amazonses.com>
+X-MS-Exchange-Organization-AuthSource: LO4GBR01FT004.eop-gbr01.prod.protection.outlook.com
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id: 677e794c-658c-41ca-81c2-08dcbc622839
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: None (protection.outlook.com: ses.food-surveys.com does not
+ designate permitted sender hosts)
+x-ms-exchange-organization-originalclientipaddress: 195.130.217.221
+x-ms-exchange-organization-originalserveripaddress: 10.118.182.99
+x-ms-publictraffictype: Email
+authentication-results: spf=none (sender IP is 195.130.217.221)
+ smtp.mailfrom=ses.food-surveys.com; dkim=fail (signature did not verify)
+ header.d=food-surveys.com;dmarc=fail action=none
+ header.from=food-surveys.com;compauth=softpass reason=201
+x-ms-office365-filtering-correlation-id: 677e794c-658c-41ca-81c2-08dcbc622839
+x-ms-traffictypediagnostic: LO4GBR01FT004:EE_|LO4P123MB6927:EE_|LO2P123MB5717:EE_
+x-forefront-antispam-report: CIP:195.130.217.221;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:eu-smtp-inbound-delivery-1.mimecast.com;PTR:eu-smtp-inbound-delivery-1.mimecast.com;CAT:NONE;SFS:(13230040)(32142699015)(12012899012);DIR:INB
+x-microsoft-antispam: BCL:0;ARA:13230040|32142699015|12012899012
+x-ms-exchange-crosstenant-originalarrivaltime: 14 Aug 2024 13:08:14.6035 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9
+x-ms-exchange-crosstenant-network-message-id: 677e794c-658c-41ca-81c2-08dcbc622839
+x-ms-exchange-transport-crosstenantheadersstamped: LO4P123MB6927
+arc-message-signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=dkim.mimecast.com; s=201903; t=1723640894;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=6fo4+yZoyT9GR0rr7PcE0CGFN+lUDemW52xp4AobGkA=;
+	b=HczfiYgVGqNVlV97/mhRtgYsvCgH/eQf7icjYpj6EjDgkS9pyPD7/8YcwduHhGqQmKA040
+	4VttNJFxdop/fmaYbhC2G/UVDLwm2TG7pZa+fndPAlKVNsnmBP/nAPBwThzky+NfitHmCj
+	7/OOUQRurqcpt+VwP42UQMpPqZ+eupmOdxFEY7E3FkIkgch+z4CrAPCn4x1408cmfg9Ici
+	rGChLcV7QPYmuKnYhFr/0slDpXuX3ZTZPJsYvpH9V/4CspXTZy4NxzT3NCgUcMKzJRWfhF
+	B6HuZEm2e6cUyFQVw1sYNGetKjZa97uQ2V7T6vdbMh9Obb69U16onDeRc3nO+g==
+arc-seal: i=1; s=201903; d=dkim.mimecast.com; t=1723640894; a=rsa-sha256;
+	cv=none;
+	b=rS5fAR/n5qjTjpxXxqICovYkhykBnvtW9GlTpxj8PrgPe0Tql0/Ziw+HUq6m2g/WJra8w+
+	sjPtCmaAfm9BbCjDRQR+HiVPwogLSfSmfWkJHMty+smfXE+hhwjafgvMyCQw4WsgMrwno0
+	y6ZFKfXUC2TVhHr6bdUjV1BO4HKHWzDWPmargSIGvByI7ACA57s8aeCLZclpmBJBZzwWjA
+	J9oeRaxnvUtbhJFXmv7r9+fxVkppau0T4MNf5qG9pqedGU0w6jwtrVPLD0BWlf5J/5glWz
+	rS11PaWvWS4WS9U88NK/6CR9PEYmb7qkjpIxtLG75GQ25zc/nN9R1dwGXyOWSw==
+arc-authentication-results: i=1;	relay.mimecast.com;	dkim=pass
+ header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc
+ header.b=dY9mutwy;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=gbtQnCVq;	dmarc=pass
+ (policy=none) header.from=food-surveys.com;	spf=none (relay.mimecast.com:
+ domain of
+ 010201915100c733-d1d63c91-5a79-464d-adca-84c814ffc6a8-000000@ses.food-surveys.com
+ has no SPF policy when checking 54.240.7.34)
+ smtp.mailfrom=010201915100c733-d1d63c91-5a79-464d-adca-84c814ffc6a8-000000@ses.food-surveys.com
+x-mc-unique: ku4uhSeXP6uSylSUzoHmUQ-1
+x-eopattributedmessage: 0
+authentication-results-original: relay.mimecast.com;	dkim=pass
+ header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc
+ header.b=dY9mutwy;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=gbtQnCVq;	dmarc=pass
+ (policy=none) header.from=food-surveys.com;	spf=none (relay.mimecast.com:
+ domain of
+ 010201915100c733-d1d63c91-5a79-464d-adca-84c814ffc6a8-000000@ses.food-surveys.com
+ has no SPF policy when checking 54.240.7.34)
+ smtp.mailfrom=010201915100c733-d1d63c91-5a79-464d-adca-84c814ffc6a8-000000@ses.food-surveys.com
+x-mimecast-spam-score: 1
+x-eoptenantattributedmessage: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9:0
+x-ms-exchange-transport-endtoendlatency: 00:00:02.4929000
+x-ms-exchange-processed-by-bccfoldering: 15.20.7875.016
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource: LO4GBR01FT004.eop-gbr01.prod.protection.outlook.com
+x-mimecast-impersonation-protect: Policy=Default Impersonation
+ Protection;Similar Internal Domain=false;Similar Monitored External
+ Domain=false;Custom External Domain=false;Mimecast External
+ Domain=false;Newly Observed Domain=false;Internal User Name=false;Custom
+ Display Name List=false;Reply-to Address Mismatch=false;Targeted Threat
+ Dictionary=false;Mimecast Threat Dictionary=false;Custom Threat
+ Dictionary=false;External=true
+dkim-signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1723640891;
+	h=Date:From:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:To:Subject:Feedback-ID;
+	bh=i+WtqriWSY5zEmY0snapdfsJXGUuIuocmn0vq6p3Y4k=;
+	b=gbtQnCVqJ75ep+9h1VyRuZyGRMblF3eYueTAnMiRpe2Dd3RYQmLxm/Q+YbYSoSgF
+	6d0mX7/m1mSU7TfJKOJvWwcaSbwQK/+6MZBSbNRzqfmJeYISICDkWSxx3OQvkzIO5wi
+	t7VOkByGkOolJavMCZ0n8/JgRtJck3vAs7GKiwU0=
+x-ses-outgoing: 2024.08.14-54.240.7.34
+feedback-id: ::1.eu-west-1.sCdqOIaTc10uCGhAgc95tjfCNfrI+wrHV6VXcDaT2v8=:AmazonSES
+x-ms-exchange-atpmessageproperties: SA|SL
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198)
+X-Microsoft-Antispam-Message-Info: =?us-ascii?Q?T0K5hac2fz2A+HL2Io5HdBw4StYrqrtO+HKWwnc6Rasmp8NHYaEEMy8yiYQp?=
+ =?us-ascii?Q?MV4R7Aj3oGqHp6Wp9mPldny933D+vCmYy85b0R2OJ1bEDNAb+PPK/fGeFtUp?=
+ =?us-ascii?Q?/5GqPmLClzRSEYuCgBo3aMneyOjVjbLrz8E4xzeiFMOXinpmdF6oqpwn6pPb?=
+ =?us-ascii?Q?zPVt4TkaY9Tqf86NfmtjafiQBEpJ556gv9FB8nXMJpoc+3aS76uojr8Z9Y19?=
+ =?us-ascii?Q?dgeO8dnXh0mpSn4lgEa8DsA6YH+7phP5veqSjCOSsuR4l3PQanQWdfDlR+do?=
+ =?us-ascii?Q?zplaTUGhn7IFNXUdLK5hbLWJVb949FBNpSszUJnMHMBkNuhEBqaXJRlEKEXh?=
+ =?us-ascii?Q?G155qLvwTzsHwMMmcYv2PXy0ma7KRT/72RE3nnNqK/amj1G3jM8+MQF7iiFV?=
+ =?us-ascii?Q?BsXRXDj8HMtz7o3v7iZw3ynTrGKPuRIkAM7qkaJUYQyloVdTitrtsbgUpPLy?=
+ =?us-ascii?Q?xpr8ap2JOagL5F6zO5jCDcx9+0HsqyKpsTDa+SFrqAfDtmhIsbb8QQNoVpgS?=
+ =?us-ascii?Q?c4yBHevUuShUGyYm0I51oLdieJDPJPCgBL7fRFVJFBvTlmdiwApxmqs4ElWX?=
+ =?us-ascii?Q?+du33kRC0KkxamJ0/K8N0P6fyHDanJu3+E8JjlbxMCrk5ixTK3eOVO3tD4lg?=
+ =?us-ascii?Q?ZFUqpDToIsxhOFkYXQ80VyebqSem00HAOfzZmD4Lr2riHQfiBP/gsCOPnPD0?=
+ =?us-ascii?Q?GhW1tunIotMdS3LLk7bJo65zfBnVWs6pdGhQLu5yX4DNp0D0Qj7TatMr1Rhk?=
+ =?us-ascii?Q?28zf4z9pOWpNNELGSERc1av5/GOP0yFvJQbkjQPIYxlNabURAk6KuV6RvfH1?=
+ =?us-ascii?Q?6cTKMN6ZT3Dnct7UkVeFgTwQc5t39R7YZ7iQ65Z3J+wJ7ln2R8b/mb9RRfHT?=
+ =?us-ascii?Q?v0TX2afCOD8cZUyYbKpNj9Kxgu3J7bKSybDl2MvCxEJqHhjbUVyaZDPf4xG/?=
+ =?us-ascii?Q?w2KJHvS5uQml+tuCt+nQ2aaGxaL2MZrSYHzYRKBgGmyusnu1tM0USuCvEpfn?=
+ =?us-ascii?Q?UvIQURJwZu1LPaluscvxujq8JQl54tyu8/biuGo1/HOjlbQYXbQqUpVeqfQu?=
+ =?us-ascii?Q?/nGNZWAj7JBz1wYuSXRdIRmPxHv3p1ivnCSFlDDEneOOH3PpWRKikEtskbPQ?=
+ =?us-ascii?Q?0IlVimIfnv98vWPen3AvH65Rkb1vTiLgmcZTgZlHxSSpogpZ1bK1wjm8u4te?=
+ =?us-ascii?Q?125HvWeqC27JeRduLEC438y4VH29aw83Isai0BDILa4uIIdNWRGlB4aquoip?=
+ =?us-ascii?Q?pbwgQ/lr1cRbwr5Fic4jr9OQj+hW1e4yAdlOY01yPgknEco5HdJD5gm4uDfI?=
+ =?us-ascii?Q?V51+iB1fo6NXba5699UA37UACUOVCwy3+uXFvFPglSgbp8u1/TzD++1s4aWI?=
+ =?us-ascii?Q?8ReSeWVk1yVxC/LFP+LyZcqu1X53n8mDaUhBhtoaLWmIl+b/b5Gniqwx4f/p?=
+ =?us-ascii?Q?hTEKU/v5f9pvjoNPdrDzOrT3cXdBuqBwJZ3kNYLPs3GiSy/ZBpCoLQGGYQ0X?=
+ =?us-ascii?Q?HrZFoProzTpHSaHfxm59SHAtePLEPJ8zv1XA/t+IPKaFypfxPvKyblRFzjWZ?=
+ =?us-ascii?Q?LDSmizpRmJKJ5QsvwTTqtwhei5AYl6E5XzomMwLfjGlf7QEQJnKCG0D6gnCJ?=
+ =?us-ascii?Q?ipbeNXwgVx6femvtjmeqmKmCI+LbjNpKm0/aHKoIyRqOu8OPm0QAY+mN2x3F?=
+ =?us-ascii?Q?VJGJRzX+KLgr23KijQ2IpXJIcx++67azgJQ3xRYXiDnmqEfGz7Msi5dFRUeZ?=
+ =?us-ascii?Q?PmUZqOs0ZiSSsrgAd17H20soCme2FG7W1V8WOXenEZ/fo38bgpzrDxk70r/v?=
+ =?us-ascii?Q?Fu+rtbXwC87kSQgdSjG3fZJ045gteP1m1mSp0etPmOAWY4AO5jhH9qhPutt+?=
+ =?us-ascii?Q?fUNahX52AtQi1/C61BPYIL3VD3/sa59IU2sj4rL2luEiiRTinjriT6L08W6n?=
+ =?us-ascii?Q?JQIdQhNnsQfNoW1G5TiQgj2T/MSrv4wKizJkWpbgrkJ5rzAb5wgiVx7fiB3U?=
+ =?us-ascii?Q?ByGL4suwbZsHTLXNUpRS3+Dliw=3D=3D?=
+Content-Language: en-GB
+Content-Type: multipart/alternative;
+	boundary="_000_010201915100c733d1d63c915a79464dadca84c814ffc6a8000000e_"
+MIME-Version: 1.0
+
+--_000_010201915100c733d1d63c915a79464dadca84c814ffc6a8000000e_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+M&amp;S Product Quality Notification - Product Escalation
+
+ID      7735
+Notification Type       Product Escalation
+Date / Time     14/08/2024 13:59
+Source  FSL
+Submitted By    R. Pittala
+Location        RDC: Crewe
+Category        Fruit - Stone Fruit
+Product 00082723: YELLOW NECTARINES X4
+Focus Product   No
+Supplier        4793: DIRECT PRODUCE SUPPLIES
+Traceability    Variety: Honey Glo
+Grower: N/A
+COO: Spain
+Label Date Code: 2024-08-19
+Product Temp: 2.8
+Storage Temp: 4
+
+Delivery Size (cases x units)   69 x 10
+Cases Sampled   20
+Units OOS (OOS / Sampled)       32/40
+Units Removed / Destructively Tested    0
+Cases Rejected  69/69
+Units Rejected  690/690
+Rejection Level Full
+Details During the inspection of 40 packs of PR yellow nectarines (82723) f=
+rom a total of 20 cases (100 packs), several issues were discovered. - 20 f=
+ruits exhibited internal breakdown and were soft. - 10 packs contained inte=
+rnal rots, glassy, and mushy texture. - 2 packs displayed external storage =
+mold. The major defect percentage is calculated at 9.7% . Combined defect p=
+ercentage is at 30%. The specification tolerance for major defects is 2%. T=
+otal cases received :69
+Action Taken    The product has been rejected on site .
+M&amp;S Contact Informed        Pablo
+Depot Contact Informed  Dean Marsh
+
+Image Links:
+
+   *   View Image 1<https://gbr01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Ft_D1Cl2VvS2p5WQfGfjuzY0PM%3=
+Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C6=
+77e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638592376972222016%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3DTrlpWowZn%2FxdjKu=
+cI3%2BzY3L4MLxrZn%2Bgzb7O4UV6HaY%3D&reserved=3D0>
+   *   View Image 2<https://gbr01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2F3LF-CmYV2fjDKVOCOhouRzkeT%3=
+Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C6=
+77e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638592376972232515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3D8FrGtKzV6%2FKyMcF=
+ShFgpTNIy7MsMbKhtG5v4FNvACCs%3D&reserved=3D0>
+   *   View Image 3<https://gbr01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FOKdoCngVYi7jq48HNiEuJsJf4%3=
+Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C6=
+77e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638592376972240276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3D6Fb3E728T%2FV%2FH=
+ELeB0EKH3Xv3N4RcJezR7KeRngRGsY%3D&reserved=3D0>
+   *   View Image 4<https://gbr01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fgb8eCoj9virZLAOc6swup36uF%3=
+Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C6=
+77e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638592376972246311%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3D7D0R9UymFWB83qMPI=
+AGVVEjCujfITgcwnjVv%2F15hBM4%3D&reserved=3D0>
+   *   View Image 5<https://gbr01.safelinks.protection.outlook.com/?url=3Dh=
+ttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FaakbCpk6RCnKNgYhJtwuGJms2%3=
+Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C6=
+77e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638592376972251921%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3DEaGPdcDxRZ%2FuCx1=
+ZItHitqU7kOzIQFN4qyTpMPaqmhQ%3D&reserved=3D0>
+
+Contacts Informed via Email:
+
+   *   quality@food-surveys.com
+   *   Heather.Chapman@marks-and-spencer.com
+   *   Andrew.Mellonie@marks-and-spencer.com
+   *   Jennifer.Hackett@gistworld.com
+   *   pablo.martinez@marks-and-spencer.com
+   *   mandstechnical@dpsltd.com
+
+--_000_010201915100c733d1d63c915a79464dadca84c814ffc6a8000000e_
+Content-Type: text/html; charset="us-ascii"
+Content-ID: <D93124B2EA97A34B837A29D0D01AB994@GBRP123.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<p><strong>M&amp;S Product Quality Notification - Product Escalation</stron=
+g></p>
+<table>
+<tbody>
+<tr>
+<td><strong>ID</strong></td>
+<td>7735</td>
+</tr>
+<tr>
+<td><strong>Notification Type</strong></td>
+<td>Product Escalation</td>
+</tr>
+<tr>
+<td><strong>Date / Time</strong></td>
+<td>14/08/2024 13:59</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>FSL</td>
+</tr>
+<tr>
+<td><strong>Submitted By</strong></td>
+<td>R. Pittala</td>
+</tr>
+<tr>
+<td><strong>Location</strong></td>
+<td>RDC: Crewe</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>Fruit - Stone Fruit</td>
+</tr>
+<tr>
+<td><strong>Product</strong></td>
+<td>00082723: YELLOW NECTARINES X4</td>
+</tr>
+<tr>
+<td><strong>Focus Product</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Supplier</strong></td>
+<td>4793: DIRECT PRODUCE SUPPLIES</td>
+</tr>
+<tr>
+<td><strong>Traceability</strong></td>
+<td>Variety: Honey Glo<br>
+Grower: N/A<br>
+COO: Spain<br>
+Label Date Code: 2024-08-19<br>
+Product Temp: 2.8<br>
+Storage Temp: 4<br>
+</td>
+</tr>
+<tr>
+<td><strong>Delivery Size</strong> <small>(cases x units)</small></td>
+<td>69 x 10</td>
+</tr>
+<tr>
+<td><strong>Cases Sampled</strong></td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>Units OOS</strong> <small>(OOS / Sampled)</small></td>
+<td>32/40</td>
+</tr>
+<tr>
+<td><strong>Units Removed / Destructively Tested</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Cases Rejected</strong></td>
+<td>69/69</td>
+</tr>
+<tr>
+<td><strong>Units Rejected</strong></td>
+<td>690/690</td>
+</tr>
+<tr>
+<td><strong>Rejection Level</strong></td>
+<td>Full</td>
+</tr>
+<tr>
+<td><strong>Details</strong></td>
+<td>During the inspection of 40 packs of PR yellow nectarines (82723) from =
+a total of 20 cases (100 packs), several issues were discovered. - 20 fruit=
+s exhibited internal breakdown and were soft. - 10 packs contained internal=
+ rots, glassy, and mushy texture.
+ - 2 packs displayed external storage mold. The major defect percentage is =
+calculated at 9.7% . Combined defect percentage is at 30%. The specificatio=
+n tolerance for major defects is 2%. Total cases received :69</td>
+</tr>
+<tr>
+<td><strong>Action Taken</strong></td>
+<td>The product has been rejected on site .</td>
+</tr>
+<tr>
+<td><strong>M&amp;S Contact Informed</strong></td>
+<td>Pablo</td>
+</tr>
+<tr>
+<td><strong>Depot Contact Informed</strong></td>
+<td>Dean Marsh</td>
+</tr>
+</tbody>
+</table>
+<p>Image Links:</p>
+<ul>
+<li><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Ft_D1Cl2VvS2p5WQfGfjuzY0PM%3Fdoma=
+in%3Dfslreporting.co.uk&amp;data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C67=
+7e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7=
+C638592376972222016%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DTrlpWowZn%2Fxd=
+jKucI3%2BzY3L4MLxrZn%2Bgzb7O4UV6HaY%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://url.uk.m.mimecastprotect.com/s/t_D1Cl2VvS2p5WQfGfjuzY0PM?domain=3Dfslr=
+eporting.co.uk" shash=3D"lkamNZPXi2TI42B+gK1FoeR+5P+0/054uVqBZzmRvksgTE+JEw=
+kXcWjql8fntjKp21EF1KoayTJAd8ojtYZkR1DXN0aKEWeFE2I4BXfu1KwTcl/n2k9kXM1kA0fGd=
+EMTSyAA4dc8ImDlu0MkMgpTdAjkS3Yu78N9pRYNUaOntBk=3D">View
+ Image 1</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2F3LF-CmYV2fjDKVO=
+COhouRzkeT%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7CTom.Koningen%=
+40dpsltd.com%7C677e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf=
+46edbc9%7C0%7C0%7C638592376972232515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D8FrGtKzV6%2FKyMcFShFgpTNIy7MsMbKhtG5v4FNvACCs%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://url.uk.m.mimecastprotect.com/s/3LF-CmYV2fjDKVOCOhouRzkeT?=
+domain=3Dfslreporting.co.uk" shash=3D"Cgn+Pwq8otQN8MARUNJFPqiY5rjP94z/6wJfm=
+TbyTmu0JR70dPPcrRFjLH5eGv9ik0SORuhlXdNuh9ef9xHBLX7EpR1EgGjWKJvYeF9jrHZy+XDF=
+Qqq0oq9Tr7gVnflMn6RMmDW7Cl8sJHzpPJ8/jQhbXugMvDQAFtoP1njcrpg=3D">View
+ Image 2</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FOKdoCngVYi7jq48=
+HNiEuJsJf4%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7CTom.Koningen%=
+40dpsltd.com%7C677e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf=
+46edbc9%7C0%7C0%7C638592376972240276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D6Fb3E728T%2FV%2FHELeB0EKH3Xv3N4RcJezR7KeRngRGsY%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/OKdoCngVYi7jq48HNiEuJsJf=
+4?domain=3Dfslreporting.co.uk" shash=3D"Je/GBzSItY+yYOoe4258P6WDdzwGMBLe1Qv=
+bXlgk4EV2BN3uBq1nh1PgqVDun8NtslDnTKdgSIpD0Zn9AE1tJuH2ojfBfLfF9+r0Ltc1yU5CKd=
+yPBhqzsjhZTeQvkcjA2uTLHgxI65nKVwsUU5FiLgatFo5Iz2tdItN6qfM3YDs=3D">View
+ Image 3</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fgb8eCoj9virZLAO=
+c6swup36uF%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7CTom.Koningen%=
+40dpsltd.com%7C677e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf=
+46edbc9%7C0%7C0%7C638592376972246311%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D7D0R9UymFWB83qMPIAGVVEjCujfITgcwnjVv%2F15hBM4%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://url.uk.m.mimecastprotect.com/s/gb8eCoj9virZLAOc6swup36uF?=
+domain=3Dfslreporting.co.uk" shash=3D"aQbzorhuLawjlwHiYoxXxGaR2zm00bisDDEDV=
+9zELXfDwxXJAW6Xnbj5585VpIM2Epx+BI1QQEZbl5BZILhPQAP2BQv5txwP3AwPC8YyXU+oc2yA=
+DB5xzuXsaW34m4fPuZ5pXUTs04NNB4oxJnrrD7EGzvXJAIynHa9H8v3oTok=3D">View
+ Image 4</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FaakbCpk6RCnKNgY=
+hJtwuGJms2%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7CTom.Koningen%=
+40dpsltd.com%7C677e794c658c41ca81c208dcbc622839%7C0a6ac99f713640dd9ec3ddedf=
+46edbc9%7C0%7C0%7C638592376972251921%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLj=
+AwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3DEaGPdcDxRZ%2FuCx1ZItHitqU7kOzIQFN4qyTpMPaqmhQ%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://url.uk.m.mimecastprotect.com/s/aakbCpk6RCnKNgYhJtwuGJms2?=
+domain=3Dfslreporting.co.uk" shash=3D"rcLIhX0XLeC76vkHcKcybKFQC1kvYmxROhh5P=
+eSCV5Mpy8JFc3t3TL6CmsYyHHcMSUTpKjkzK1GTOT5i24GuFGY1W1LE1bkx03Rqye+rncAFFVd1=
+tJHo0m9p21eLPMnvP1eGYhfUOE9UZ8+AuT5b9jI8rqkf+BAVvzCNE9nW7DE=3D">View
+ Image 5</a></li></ul>
+<p>Contacts Informed via Email:</p>
+<ul>
+<li>quality@food-surveys.com</li><li>Heather.Chapman@marks-and-spencer.com<=
+/li><li>Andrew.Mellonie@marks-and-spencer.com</li><li>Jennifer.Hackett@gist=
+world.com</li><li>pablo.martinez@marks-and-spencer.com</li><li>mandstechnic=
+al@dpsltd.com</li></ul>
+</body>
+</html>
+
+--_000_010201915100c733d1d63c915a79464dadca84c814ffc6a8000000e_--

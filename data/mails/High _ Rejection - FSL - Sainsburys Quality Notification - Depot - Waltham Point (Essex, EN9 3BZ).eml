@@ -1,0 +1,755 @@
+Received: from CWLP123MB6949.GBRP123.PROD.OUTLOOK.COM (2603:10a6:400:1f8::14)
+ by CWLP123MB7107.GBRP123.PROD.OUTLOOK.COM with HTTPS; Wed, 18 Sep 2024
+ 10:01:46 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=gfYkLRblvQPxvQOY9j6wmsrB08e7VQ7aUjgBknv1eVvLE6q1M8Z4Iu9izWmvXQ0vb3ao/uvHPwdpIhvLBUgE0Je7rzq8eLp7JRieAcnPRFUrFrbbuUYJ8Wdbj+TeeAa54h+m+Pxj9YJ8rhN4Z9F0qBNVlowWgzx/w9ZFzvMzbH0zxfjoXfVtv0O9/MDniD5e7feRxALAiK1D5PkEF/2gpOKPWBzCLlD9fH4sriVjkX1uB/NN6DgAMolYMj0sp47DNnJYZR1cgeJw4nSrTfJlmpUqYfuIn0HBUVcKn82mhiaUXd7WHB8xmG3wFYz8Wqv/le76ZdI558isYI3wPcNxcw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=23ZcNjjgwv0rSyxPTzwLYZfSJfDrfhaP82JJF9crDiQ=;
+ b=JE7gX0j+SOdZ5e9rom841JJRndB1cUpHXk4bXiPUlQbXvaN1mFtdRSwIxfHQvnB/bxn+sO0Ophe3z71Ul8edYyuDy/mcuy1WnTLShH0kbSQWOtlY9kVYd8jx0YI/CmQGj/pXHNFrCDmqqjJ5QvLeIoovQC2cTmE6sCI7k1flQKjnp7gj8bQ2ViwgyGPWhBbgUmIFhUR8Sm334rplrV8sGZGrr+htqCZ1kJMPm8Ek43eEggY5YzEccHwB7wGvDOHLmYUGr1cFP2mtpjLsk7V2aXChdnPNlvGnMSv8cuxDCjlvUGL14rb4AjS2oXoHjxX7pQU4ydFQXXhbmhbEXbxPUg==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=none (sender ip is
+ 195.130.217.221) smtp.rcpttodomain=efcltd.com
+ smtp.mailfrom=ses.food-surveys.com; dmarc=fail (p=none sp=none pct=100)
+ action=none header.from=food-surveys.com; dkim=fail (signature did not
+ verify) header.d=food-surveys.com; dkim=fail (signature did not verify)
+ header.d=amazonses.com; arc=pass (0 oda=0 ltdi=0 93)
+Received: from LO4P123CA0152.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:188::13)
+ by CWLP123MB6949.GBRP123.PROD.OUTLOOK.COM (2603:10a6:400:1f8::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7982.16; Wed, 18 Sep
+ 2024 10:01:40 +0000
+Received: from LO1PEPF000028CD.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:600:188:cafe::19) by LO4P123CA0152.outlook.office365.com
+ (2603:10a6:600:188::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7939.30 via Frontend
+ Transport; Wed, 18 Sep 2024 10:01:40 +0000
+Authentication-Results: spf=none (sender IP is 195.130.217.221)
+ smtp.mailfrom=ses.food-surveys.com; dkim=fail (signature did not verify)
+ header.d=food-surveys.com;dmarc=fail action=none
+ header.from=food-surveys.com;compauth=softpass reason=201
+Received-SPF: None (protection.outlook.com: ses.food-surveys.com does not
+ designate permitted sender hosts)
+Received: from eu-smtp-inbound-delivery-1.mimecast.com (195.130.217.221) by
+ LO1PEPF000028CD.mail.protection.outlook.com (10.167.240.37) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7918.13
+ via Frontend Transport; Wed, 18 Sep 2024 10:01:40 +0000
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=dkim.mimecast.com; s=201903; t=1726653700;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=23ZcNjjgwv0rSyxPTzwLYZfSJfDrfhaP82JJF9crDiQ=;
+	b=PBdaw+mAjrZ1yUQZYxOglvN7qw2WABbnFKaDfRgj7j2PDCW95Fq5HC/g1nKSWUNAQyIY03
+	wYrR9gW+JN5zORhdb01mypBeRwGkgK4TMuSs4T4ByALIt7duN3ooUD7CZWhoB1vdsfMqqp
+	/A/xlXyYaIBGHwhssR4Zl/B+cPzZwDAFhqjY5HoZai6Yd/AI2SSbDz4xqICdRPnrKTmSo5
+	UwfdIl1OQroVYWK4jB1qZCViwK3TyQXWUznvW4HRyt6zXUekSs3vA+mvAFmXWcQGE/fcxO
+	ZEST4Wz+I4ZbrpsV/sXeBBep8+FKfwdIAjIkuZhTV9FNjkCCnCJHG/MLoS4sLA==
+ARC-Seal: i=1; s=201903; d=dkim.mimecast.com; t=1726653700; a=rsa-sha256;
+	cv=none;
+	b=Clk/BDcFeOtrUbZzSGieeFVoh56ka+SEkH5FJjVy+mryou3FjOEY0/vrXWv1vRDkaSM+xr
+	vNrCHpLk4epSs70QIh0UOOwtpWBNrMGK4bMFcpeOmVmJFN5Xd4BqRSyoLmsh28JpAMNrrn
+	uYuzoOf97KW8ZMkY/CkJXB55PvN4D6RVYI0xOpim6vzhExlxkBnU7beyKyw/9opaVGuFUA
+	s+70FmaEpFj5c0AxlqNzehf9GYwSPK9QFiP6lpIVp5DaBHu3MtEjbHQE4Q8miEV3RA/UyO
+	o+5TjPQgxpPK1ol7+dPC7OCcUV9I64yJFsVakWf0fg7n9FQs2sJ0jNTCwc0WMw==
+ARC-Authentication-Results: i=1;
+	relay.mimecast.com;
+	dkim=pass header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc header.b=I4R0bD+Y;
+	dkim=pass header.d=amazonses.com header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b="cVpC/RSN";
+	dmarc=pass (policy=none) header.from=food-surveys.com;
+	spf=none (relay.mimecast.com: domain of 01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@ses.food-surveys.com has no SPF policy when checking 54.240.7.24) smtp.mailfrom=01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@ses.food-surveys.com
+Authentication-Results-Original: relay.mimecast.com;	dkim=pass
+ header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc
+ header.b=I4R0bD+Y;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b="cVpC/RSN";	dmarc=pass
+ (policy=none) header.from=food-surveys.com;	spf=none (relay.mimecast.com:
+ domain of
+ 01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@ses.food-surveys.com
+ has no SPF policy when checking 54.240.7.24)
+ smtp.mailfrom=01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@ses.food-surveys.com
+Received: from a7-24.smtp-out.eu-west-1.amazonses.com
+ (a7-24.smtp-out.eu-west-1.amazonses.com [54.240.7.24]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.3,
+ cipher=TLS_AES_256_GCM_SHA384) id uk-mta-92-09tfoZ6DPauwZrsUyS-mog-1; Wed,
+ 18 Sep 2024 11:01:37 +0100
+X-MC-Unique: 09tfoZ6DPauwZrsUyS-mog-1
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ydzxhbrynxrsx65uk2biulhajt2sh7hc; d=food-surveys.com;
+	t=1726653696;
+	h=Date:From:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:To:Subject;
+	bh=t4QFtTOBotRqLcc9qpKyyBz49pA7K4GgpvmM5Xwvj6c=;
+	b=I4R0bD+YsSRHJ7Z0DYkF3Nupo8ItXOnx3wArhqbJUlgI4lNRsI4T7wc1WrHEa310
+	BWrX2emcM57l50UQAbiUwwztUT7xlp7N8InJIn4IsxVyzZ+fj6yp/M7Eb+O1oOY49jO
+	dFUXo7mcz9ACT/P8aLt450WMnOmZLnrC9JHpedttpBVKUz7Jaeg4lMuAENWBDqHN6QB
+	2Aj8Lp8BUOp6i73MrTawP+lOgTChjp8eC86/9b7IKYn0B+U3xdIJwXEXDhN+2z0It7z
+	vRgR0tUA8jMgzew4sAzx5kGlegn5n1fjKndgj6nt3YdegQhXTxF5jLmVtp2eDCuilPs
+	2tli3qiZSw==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1726653696;
+	h=Date:From:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:To:Subject:Feedback-ID;
+	bh=t4QFtTOBotRqLcc9qpKyyBz49pA7K4GgpvmM5Xwvj6c=;
+	b=cVpC/RSN11gp0wmGp/oMgZLWvk+tRR9ElpK+eBqbrOL5sfnjkHH2+We/gteY+ecz
+	xJwXFU8q3ZJ5KHybi80FulRmtSFik7Nno1abtMxIndvVLuAt1zR/jo9E8AfV8NORIeb
+	0Q9I45RsQBs/xzTKgrJEsHQKUVzPC9mwCXG7oSbs=
+Date: Wed, 18 Sep 2024 10:01:36 +0000
+From: sainsburys@food-surveys.com
+Message-ID: <01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@eu-west-1.amazonses.com>
+To: technical@efcltd.com
+Subject: =?us-ascii?Q?High_/_Rejection_-_FSL_-_Sainsburys_Quality_Not?=
+ =?us-ascii?Q?ification_-_Depot_-_Waltham_Point_(Essex,_EN9_3?=
+ =?us-ascii?Q?BZ)?=
+Feedback-ID: ::1.eu-west-1.sCdqOIaTc10uCGhAgc95tjfCNfrI+wrHV6VXcDaT2v8=:AmazonSES
+X-SES-Outgoing: 2024.09.18-54.240.7.24
+X-Mimecast-Spam-Score: 1
+X-Mimecast-Impersonation-Protect: Policy=Default Impersonation Protection;Similar Internal Domain=false;Similar Monitored External Domain=false;Custom External Domain=false;Mimecast External Domain=false;Newly Observed Domain=false;Internal User Name=false;Custom Display Name List=false;Reply-to Address Mismatch=false;Targeted Threat Dictionary=false;Mimecast Threat Dictionary=false;Custom Threat Dictionary=false;External=true
+X-Mimecast-Impersonation-Protect: Policy=Reply-To-Mismatch and Threat Dictionary;Similar Internal Domain=false;Similar Monitored External Domain=false;Custom External Domain=false;Mimecast External Domain=false;Newly Observed Domain=false;Internal User Name=false;Custom Display Name List=false;Reply-to Address Mismatch=false;Targeted Threat Dictionary=false;Mimecast Threat Dictionary=false;Custom Threat Dictionary=false;External=true
+Return-Path: 01020192049489db-67903af6-d726-4709-8849-d4d706628bcd-000000@ses.food-surveys.com
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Sep 2024 10:01:40.2642
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 6d405d11-42e9-4f57-acdd-08dcd7c8e440
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: LO1PEPF000028CD:EE_|CWLP123MB6949:EE_|CWLP123MB7107:EE_
+X-MS-Exchange-Organization-AuthSource: LO1PEPF000028CD.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 6d405d11-42e9-4f57-acdd-08dcd7c8e440
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|32142699015|12012899012
+X-Forefront-Antispam-Report: CIP:195.130.217.221;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:eu-smtp-inbound-delivery-1.mimecast.com;PTR:eu-smtp-inbound-delivery-1.mimecast.com;CAT:NONE;SFTY:9.25;SFS:(13230040)(32142699015)(12012899012);DIR:INB;SFTY:9.25
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Sep 2024 10:01:40.2486
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6d405d11-42e9-4f57-acdd-08dcd7c8e440
+X-MS-Exchange-CrossTenant-Id: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9
+X-MS-Exchange-CrossTenant-AuthSource: LO1PEPF000028CD.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CWLP123MB6949
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.1924217
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7982.000
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198)
+X-Microsoft-Antispam-Message-Info: =?us-ascii?Q?n38Ug/huvse/PZSz0U0O7T9kHyWgoS+ARKC9k3cBEDW6TcUuFb9hVnnux4VY?=
+ =?us-ascii?Q?dOx6nTN3wGNlqK7BlhAWz6yR09as1KYfzH71y/wl0tVg2G7WN82OwexAj41a?=
+ =?us-ascii?Q?tSAOleY86Qx2gNEmh5DZ33xmcCmK2Bzld2ghuX7vtiwYmcgPODw+pm4m5i1R?=
+ =?us-ascii?Q?mFYtwt18F0YkWXjNXm3YUmwm/aCLVgcVaFrZ3ixammjrmcGJkVOSL26/NID+?=
+ =?us-ascii?Q?zl4R4FK7zTytmuPgPeLS1Mo+MQOQqJHSSceDGYT+z5jgFcEBLutYaRawFRR4?=
+ =?us-ascii?Q?La39uBa3QgkgPksuL4WAHUPR/m2LDwF6sDo6DzxqjGf/xhCEEbJfLQ0SoSVM?=
+ =?us-ascii?Q?lzVJIqgrkKGtnxrt1rMXBBNiUu+yFnG7LCIwEajDG0wuNdwPJfHTv3O8KFw4?=
+ =?us-ascii?Q?X89zz6cYyIos7vPEQ4MB97AU07nSTYSMggTvfi6hzkFYE37034O5a9x9YjNW?=
+ =?us-ascii?Q?wRUQXQAHbWGhf6aeByneNLDIjbEu4D3Wx/SnO3xSANanq6200rphsp+SQ2yQ?=
+ =?us-ascii?Q?6oaezZNJ5SP5EChcZHojtLcayrZ2UnII5OueREaYrie3Z3tpm/+WguT00e87?=
+ =?us-ascii?Q?6wxXida702y7oGjOvC7v7u5tg2kYXCIKlcQ83TwJOzCqRGiEKlwGvmXHj3z1?=
+ =?us-ascii?Q?rExaY467w3pSXYOV0fVK3aG8Q49n9c84jp4hKtJD5O+Hyy5vxF7yRqQq1x9Q?=
+ =?us-ascii?Q?f3z1gEtylqw++30/rtgSl8vVmummSp5YKMECsr6I0/REl4EKzxUXOHgKPb1W?=
+ =?us-ascii?Q?bIxJS3+nC8hUPk1pRBO7QGpyUxNARKTsxDLqdpVD9iWVGX9B9/8iy97f2w/r?=
+ =?us-ascii?Q?4saODlqwp8f11lSczzuqA1Zqi6/q5svTM1taIn78sJUx0bcni4iRrazq0ax4?=
+ =?us-ascii?Q?qrk7YKJ4KsRd63rnQ7UbJ72bNAuya8DEalXFUS/LRAeqJiA/r6PzFcZBdeOA?=
+ =?us-ascii?Q?ykpbKWDKbKfCaiP1oXtf3jY0C0flloMqBsOVLjAQMi+qHCoc2WrC2gVWWglR?=
+ =?us-ascii?Q?dVq4YSK+a1M6qaAXgviQDaBixHSJZ1hcB/zbJAARxn1vStipr2UmK93H635g?=
+ =?us-ascii?Q?1l/PhaNt2YjMiFY1BTji0/MO30CJsNGDQzgOVTC6aSZi1lwpm5TVEAROFMH1?=
+ =?us-ascii?Q?e7oeTCb7YPI/IlA2vtRywOBU50L8x/hzG/h8pKjQaTI6q4rMm0ukG3QZ91hA?=
+ =?us-ascii?Q?5lq6TmaizOf34jgvc/lE9VcrJbjvPWctRV9Z04ZtfdjVZwHZUMSgNym/1lgI?=
+ =?us-ascii?Q?KauP/9gwBDxJq833D3HJCHyHnjXFG7Gq8uJ9oDlvdThyUIk95zIxw4Obdq8Y?=
+ =?us-ascii?Q?ujpkMKqDcyCmJj+rO2PWjms34cPhyy09USlSUgDvxY2pcVgcRlqGVQ/jbrXZ?=
+ =?us-ascii?Q?MMSG8NOll7L7peUYtQiUA1W7udrrzIGca/VD4Xs5Eah+ABWkf60A6dnJuVWD?=
+ =?us-ascii?Q?1cYxDtsTkBumwm1rVqj7LqKNcLNKkF69jBPMxscMTUJAxEgmxiA8+kVED2Z2?=
+ =?us-ascii?Q?98UTl8EiufO/XuNyuoCUW6xjbWhAPmIEUTRVS2lQHJcpWmzZ/u8EM8p5d9VI?=
+ =?us-ascii?Q?sgGhK/0g9a0Hoz8nArSm3iJB+DWzTy2m8hi3rX4hXyY4safY96FNE7ax0IZY?=
+ =?us-ascii?Q?igmOK4oQOs2soRVu6+DjlX6HZrdMBjrXnh1tQPTeQ8BnpcGdmIHAmO4rYOs4?=
+ =?us-ascii?Q?/qyh1GkutOVCmDBDgpeonQcs94WCZlKIIUaH1zAN+3NTCqfgpb/yYyVjAQNt?=
+ =?us-ascii?Q?qkAejfAK39r7QU/XglfkXCBZZ/HTS+fSMK828zbcjR0TKObhcKv24utH+1e7?=
+ =?us-ascii?Q?vPVd232NBwcw0IVyFiYuVXMBQkLe+JdTG4jEOHfemCWjgzL4nGhTZgQvr3Yp?=
+ =?us-ascii?Q?Jy3B3LYQRhgFqwPNnRbNLN59MAgp7iKh9UlWNLZeYpqLG+j6WqOK8c0gQePS?=
+ =?us-ascii?Q?AEIFW5chzMK+TDG0NlVDS7If4RhZq9I8vgQwNZqBqfGyEltm9PTWo6/fP2h4?=
+ =?us-ascii?Q?oEX1OwI8we12knWMdRMY0fFpjVwplm0MSsOcbXndX+qNuOTpM/swqscrlI0Z?=
+ =?us-ascii?Q?x0dugVxb0eiQjQgWYBQ9ooRHW5+oIDMeieJ96rlqjWqVow6l+9+J/Yg22hlB?=
+ =?us-ascii?Q?TBsj5BNtUK2wlbCakSu+KWhQpXOT/FE4RpNyC3E4rpreb0HeFnC6jnXWuwQp?=
+ =?us-ascii?Q?XqrX2YA5QDKeZxpwoFdq3DSTUGfWY2aN1d+x1w=3D=3D?=
+Content-Type: multipart/alternative;
+ boundary="b1=_GVl9tQfnmvlwZa3JWzFo5nxBqSupCgK53xPEsKP4k"
+MIME-Version: 1.0
+
+--b1=_GVl9tQfnmvlwZa3JWzFo5nxBqSupCgK53xPEsKP4k
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Some people who received this message don't often get email from sainsburys=
+@food-surveys.com. Learn why this is important<https://aka.ms/LearnAboutSen=
+derIdentification>
+
+Sainsburys Product Quality Notification - High / Rejection
+
+ID      1807
+Notification Type       High / Rejection
+Date / Time     18/09/2024 10:28
+Inspector       A. Kyriacou
+Location        Depot - Waltham Point (Essex, EN9 3BZ)
+Category        Produce - Citrus
+Product SKU     7832562: SO Organic Easy Peelers min 500g
+Focus Product   No
+Supplier        O01661
+Traceability    887/040/008
+Date Code: 2024-09-23
+Production Time:
+Packaging Code: J2309s
+Evolve Spec Used?       Yes
+Delivery Size (cases x units)   29 x 8
+Cases Sampled   10
+Retail Units OOS (OOS / Sampled)        22/80
+Retail Units Removed / Destructively Tested     0
+Cases Rejected  29/29
+Units Rejected  232/232
+Rejection Level Full
+Details 22 x Heavy scarring (plate 8), multiple packs also contain greening=
+ (levels 6 / 7) and early signs of rind breakdown (plate 3). 27.5% affected=
+, spec states reject if combined non-progressive defects are over 10%
+Action Taken    Rejected
+
+Image Links:
+
+  *   View Image 1<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa07c8c8c6.jpeg>
+  *   View Image 2<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa095d4d95.jpeg>
+  *   View Image 3<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa0ab99a44.jpeg>
+  *   View Image 4<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1167c94f.jpg>
+  *   View Image 5<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa12b087ee.jpeg>
+  *   View Image 6<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa136dc872.jpeg>
+  *   View Image 7<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa147debd6.jpeg>
+  *   View Image 8<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa15ed0d73.jpeg>
+  *   View Image 9<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa16cd1fb3.jpeg>
+  *   View Image 10<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa17e184a4.jpeg>
+  *   View Image 11<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1a006f41.jpeg>
+  *   View Image 12<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1b2003e2.jpeg>
+  *   View Image 13<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1ce2b7a1.jpeg>
+  *   View Image 14<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1d886862.jpeg>
+  *   View Image 15<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1eb787cc.jpeg>
+  *   View Image 16<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa1fc12401.jpeg>
+  *   View Image 17<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa20b7818a.jpeg>
+  *   View Image 18<https://www.fslreporting.co.uk/scripts/getFile.php?key=
+=3Dsainsburys/images/notifications/2024-09-18/1807-66eaa21938b0d.jpeg>
+
+Action Required by TM: Please ensure the correct supplier contact has been =
+notified about the rejection and ensure you share the rejection decision wi=
+th your cross-functional team
+
+Action Required by Supplier: Please contact the depot and your JS supply ch=
+ain contact to agree collection/stock replacement
+
+Contacts Informed via Email:
+
+  *   sainsburys@food-surveys.com
+  *   Agata.Pytko@sainsburys.co.uk
+  *   michelle.calvert@sainsburys.co.uk
+  *   sarah.blanford@sainsburys.com
+  *   technical@efcltd.com
+
+--b1=_GVl9tQfnmvlwZa3JWzFo5nxBqSupCgK53xPEsKP4k
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: revert !=
+important; white-space: revert !important; width: revert !important; word-b=
+reak: revert !important; word-spacing: revert !important; writing-mode: rev=
+ert !important; zoom: revert !important; cellpadding: 0 !important; border:=
+ 0 !important; cellspacing: 0 !important; display: table !important; width:=
+ 100% !important; table-layout: fixed !important; border-collapse: seperate=
+ !important; float: none !important; border-spacing: 0px 0px !important; " =
+align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: revert !important; white-space: revert !important; width: revert !import=
+ant; word-break: revert !important; word-spacing: revert !important; writin=
+g-mode: revert !important; zoom: revert !important; display: block !importa=
+nt; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+revert !important; white-space: revert !important; width: revert !important=
+; word-break: revert !important; word-spacing: revert !important; writing-m=
+ode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: revert !important; white-space: revert !important; width: revert !=
+important; word-break: revert !important; word-spacing: revert !important; =
+writing-mode: revert !important; zoom: revert !important; padding: 7px 2px =
+7px 2px !important; background-color: #A6A6A6 !important; valign: middle !i=
+mportant; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: revert !important; white-space: revert !import=
+ant; width: revert !important; word-break: revert !important; word-spacing:=
+ revert !important; writing-mode: revert !important; zoom: revert !importan=
+t; width: 100% !important; background-color: #EAEAEA !important; padding: 7=
+px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Sego=
+e WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fon=
+t-weight: normal !important; color: #212121 !important; text-align: left !i=
+mportant; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ revert !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+Some people who received this message don't often get email from sainsburys=
+@food-surveys.com.
+<a href=3D"https://aka.ms/LearnAboutSenderIdentification">Learn why this is=
+ important</a>
+</div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: revert !important; white-space: =
+revert !important; width: revert !important; word-break: revert !important;=
+ word-spacing: revert !important; writing-mode: revert !important; zoom: re=
+vert !important; width: 75px !important; background-color: #EAEAEA !importa=
+nt; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, S=
+egoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !i=
+mportant; font-weight: normal !important; color: #212121 !important; text-a=
+lign: left !important; word-wrap: break-word !important; align: left !impor=
+tant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><strong>Sainsburys Product Quality Notification - High / Rejection</stro=
+ng></p>
+<table>
+<tbody>
+<tr>
+<td><strong>ID</strong></td>
+<td>1807</td>
+</tr>
+<tr>
+<td><strong>Notification Type</strong></td>
+<td>High / Rejection</td>
+</tr>
+<tr>
+<td><strong>Date / Time</strong></td>
+<td>18/09/2024 10:28</td>
+</tr>
+<tr>
+<td><strong>Inspector</strong></td>
+<td>A. Kyriacou</td>
+</tr>
+<tr>
+<td><strong>Location</strong></td>
+<td>Depot - Waltham Point (Essex, EN9 3BZ)</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>Produce - Citrus</td>
+</tr>
+<tr>
+<td><strong>Product SKU</strong></td>
+<td>7832562: SO Organic Easy Peelers min 500g</td>
+</tr>
+<tr>
+<td><strong>Focus Product</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Supplier</strong></td>
+<td>O01661</td>
+</tr>
+<tr>
+<td><strong>Traceability</strong></td>
+<td>887/040/008<br>
+Date Code: 2024-09-23<br>
+Production Time: <br>
+Packaging Code: J2309s<br>
+</td>
+</tr>
+<tr>
+<td><strong>Evolve Spec Used?</strong></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Delivery Size</strong> <small>(cases x units)</small></td>
+<td>29 x 8</td>
+</tr>
+<tr>
+<td><strong>Cases Sampled</strong></td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Retail Units OOS</strong> <small>(OOS / Sampled)</small></td>
+<td>22/80</td>
+</tr>
+<tr>
+<td><strong>Retail Units Removed / Destructively Tested</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Cases Rejected</strong></td>
+<td>29/29</td>
+</tr>
+<tr>
+<td><strong>Units Rejected</strong></td>
+<td>232/232</td>
+</tr>
+<tr>
+<td><strong>Rejection Level</strong></td>
+<td>Full</td>
+</tr>
+<tr>
+<td><strong>Details</strong></td>
+<td>22 x Heavy scarring (plate 8), multiple packs also contain greening (le=
+vels 6 / 7) and early signs of rind breakdown (plate 3). 27.5% affected, sp=
+ec states reject if combined non-progressive defects are over 10%
+</td>
+</tr>
+<tr>
+<td><strong>Action Taken</strong></td>
+<td>Rejected</td>
+</tr>
+</tbody>
+</table>
+<p>Image Links:</p>
+<ul>
+<li><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2F637VCkrVwCO77xDC2fOCG79Z1%3Fdoma=
+in%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwick%40efcltd.com%7=
+C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C=
+0%7C638622505065951247%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoi=
+V2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3D%2B9lKU4QnU=
+drUEVavbFZoxoO2xZjc9UwCiVgBqA9f1%2Fs%3D&amp;reserved=3D0" originalsrc=3D"ht=
+tps://url.uk.m.mimecastprotect.com/s/637VCkrVwCO77xDC2fOCG79Z1?domain=3Dfsl=
+reporting.co.uk" shash=3D"cq02I0oo53y2HFzS6erajlAjIYF3nBYR7QSwoy97R5PZS+/7q=
+ovo+0jkePefn4mLlvkTMKIiL3sC3P+H2g2N9JmBrUMTZP9SOWDWD6pfncks3JIqdAO1LsEUI7La=
+mOys1+0gui/VZefs0xqLS4Ia1h3xlaseOaiypklm593pf+w=3D">View
+ Image 1</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fj15DCl2VvS2yyQW=
+C9hoCz9jTV%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505065976416%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DsxFX8p09pzjggtikebSlZPrUthoupBbi7P%2FguqepmmY%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/j15DCl2VvS2yyQWC9hoCz9j=
+TV?domain=3Dfslreporting.co.uk" shash=3D"wbYI4RNVWXn7VYF45SxCKNnI712aEn7OXP=
+TTQk8xY3RY8gKdmybt/sNSK6kGSn6NnAYZF/0RAvZZQjgQPmRglvKdghZI11dinmcwxurlFa2CM=
+8KpyXm7uzmpTMgDluPp0+hKLuej4fiLLcn0a6x0ayHhLWzQIi8RPGOHwk3ksvU=3D">View
+ Image 2</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FwGntCmYV2fjZZOV=
+iBixCRrqAe%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505065990397%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3D0y0lhkezlu3R0SFB%2FUFUdTwkSt3vJFg8vMVLFFnNFvY%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/wGntCmYV2fjZZOViBixCRrq=
+Ae?domain=3Dfslreporting.co.uk" shash=3D"NdpDLOvxlcDXehrEQBvMIVbTUKdK0baFnu=
+QeZ9wggS6YAjXBeqOhZ5AYrm9DBhVn2kPG0pTCbP1NP95OuzUfifNJfZmRKVtzoHiJIHVHmroJs=
+QkpgjsjE7NxXZnmdV2i/IgaKnFANr6bUd1DR5WuVryfdIlqkUj0C+HV1zG0tdM=3D">View
+ Image 3</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fs4suCngVYi7zz84=
+fZsYCJOgNA%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066004048%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DJEG%2BAsF34lVUjDc27yp9jZBb5YGqcmSr4H3wXHnVGg4%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/s4suCngVYi7zz84fZsYCJOg=
+NA?domain=3Dfslreporting.co.uk" shash=3D"iY1KgGPBI/sOKMe9T/TfkBbDOjxyxYLWqW=
+5wXqhGUrA4yPU+shsdTkp2vT+Jyx1eurAOXHhyno/Y00KSzcsOwrwgVpjejKCiKD8JuZJhjvpGB=
+vizqTFgLrKeYqxDIE+o28TIv4ULAoaDx3kCWpGDxN30L1Uaz0iy+dHE0O5XiPg=3D">View
+ Image 4</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FHxKICoj9virMMOA=
+cOtgCpxMNu%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066018510%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3D102vQbwiGlvwo%2B5TncO3ivce6gQWyCwL9JcZSGnE3lo%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/HxKICoj9virMMOAcOtgCpxM=
+Nu?domain=3Dfslreporting.co.uk" shash=3D"Osmnnpqb8ltkMUHElocU5qAjO0cEi/DvA7=
+8B7cGJ8bDJgYdTSlJNzhoeHGXFEPkrxWYkNeTOk2GC4dDnb23Ufey/O9TbeCJJRXkvdIF++FxJw=
+EZtUjYpEYPbf7W8ma1CihIAoo6LhqZePrajeNsdiJg/bfNOn06Lkp0tC4SiJns=3D">View
+ Image 5</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FMN_fCpk6RCnGGYg=
+t2u7CGLQCp%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066030208%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DySO%2BH57FVTlQV3MZ7TQRg%2FLfx9P68phFz7vCKEI5hdA%3D&amp;reserved=3D0" =
+originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/MN_fCpk6RCnGGYgt2u7CG=
+LQCp?domain=3Dfslreporting.co.uk" shash=3D"VGc2jfvt+d/CV9+Kr6RByBPDC1r5LDXb=
+KSNGZAikcCKxIium7pAcFlavyu/XklB6WfNElih30mWAkClY5iu57rIeeG1gND+ZWwUKVRNuUXn=
+cM/nuFA0EPguf3CyZO+2LOjXbUGy60nnO79CElP3qz61YKDh27+IMPk17Aqa3f3w=3D">View
+ Image 6</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Ficf5CqlXVU8DDqg=
+CqC8CEv-lh%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066041103%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DZAmtQGC%2BrWy7wviDu%2F8ruP%2F0Lg%2FyNlODXE8cmts4nf0%3D&amp;reserved=
+=3D0" originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/icf5CqlXVU8DDqg=
+CqC8CEv-lh?domain=3Dfslreporting.co.uk" shash=3D"RQbe74UPV7qZfXrEPQnHm0GUGB=
+d4vKheDndQalWNhks4YMkvbgew3LdyVksqZ7c3fGx9ikQ3dZbbpU7BSwAWP4UT5maJs+Unf4ET7=
+LpWEvinhBggnnJMrRcaIeDF1hos5Suduf0bUyCAf/6xgt9ENmUi0bePAksCuxeS2BHwsp4=3D">=
+View
+ Image 7</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fq4mVCrmNEC8ppgy=
+CQFoC4kdlw%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066051753%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DOmqOWql48dj1flcyxk6NAjK6sccwTCm2Qq%2BdC5yE%2B4o%3D&amp;reserved=3D0" =
+originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/q4mVCrmNEC8ppgyCQFoC4=
+kdlw?domain=3Dfslreporting.co.uk" shash=3D"mfBduzcL07/2IZd0Y5kiEO5LP4nNRVFB=
+CzS+rDgx01mYa3Y21mLsByt2MAXUmHyIBnbYXQGX0jDObH9WIl7eHc+jdlm+cG9W5LfrZCG79W3=
+zHLzExmlGTuPA36IH2EhyNcw7LTBqQpH2uwgvWCTwG18jMoxczJ7shgw+9Vr24fY=3D">View
+ Image 8</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FXqEYCv87Yf7GGQJ=
+fwH8CQXY4Q%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066063509%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DU%2FTKcggVnUC3bwiYleHiyulvvskcAymxYE3pOtGNzng%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/XqEYCv87Yf7GGQJfwH8CQXY=
+4Q?domain=3Dfslreporting.co.uk" shash=3D"olcm/hz6iQ1Nq+lTFfycItGV3kJedQXhla=
+5KFqme0QSyCBZRwtHqsnDtq3LD/9RZ9pb0odgbw5qa1JnyXQqdwA8vppwe/TfM7P2rHddbyyJ9x=
+pUQ59GoJ5rTaE7DsUDK2VHBbzwS31jtfSjBOHHLBdpRliXbfVJQP4lvxcvbtJ0=3D">View
+ Image 9</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FiTlECwK8ESG77B5=
+HlI2CJ5TcE%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barwi=
+ck%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3dd=
+edf46edbc9%7C0%7C0%7C638622505066075448%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3D9aqx6qR2lMQGvRNjzOKeTs50CHqP6poO6Fp6666vGnA%3D&amp;reserved=3D0" orig=
+inalsrc=3D"https://url.uk.m.mimecastprotect.com/s/iTlECwK8ESG77B5HlI2CJ5TcE=
+?domain=3Dfslreporting.co.uk" shash=3D"Rt+AxBfPXDzPuaDWj6i9T9r0icBz+7N3a1Y1=
+CG6eU063CP/c/BALeClgRZeUsBS6v8JgtXidLATqovUTSEpF4/SM5CUyvrESPVMF/ikr+7rTe6B=
+z+fZBtXT8PIKIE/nkVyFuXchcUU0nOD/4evXg9407YDNs/vcfZyD1GwDkGRQ=3D">View
+ Image 10</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FZP1HCx2NVS1yyY=
+pUxSxCybfz5%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066085754%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DSSj80jEfz10hLfMQmofnCPk9qEhj%2B7pvV6dRGIT4WOk%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/ZP1HCx2NVS1yyYpUxSxCyb=
+fz5?domain=3Dfslreporting.co.uk" shash=3D"xcwkRmESiP0J3a5CRQVliyscHiENGdm9c=
+Hl6yV7kdBUyL7g3bmXw89PR4+TEZ+jvjqZYlPlq4eYKIGMreldbeGwgeBLxYNkxgV8mEbhUZJwc=
+EN+3nw6Bx3f+DDhtlspGXeA38IrxKbmcvqd/bmKOb8uFcdVwvZDxk+Mm3xNtCrY=3D">View
+ Image 11</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FMwcGCy9O6Crggx=
+GcgT1CxJADJ%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066100725%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3Dqp0lLydwr2rDexb9KpfdsGnBV19DUgh3p9HBTDYW4Mo%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/MwcGCy9O6CrggxGcgT1CxJAD=
+J?domain=3Dfslreporting.co.uk" shash=3D"LpAkzCvr8WUeAGEWwT6qfi2j5/2RQhV/jYD=
+ajAA2L5YpEC9LYRBIRW04RNGFwE5C7ddDPxRS5DvVcwOB1NirFsr6kWvdrl3TVOMlWvGYH383gk=
+c4Bl/62WFd+2P3O7mRenmRXJlUrSHcYrUI1Wu8FyoamAztfHqdjrpo4EWj//s=3D">View
+ Image 12</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fw4HNCz7NBiM335=
+XCxU0C9FgND%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066112946%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DMU3nQAQi1JrDaOfDUDZRiKnHfAXqi5YgR1wjn8qVFsk%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/w4HNCz7NBiM335XCxU0C9FgN=
+D?domain=3Dfslreporting.co.uk" shash=3D"GFEibR4wHy4g74chs2QnOj8Kw71T++7O3Ti=
+8EL8oGhZ/A7YoTS6NBSrsfmR2oi9V/p0iDfXn80GMjiFZK1re6QmAFV4TgDetqDmx9EPXRYJxHX=
+ZHIebo5NA0r6cAwd8MP66Oz3xYlsgDvSotywqgBlQv9Ua/1PTumwSGb5VyQLM=3D">View
+ Image 13</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FiouPCAM7QFNggk=
+xIncoCGvr4D%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066123995%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3Dp%2B9vLY%2B2A%2FSmaFEoAjv%2FgOfB%2BpeZcerTEUyEITSeVWs%3D&amp;reserve=
+d=3D0" originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/iouPCAM7QFNggk=
+xIncoCGvr4D?domain=3Dfslreporting.co.uk" shash=3D"RCjM2bd7PkDlZJ4n2J0GKpa92=
++4zRJt/iVTdpKka8wxO0FoVV/rc8u07nNpc2+V6MxQs0H58gO0sgdNRTzuulKuSCOhp2lsAN38F=
+KBUifRgmU/++N7gVO/uw6Op+TFaumnKjAklre2LJtbC7z+C/ulgqt1lYDxio21tj67+vZ4w=3D"=
+>View
+ Image 14</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FsG3ICBP78t711Y=
+xfEfkC2uO7_%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066134235%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DS9JINS%2B3cwyPUw3Ba3EbCiXojK7blTaT2OrdA5A2VNc%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/sG3ICBP78t711YxfEfkC2u=
+O7_?domain=3Dfslreporting.co.uk" shash=3D"E+q0+Lr93pllRjnS1JL664Q5UVwfbxrQV=
+I9TWqjwQ8pa6CkGS2K9OuVD8H48o1A9ociMRD/fk8ua4nefNJAY6cKZRXDSKmHOVXWMq0Dr/XvX=
+zZ4wHsVGTSp3bAJPLqc/lcRzTjkOYMLaa2vbVE5F3g/hVFLHtnQYdYJPb5hi8Gc=3D">View
+ Image 15</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fe2bFCDQ7YT5114=
+7UEhBCjFGcJ%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066144683%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DcL1nij9jN0FAqX8rQ%2F7bR6ICCT%2BaP5saKJDT%2FtdEzrY%3D&amp;reserved=3D=
+0" originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/e2bFCDQ7YT51147UEh=
+BCjFGcJ?domain=3Dfslreporting.co.uk" shash=3D"yjmcxpMd0OtnzgziN/H3qlkZjiCw7=
+HNh16OXQ/VwHonk3Km/Iof58YW3gnonRLSW9CSqXEjJIU7A3clMM5Q+tMbKSU0pmASOQfwQyK51=
+Mrt3riDAxtrmBW2VbZD8gNIh7zJgKCWfq0CYKSsiEEPbDV2YLsJWbq8K5UBltk9nto4=3D">Vie=
+w
+ Image 16</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FwKfOCE07Zf3mmE=
+wCoiXC7K7a6%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066155731%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DFkrBdOAThPT1R%2BSR%2B2vu%2B2GI9hZInBtVJ424lNiw0Fs%3D&amp;reserved=3D=
+0" originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/wKfOCE07Zf3mmEwCoi=
+XC7K7a6?domain=3Dfslreporting.co.uk" shash=3D"CiHYCVRm9Zh/i6kjGQikMuhZ9IxaC=
+j4xze5TQcjh6M3/uED69vfeJugD/hYQHUEuOX8cEykJ5oOo33JT0Ws9fF9QKKUTSvOW4BcUQq3h=
+LXAwWq7QhYS5rGLfyWVWhKlGYIazSJd3i81+uooTYu6uopIYKQTBCAt6SWXl0vxP63o=3D">Vie=
+w
+ Image 17</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fc21SCGM7YF1mmv=
+rUNswCBGncJ%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cwilliam.barw=
+ick%40efcltd.com%7C6d405d1142e94f57acdd08dcd7c8e440%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638622505066167772%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3DD5JPqORpHvNV3DBDPxWSMK9%2FO3eC1MiqARHg557J85A%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/c21SCGM7YF1mmvrUNswCBG=
+ncJ?domain=3Dfslreporting.co.uk" shash=3D"iLdrMzMnXwFyXm7UDzXdzvPBVpEfWZOgT=
+dCZZ3ts83mZwevy2w/jrabB1ts+0xBe+RJqET9xTzXiD604WEH9jOf5AL67VbvVUsI3pKCZaXVR=
+oz84/W9Ve6PJgpQ/axcj1t2GduUlCmq1AU9ivP026XeNWuuC2bnVNXRp2XnkYEc=3D">View
+ Image 18</a></li></ul>
+<p><strong>Action Required by TM:</strong> Please ensure the correct suppli=
+er contact has been notified about the rejection and ensure you share the r=
+ejection decision with your cross-functional team</p>
+<p><strong>Action Required by Supplier:</strong> Please contact the depot a=
+nd your JS supply chain contact to agree collection/stock replacement</p>
+<p>Contacts Informed via Email:</p>
+<ul>
+<li>sainsburys@food-surveys.com</li><li>Agata.Pytko@sainsburys.co.uk</li><l=
+i>michelle.calvert@sainsburys.co.uk</li><li>sarah.blanford@sainsburys.com</=
+li><li>technical@efcltd.com</li></ul>
+</div>
+</body>
+</html>
+
+--b1=_GVl9tQfnmvlwZa3JWzFo5nxBqSupCgK53xPEsKP4k--
