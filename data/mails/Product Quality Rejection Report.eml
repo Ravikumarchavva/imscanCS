@@ -1,0 +1,873 @@
+Received: from CWLP123MB5820.GBRP123.PROD.OUTLOOK.COM (2603:10a6:400:1b9::12)
+ by LO2P123MB5717.GBRP123.PROD.OUTLOOK.COM with HTTPS; Tue, 11 Feb 2025
+ 11:35:33 +0000
+Received: from LO4P123CA0323.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:197::22)
+ by CWLP123MB5820.GBRP123.PROD.OUTLOOK.COM (2603:10a6:400:1b9::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8445.11; Tue, 11 Feb
+ 2025 11:35:29 +0000
+Received: from CW2PEPF000056C0.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:600:197:cafe::ac) by LO4P123CA0323.outlook.office365.com
+ (2603:10a6:600:197::22) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8398.31 via Frontend Transport; Tue,
+ 11 Feb 2025 11:35:29 +0000
+Received: from eu-smtp-inbound-delivery-1.mimecast.com (91.220.42.227) by
+ CW2PEPF000056C0.mail.protection.outlook.com (10.167.240.23) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8445.10
+ via Frontend Transport; Tue, 11 Feb 2025 11:35:29 +0000
+Received: from a52-137.smtp-out.eu-west-1.amazonses.com
+ (a52-137.smtp-out.eu-west-1.amazonses.com [54.240.52.137]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.3,
+ cipher=TLS_AES_256_GCM_SHA384) id uk-mta-255-mQVRqp0TOs6os3hHLlMeSg-1; Tue,
+ 11 Feb 2025 11:35:26 +0000
+From: Tesco <no-reply@mail.tesco.com>
+To: Technical UK <TechnicalUK@dpsltd.com>, Nick Laister
+	<Nick.Laister@dpsltd.com>, BIGA Mohamed- technical contact
+	<bigamed@gmail.com>, QA <QA@dpsltd.com>
+CC: "Mike.Corbett@tesco.com" <Mike.Corbett@tesco.com>,
+	"goodsin.belfast@tesco.com" <goodsin.belfast@tesco.com>
+Subject: Product Quality Rejection Report
+Thread-Topic: Product Quality Rejection Report
+Thread-Index: AQHbfHkPAco5mfSCQ0OYuwc5KCUgwg==
+Date: Tue, 11 Feb 2025 11:35:25 +0000
+Message-ID: <01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000@eu-west-1.amazonses.com>
+X-MS-Exchange-Organization-AuthSource: CW2PEPF000056C0.GBRP265.PROD.OUTLOOK.COM
+X-MS-Exchange-Organization-ComplianceLabelId: 24105130-629e-4082-af60-4632cd79b32d
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id: 4fd6cb00-582a-46b7-ddd3-08dd4a902fcb
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: SoftFail (protection.outlook.com: domain of transitioning
+ bounce.mail.tesco.com discourages use of 91.220.42.227 as permitted sender)
+x-ms-exchange-organization-originalclientipaddress: 91.220.42.227
+x-ms-exchange-organization-originalserveripaddress: 10.167.240.23
+x-ms-publictraffictype: Email
+authentication-results: spf=softfail (sender IP is 91.220.42.227)
+ smtp.mailfrom=bounce.mail.tesco.com; dkim=pass (signature was verified)
+ header.d=mail.tesco.com;dmarc=pass action=none
+ header.from=mail.tesco.com;compauth=pass reason=100
+x-ms-office365-filtering-correlation-id: 4fd6cb00-582a-46b7-ddd3-08dd4a902fcb
+x-ms-traffictypediagnostic: CW2PEPF000056C0:EE_|CWLP123MB5820:EE_|LO2P123MB5717:EE_
+x-forefront-antispam-report: CIP:91.220.42.227;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:eu-smtp-inbound-delivery-1.mimecast.com;PTR:eu-smtp-delivery-1.mimecast.com;CAT:NONE;SFS:(13230040)(12012899012)(13102899012)(32142699015)(69100299015)(5062899012)(3072899012)(3092899012)(2092899012)(1032899013)(13003099007)(8096899003)(2066899003);DIR:INB
+x-microsoft-antispam: BCL:2;ARA:13230040|12012899012|13102899012|32142699015|69100299015|5062899012|3072899012|3092899012|2092899012|1032899013|13003099007|8096899003|2066899003
+x-ms-exchange-crosstenant-originalarrivaltime: 11 Feb 2025 11:35:29.3801 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9
+x-ms-exchange-crosstenant-network-message-id: 4fd6cb00-582a-46b7-ddd3-08dd4a902fcb
+x-ms-exchange-transport-crosstenantheadersstamped: CWLP123MB5820
+arc-message-signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=dkim.mimecast.com; s=201903; t=1739273729;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=TTWrVluHLB0Esg5+BzdMuyK49v8I1IgrxCE/DXO6/HM=;
+	b=BCiCff+ipPD6EHUihB5u9H6t7P06LmIQmBb+uFC5d2zDQVmScjBtdu7HpKsPh0HPCS3SWe
+	/kv3kPpYLyYcM8ksdffejhVjdisPhgDYpSPJhRTwy61AYJbCy62e5W9YRKnkI9MTot2GMm
+	Lr6sE5diYsU9zzWs92bkXNuk0MfucwXbhzsokFRXz5FSJa7D2+j8BfHR2WctMPgWBxeqk2
+	U9bfx1WSbv1llkD2koLLlTigwGo9GoNEX5i2Sn+oH+8DGGXwvHo37Ay0dmzwzTVxEWleyY
+	eKKlCGRmibbw0bMXdQg3v0MBJZ1DhmFOcUIYwrDaMeLmmdNR4DCdFnyV07Vqqg==
+arc-seal: i=1; s=201903; d=dkim.mimecast.com; t=1739273729; a=rsa-sha256;
+	cv=none;
+	b=eIH8WbHbs1RJhUAoOBy6KF6d7c9ZoFsb0CRDihfoLg+eqTOW6V8olyoUrd9eA09JyexQVK
+	DqjSy6cSEYNTSmhjC+eNHAh7tFMUG50ZEyYiXZHc7kZuzmC1r7yIZKw/w+BzkQdf63FHXO
+	ZNi2YnLGB18/vpJa1Dgrm1Jg0ONSTFbPQkWv6ux2fJTWY0Y/2Jss/sjJlblR4PTtoGvQ2E
+	xxL5eASY5Orsx0+uslk9yJX0VShpwzfA2iY9ekzbd0LhNwJxqgImDzFulT4+C+lphF4014
+	BufkAE//OUI30YI4BHfFpkmHTwiFg9rkIdADV6LFpN2TF0+vacHf5iNbqDYnBQ==
+arc-authentication-results: i=1;	relay.mimecast.com;	dkim=pass
+ header.d=mail.tesco.com header.s=e7cqq2yqckbkgrnpsqwppopodkzavn2m
+ header.b=SwELjeYx;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=ZvPu9uOH;	dmarc=pass
+ (policy=reject) header.from=mail.tesco.com;	spf=pass (relay.mimecast.com:
+ domain of
+ 01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000@bounce.mail.tesco.com
+ designates 54.240.52.137 as permitted sender)
+ smtp.mailfrom=01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000@bounce.mail.tesco.com
+x-mc-unique: mQVRqp0TOs6os3hHLlMeSg-1
+x-eopattributedmessage: 0
+authentication-results-original: relay.mimecast.com;	dkim=pass
+ header.d=mail.tesco.com header.s=e7cqq2yqckbkgrnpsqwppopodkzavn2m
+ header.b=SwELjeYx;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=ZvPu9uOH;	dmarc=pass
+ (policy=reject) header.from=mail.tesco.com;	spf=pass (relay.mimecast.com:
+ domain of
+ 01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000@bounce.mail.tesco.com
+ designates 54.240.52.137 as permitted sender)
+ smtp.mailfrom=01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000@bounce.mail.tesco.com
+x-mimecast-spam-score: -99
+x-eoptenantattributedmessage: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9:0
+x-ms-exchange-transport-endtoendlatency: 00:00:04.0119019
+x-ms-exchange-processed-by-bccfoldering: 15.20.8422.015
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource: CW2PEPF000056C0.GBRP265.PROD.OUTLOOK.COM
+x-mimecast-impersonation-protect: Policy=Default Impersonation
+ Protection;Similar Internal Domain=false;Similar Monitored External
+ Domain=false;Custom External Domain=false;Mimecast External
+ Domain=false;Newly Observed Domain=false;Internal User Name=false;Custom
+ Display Name List=false;Reply-to Address Mismatch=false;Targeted Threat
+ Dictionary=false;Mimecast Threat Dictionary=false;Custom Threat
+ Dictionary=false;External=true
+dkim-signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1739273725;
+	h=Content-Type:From:To:Cc:Subject:Message-ID:Content-Transfer-Encoding:Date:MIME-Version:Feedback-ID;
+	bh=PLFhAYbhO4lEF0a3joSOGPiNyS3ghg6+01TzIgQRifw=;
+	b=ZvPu9uOHKJ7lqeH36LGikKrpwFwyNmOaiNjq5YMfTsKHnmYOrXO1fp2JOLR3C8OW
+	nLnVItg/4dEDqw7uxQJZRDSupkoEaWhEIqp3rSmU0RzqZrUzilIfPmXGHjrKIB6sQpq
+	TPLar2pLCPwtw+rLx9XFaHlXQYFEizTOC+SLMmnM=
+x-ses-outgoing: 2025.02.11-54.240.52.137
+feedback-id: ::1.eu-west-1.+VWVazRRxEaLmCdXqiiN4jlLHSVx6Xq8KGl1f9exFUc=:AmazonSES
+x-tesco-trace-id: plmui-344bd8eb-7ed0-4709-84f7-e5c62fb0b674
+x-ms-exchange-atpmessageproperties: SA|SL
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:1;jmr:0;auth:0;dest:D;OFR:CustomRules;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198)
+X-Microsoft-Antispam-Message-Info: =?Windows-1252?Q?QcOXtswGW4l1Zeqbv9GdR7FXv4MKJLCz3FEJrGn/w1N2oQKsX/SjRgRQ?=
+ =?Windows-1252?Q?N9PltLxQmZjSarrHedPi/oadPCc/t92UF+PMp4fRS862GMg3Oc8jv8+o?=
+ =?Windows-1252?Q?R/FOOzJVJULeZRDE8G0+iHtfEZrvl95xX1WJ2A8457dxjbsDWEd4FKi/?=
+ =?Windows-1252?Q?PsxxbDySD7+en+kmYCptatw7zvsxy51qCK9oeO8NpdAFvSChUPPDC9JP?=
+ =?Windows-1252?Q?lcbP53FkHXN8buwAyoF0gKSovQJWtfkBmJOpkR+yVppyKDz1oYy1PhW3?=
+ =?Windows-1252?Q?AzLvOVInxJIa4BjwCGr/gvpGgIh/k+1J2K5DrQbZXaRXxCLbFIasD7HC?=
+ =?Windows-1252?Q?vU+fKPL+PNdFikScIpVy/rFsvsWtZ7U1oh/lf7LlI2ds9DTu+uevaKWd?=
+ =?Windows-1252?Q?XyJ0ZmqdAfHHkEQsjHC6qcYhUfEwQkGeRRTwAJSPRyzwYdfdEgBEP5V0?=
+ =?Windows-1252?Q?oOYq1SAfC7M/b+9EVmZEBQuntKMnwkrT3lXLBSsE4/dC8Y3jdCft0k1Y?=
+ =?Windows-1252?Q?mn+7Itp4wmB25UyqYI4Y/V+P62n+w1SdIwspUazhwSJo3G7VUFEZtmHw?=
+ =?Windows-1252?Q?6a4c1PpJ7MUOZ6yYuXMpVLDUMcrrxkGqU273ao7BZpnR2zj2ACrcNOCY?=
+ =?Windows-1252?Q?abLdCm8it8WNwVD3RcCiGEMtPuhnR+cTMU3i/4n8+WwebEMK33mBjQXd?=
+ =?Windows-1252?Q?6rtH9VnueQN0qhLBkfxWS041zAr90IJc756jqKASz/dzUf0IeNBn4Je8?=
+ =?Windows-1252?Q?96VmkINrgdCOecsuzNcXlGKssQtpZIIJm6qbV+694eEnRf8YgougV9oq?=
+ =?Windows-1252?Q?D/OaOdMa08DUnm2HPnv+rLVwarfQGh2QjWRsVmRSuDL77aerRCjZWc0K?=
+ =?Windows-1252?Q?Tz3UFugC8AYDjoThAim+vieamd165X0JYiZoytXeHWDKGPGyRV8yeO32?=
+ =?Windows-1252?Q?Z0pUn2UjKAAozRXtfrdMEIG/N5Q+/d//DTa0Hy3YJxpBB+KfYkZDlFWZ?=
+ =?Windows-1252?Q?JicZy3vVx/ynalWVZ+lTdTk99/t6TiD5J+4AkVJaloH6pREVMqWHX1WT?=
+ =?Windows-1252?Q?Mxnz/FEABlutW3DTsH4MxzIjMUi5w1kVCaKz/3gA36JIVKiMy+qzpABr?=
+ =?Windows-1252?Q?OAD0O5Nzn1BAjF7VCMIp4SP4qsOqPYtjbFikyTDdcketBXKKA1oYjD5O?=
+ =?Windows-1252?Q?6pZS16I55eX5GqFIWxV1kWTQfMmGnFBC5x8xLdPfdPmamEqL6zI320ks?=
+ =?Windows-1252?Q?cMA9+INbrwEsLgbhVw5HZ0hu9tFb2/eq3eaAcbz5wfWA04vnC6arkPWg?=
+ =?Windows-1252?Q?9v3+qnV7fkPPqb+H6wCAtTwasixrJz8FFPzlY4/PaACRE5JpJvK4eAvd?=
+ =?Windows-1252?Q?ykU8LTYLxEjCY5RLr5XKiKvSzNboNekLsriEhbdWThlusStkWlSmQxA4?=
+ =?Windows-1252?Q?mIkrqaVUWFuaUCuCNK4eNO/8BiL8ud+VxOjC+zm/2ZQbrIXT6f4xcUxM?=
+ =?Windows-1252?Q?/ZUdq9gtqhCCcHQs01tu9SneTLV1tcPJfaiZpSrsxPykw/TyjbT2Kmej?=
+ =?Windows-1252?Q?s5PeF81X+Q5vTvk6qknmlDiIa4lhlhIUGZHYbUcAW6lTQnGod1bLJBP5?=
+ =?Windows-1252?Q?3NEBztk9oaEdBShPKqGd0EvYnIMh1ExHE/niRG/WNfoE6t64SjrWrBB7?=
+ =?Windows-1252?Q?e8THWii16043GSp8ljXXFJcxUkOstzYY5hdeHscEAq1E9q1Nu5TXTM+3?=
+ =?Windows-1252?Q?GgewxYCzg9YKE4h8NZMg7gJxMPjUYJAz820IiIZm8HN1Qr2hR86GYLGc?=
+ =?Windows-1252?Q?sY1ni9rT9T9UEIVEzY93JVlL+Frmet7UsTIrIaOXTXy/kc9X4Bs9kG/v?=
+ =?Windows-1252?Q?zClC7ghMoP90/jycTP/7cl/ZN7YZWYyM4tlS8yh5294+uxaMObNG8AdR?=
+ =?Windows-1252?Q?AW29f10jMoM4JGB2TskEdLNrnPobqq62+q9tl230QR6Z5GZuPQz3xutd?=
+ =?Windows-1252?Q?FPJI6zVOO9Qp9cjeEmwMZ1EOBMW8k2Bm+d/huqZPoBCtFGTdXiRi9buI?=
+ =?Windows-1252?Q?KVJSK1fDu8Ap3onwIVc7H9c3j4F2ucdc++BJJiyjGsMoGU44dFKSgqks?=
+ =?Windows-1252?Q?kzXdsV+qf59z13BwTr2z+RJ09r3GJtNpqBVQSkS9YgVsKebtZa9yNdtm?=
+ =?Windows-1252?Q?i2jDmzNr14BZRHlPp2FnR5YV7UqIxVyvqDn0mnpmbJ/J5Gq6xicopF6e?=
+ =?Windows-1252?Q?4qspOTHhMoQ+4DmJ3ktoHDQXH8IbduYK9oedRm8L?=
+Content-Language: en-GB
+Content-Type: multipart/alternative;
+	boundary="_000_01020194f4cae606f6e5a3cae61e44e3a0071f4ca9e39348000000e_"
+MIME-Version: 1.0
+
+--_000_01020194f4cae606f6e5a3cae61e44e3a0071f4ca9e39348000000e_
+Content-Type: text/plain; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+
+Tesco.com <https://gbr01.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F=
+%2Fclick.mail.tesco.com%2FCL0%2Fhttp%3A%252F%252Fwww.tesco.com%252F%2F1%2F0=
+1020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2FMoAcDEuvpQJsG=
+eWskKyVH7jUxTs5XWtt7eYuwiDKOng%3D391&data=3D05%7C02%7CTom.Koningen%40dpsltd=
+.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9ec3ddedf46edbc9%=
+7C0%7C0%7C638748705335734235%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydW=
+UsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%=
+7C%7C%7C&sdata=3DdaBWzwp5U%2BgCzsFfKdDFcr2ncxh5qH2fzg6nZyWEruA%3D&reserved=
+=3D0>
+ <https://digitalcontent.api.tesco.com/v1/media/test/2E7AA2C9-3AFD-4623-B6B=
+E-6B89167DC514.png>
+
+Quality check outcome: Rejection
+
+
+
+Product name    Tesco Salad Tomatoes 650G
+TPNB    082872766
+TPND    035616112
+Traceability code       Po178508
+Display Until   18/02/2025
+Variety         Delyca
+Country of origin       Morocco
+Test date       11/02/2025 11:35:24 AM
+Rejected        29.0 case(s)
+Rejection type  Quality
+Supplier code   25887
+Site code       DP260 (UK)
+
+Issue found - Rots and mould (Level: 2)
+
+Severity - Waste
+
+Cases inspected         6.0
+Inspected packs         60.0
+Affected packs  3.0
+% Affected      5.0
+
+Click on images to view full size:
+
+ <https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick=
+.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.tesco.com%252F=
+v2%252Fmedia%252Fmyproduct-quality%252F0442a4a1-5e7d-4a0d-9fc0-e52506e962a2=
+%252F20250211_112959.jpg-9939be72-5dee-4789-b465-9bcb795e60a9.jpeg%2F1%2F01=
+020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2FDvm2DllEaoTr2f=
+nYlxU1RwqEZtbbGAL9hgv5MuLNSCM%3D391&data=3D05%7C02%7CTom.Koningen%40dpsltd.=
+com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9ec3ddedf46edbc9%7=
+C0%7C0%7C638748705335777826%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWU=
+sIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7=
+C%7C%7C&sdata=3D4QG%2Bum45Uk19jTayzd1EbhniGasL%2F6Jg5MQN%2FZh9BH4%3D&reserv=
+ed=3D0>  <https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.tesco.=
+com%252Fv2%252Fmedia%252Fmyproduct-quality%252F3d0b213a-a4d3-49ff-add9-ff19=
+75a8117d%252F20250211_112947.jpg-a233c839-1952-4c50-bc37-2732a96ffc8d.jpeg%=
+2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2Fgch1Hl=
+yVRZ5CeEfrew39J-UrLuH92aV9jCNqaEjJW4w%3D391&data=3D05%7C02%7CTom.Koningen%4=
+0dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9ec3ddedf4=
+6edbc9%7C0%7C0%7C638748705335809803%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGk=
+iOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%=
+3D%7C0%7C%7C%7C&sdata=3DuwM%2FOOKMcq%2BEKPNSz%2BNMUvE7fHQwbZMb%2FZUFYN3yD%2=
+FU%3D&reserved=3D0>  <https://gbr01.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcont=
+ent.api.tesco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252Fd4c3cb4d-b037-=
+40e1-8bfe-dcafd1b1bc60%252F20250211_112911.jpg-6984189c-b223-4b1d-8de4-893c=
+e2714453.jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-0=
+00000%2F3d5anvG6pF5JPcHvsYB6Wl35SNI3FJETujjKU3Gkijw%3D391&data=3D05%7C02%7C=
+Tom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f7136=
+40dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335833913%7CUnknown%7CTWFpbGZsb3d8e=
+yJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIs=
+IldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DTeL6JgdUZ0CJ8aQRYtjtQO9I5iKvkOW%2BCSr=
+8FJo59HA%3D&reserved=3D0>  <https://gbr01.safelinks.protection.outlook.com/=
+?url=3Dhttps%3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigital=
+content.api.tesco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252Fef330bdf-b=
+31c-4a89-8133-f0a382c29b6a%252F20250211_112855.jpg-141ed508-c3e2-4ce0-b5a4-=
+4424d4fe64fa.jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e393=
+48-000000%2FZRH-0DrZ-Z-m_XJDaG8HS8sXJ6bj6ChIh-37E7-cNBk%3D391&data=3D05%7C0=
+2%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f=
+713640dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335852578%7CUnknown%7CTWFpbGZsb=
+3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFp=
+bCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3D3n1vW6DbO%2FztvqOC%2BuVTrYmpFEzBi=
+dRxZWKOspbk1dc%3D&reserved=3D0>  <https://gbr01.safelinks.protection.outloo=
+k.com/?url=3Dhttps%3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fd=
+igitalcontent.api.tesco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252F543a=
+abe5-46e8-4603-9d2f-346527bbe1ea%252F1739273674714341020982154604668.jpg-aa=
+cee4a6-1e10-4407-8fba-a68aa569ce64.jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61=
+e-44e3-a007-1f4ca9e39348-000000%2FkmtpyMO-71kyFmyyLZFuRXMNMpm9wf9bZm-2mL1yz=
+r8%3D391&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd30=
+8dd4a902fcb%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335873622=
+%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOi=
+JXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3D2HiyNBMhZq4=
+oZMi1SscVggLEZRh9J9Sbq%2BKXTGSuk4E%3D&reserved=3D0>
+
+
+
+Actioned by      Distributed to
+Brian Carr       Direct Produce Supplies Plc =96 Technical UK, Nick Laister=
+, bigamed@gmail.com, QA DPS
+Belfast Depot   Tesco =96 Mike Corbett and GoodsIn
+
+Regards,
+
+
+Quality Assessment Team
+
+Terms & Conditions  <https://gbr01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Ftoolkit.tesco.=
+com%252Fsign-in%252F%2523%252Fterms-conditions%2F1%2F01020194f4cae606-f6e5a=
+3ca-e61e-44e3-a007-1f4ca9e39348-000000%2Fr7O49dEKlJLyHLbAzCpBelR6t8TxSql-eM=
+4ZpDGQMuM%3D391&data=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46=
+b7ddd308dd4a902fcb%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C63874870533=
+5897149%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCI=
+sIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DsLkC=
+gUSzg1RSxDlqLSZgTTR28JbdX1TOu%2B59iv84RJA%3D&reserved=3D0>      Privacy  <h=
+ttps://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.ma=
+il.tesco.com%2FCL0%2Fhttps%3A%252F%252Ftoolkit.tesco.com%252Fsign-in%252F%2=
+523%252Fprivacy-policy%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca=
+9e39348-000000%2FLx2n90rvMhMV7BbMS_bc4zUOTz18-ke4abhBjxCF_JE%3D391&data=3D0=
+5%7C02%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6=
+ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335921055%7CUnknown%7CTWFp=
+bGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjo=
+iTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3DLFLUSNwedenxLMLfo%2Bx%2B2%2F=
+A5W8uIooTJhpP47Uf6cSU%3D&reserved=3D0>
+
+=A9 2017 Tesco.com. All rights reserved.
+
+ <http://click.mail.tesco.com/CI0/01020194f4cae606-f6e5a3ca-e61e-44e3-a007-=
+1f4ca9e39348-000000/3OKukVMu92fGxEymQ4YRzOEueBjgWxk95i27ffbLhvo=3D391>
+
+--_000_01020194f4cae606f6e5a3cae61e44e3a0071f4ca9e39348000000e_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <726CA9BD54A49D409D181245975E37E0@GBRP123.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<title>Quality check outcome - Rejection</title>
+<!--[if !mso]><!-- -->
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<!--<![endif]-->
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<style type=3D"text/css">
+      body {
+        margin: 0 auto;
+        padding: auto;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background: #f6f6f6; */
+        max-width: 1260px;
+        align-items: center;
+      }
+      table,
+      td {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      /* img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      } */
+      /* p {
+        display: block;
+        margin: 13px 0;
+      } */
+    </style><!-- <style type=3D"text/css">
+      @media only screen and (max-width: 480px) {
+        @-ms-viewport {
+          width: 320px;
+        }
+        @viewport {
+          width: 320px;
+        }
+      }
+    </style> --><!-- <style type=3D"text/css">
+      @media only screen and (min-width: 504px) {
+        .mj-column-per-100 {
+          width: 100% !important;
+          max-width: 100%;
+        }
+        .mj-column-per-50 {
+          width: 50% !important;
+          max-width: 50%;
+        }
+      }
+    </style> --><!-- <style type=3D"text/css">
+      @media only screen and (max-width: 504px) {
+        table.full-width-mobile {
+          width: 100% !important;
+        }
+        td.full-width-mobile {
+          width: auto !important;
+        }
+      }
+    </style> --><style type=3D"text/css">
+      @font-face {
+        font-family: "regularfont";
+        src: url("https://email.tesco.com/scripts/Fonts/TESCOModern-Regular=
+-web.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "boldfont";
+        src: url("https://email.tesco.com/scripts/Fonts/TESCOModern-Bold-we=
+b.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html {
+        font-weight: 400 !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* .bggrey {
+        background: #f6f6f6;
+      } */
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      table {
+        margin-top: 12px;
+        margin-bottom: 24px;
+      }
+      .table-cell {
+        text-align: left;
+        padding: 8px !important;
+        /* font-weight: normal; */
+        border: 1px solid #ccc;
+      }
+      .table-key-cell {
+        color: #333333;
+        background-color: #e5e5e5;
+      }
+      .bold-text {
+        font-weight: bold;
+        /* font-family: boldfont, Arial, Helvetica, sans-serif; */
+      }
+      .normal-text {
+        font-weight: normal;
+      }
+      .table-value-cell {
+        color: #666666;
+        font-weight: normal;
+      }
+      .image-url {
+        /* display: block; */
+        /* margin-bottom: 10px; */
+        padding: 6px;
+        display: inline-block;
+      }
+      .footer-table {
+        background: #f6f6f6;
+      }
+      .footer-link-cell {
+        padding: 24px;
+      }
+      .footer-link-cell a {
+        color: #333333;
+        text-decoration: none;
+        mso-line-height-rule: exactly;
+      }
+      .footer-link-cell img {
+        vertical-align: middle;
+        mso-line-height-rule: exactly;
+      }
+      .copyright {
+        font-size: 14px;
+        margin: 0 24px 24px;
+        color: #666666;
+      }
+      .report-title-circle {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dark-grey-text {
+        color: #333333;
+      }
+      .logo {
+        height: 24px;
+        width: 132px;
+        background: url('https://email.tesco.com/images/UK_Customer/Core_Co=
+mponents/tesco-logo.svg')
+      }
+      .site-ribbon {
+        background-color: #00539f;
+        line-height: 14px;
+        padding: 6px 18px;
+      }
+      .site-link {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        margin: 0 auto;
+      }
+      .logo-wrapper {
+        border-bottom: 1px solid #ccc;
+        padding: 20px;
+      }
+      .white-background {
+        background: #ffffff;
+      }
+      .mb0 {
+        margin-bottom: 0;
+      }
+      .mt10 {
+        margin-top: 10px;
+      }
+      .mb10 {
+        margin-bottom: 10px;
+      }
+      .table-border {
+        border: 1px solid #ccc;
+      }
+      .tr-bottom-border {
+        border-bottom: 1px solid #ccc;
+      }
+      .regards {
+        color: #666666;
+        margin-bottom: 12px;
+      }
+    </style>
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"1=
+00%">
+<tbody>
+<tr>
+<td class=3D"site-ribbon"><a href=3D"https://gbr01.safelinks.protection.out=
+look.com/?url=3Dhttp%3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttp%3A%252F%252F=
+www.tesco.com%252F%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39=
+348-000000%2FMoAcDEuvpQJsGeWskKyVH7jUxTs5XWtt7eYuwiDKOng%3D391&amp;data=3D0=
+5%7C02%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6=
+ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335734235%7CUnknown%7CTWFp=
+bGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjo=
+iTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DdaBWzwp5U%2BgCzsFfKdDFcr=
+2ncxh5qH2fzg6nZyWEruA%3D&amp;reserved=3D0" originalsrc=3D"http://click.mail=
+.tesco.com/CL0/http:%2F%2Fwww.tesco.com%2F/1/01020194f4cae606-f6e5a3ca-e61e=
+-44e3-a007-1f4ca9e39348-000000/MoAcDEuvpQJsGeWskKyVH7jUxTs5XWtt7eYuwiDKOng=
+=3D391" shash=3D"Anb0DDgeHzRrbKXxg5h2hugv+SBPbZqEcUPuGyGZ2m6N6CfqPhaasy9Lde=
+QY4ZlX4pHqXSwQTR9nFGUF8KkuOzbKAHgKGWtzVtskFdKMQvOiU+84mR6TKXqM7IzDf+c3lkxJ4=
+LZthAOj1WgfTMCjLwEPImN/FdKreEwufl8fsHI=3D" class=3D"site-link" target=3D"_b=
+lank"><strong>Tesco.com</strong>
+</a></td>
+</tr>
+<tr>
+<td class=3D"logo-wrapper white-background"><img src=3D"https://digitalcont=
+ent.api.tesco.com/v1/media/test/2E7AA2C9-3AFD-4623-B6BE-6B89167DC514.png" a=
+lt=3D"Tesco" height=3D"24">
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"1" cellspacing=3D"0" width=3D"100%" class=3D"mb10 mt1=
+0">
+<tbody>
+<tr>
+<h2 class=3D"normal-text">Quality check outcome: Rejection<!--[if mso]>
+              <v:roundrect
+              xmlns:v=3D"urn:schemas-microsoft-com:vml"
+              xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+              style=3D"height:24px;width:24px;"
+              arcsize=3D"50%" strokecolor=3D"#ff0000" fillcolor=3D"#ff0000"=
+>
+                <w:anchorlock/>
+              </v:roundrect>
+            <![endif]-->
+<span class=3D"report-title-circle" style=3D"background-color: #ff0000;"></=
+span></h2>
+</tr>
+<tr>
+<h3 class=3D"normal-text"></h3>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"1" cellspacing=3D"0" width=3D"100%" class=3D"mb10">
+<tbody class=3D"table-border">
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Product name </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">Tesco Salad Tomatoe=
+s 650G </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+TPNB </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">082872766 </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+TPND </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">035616112 </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Traceability code </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">Po178508 </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Display Until </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">18/02/2025 </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Variety </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">Delyca </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Country of origin </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">Morocco </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Test date </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">11/02/2025 11:35:24=
+ AM </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Rejected </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">29.0 case(s) </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Rejection type </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">Quality </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Supplier code </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">25887 </td>
+</tr>
+<tr class=3D"tr-bottom-border">
+<th class=3D"table-cell table-key-cell bold-text" style=3D"background: #e5e=
+5e5;" width=3D"50%">
+Site code </th>
+<td class=3D"table-cell table-value-cell" width=3D"50%">DP260 (UK) </td>
+</tr>
+</tbody>
+</table>
+<p class=3D"mb0"><span class=3D"dark-grey-text bold-text" style=3D"font-wei=
+ght: bold;">Issue found</span>
+<span>- Rots and mould (Level: 2)</span> </p>
+<p><span class=3D"dark-grey-text bold-text" style=3D"font-weight: bold;">Se=
+verity</span>
+<span>- Waste</span> </p>
+<table width=3D"100%" cellpadding=3D"1" cellspacing=3D"0" width=3D"100%" cl=
+ass=3D"mb10">
+<tbody>
+<tr>
+<th width=3D"50%" class=3D"table-cell table-key-cell bold-text" style=3D"ba=
+ckground: #e5e5e5;">
+Cases inspected </th>
+<td width=3D"50%" class=3D"table-cell table-value-cell">6.0</td>
+</tr>
+<tr>
+<th width=3D"50%" class=3D"table-cell table-key-cell bold-text" style=3D"ba=
+ckground: #e5e5e5;">
+Inspected packs </th>
+<td width=3D"50%" class=3D"table-cell table-value-cell">60.0</td>
+</tr>
+<tr>
+<th width=3D"50%" class=3D"table-cell table-key-cell bold-text" style=3D"ba=
+ckground: #e5e5e5;">
+Affected packs </th>
+<td width=3D"50%" class=3D"table-cell table-value-cell">3.0</td>
+</tr>
+<tr>
+<th width=3D"50%" class=3D"table-cell table-key-cell bold-text" style=3D"ba=
+ckground: #e5e5e5;">
+% Affected </th>
+<td width=3D"50%" class=3D"table-cell table-value-cell">5.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class=3D"mb10">Click on images to view full size:</h3>
+<a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.tesco=
+.com%252Fv2%252Fmedia%252Fmyproduct-quality%252F0442a4a1-5e7d-4a0d-9fc0-e52=
+506e962a2%252F20250211_112959.jpg-9939be72-5dee-4789-b465-9bcb795e60a9.jpeg=
+%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2FDvm2D=
+llEaoTr2fnYlxU1RwqEZtbbGAL9hgv5MuLNSCM%3D391&amp;data=3D05%7C02%7CTom.Konin=
+gen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638748705335777826%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU=
+1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyf=
+Q%3D%3D%7C0%7C%7C%7C&amp;sdata=3D4QG%2Bum45Uk19jTayzd1EbhniGasL%2F6Jg5MQN%2=
+FZh9BH4%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesco.com/CL=
+0/https:%2F%2Fdigitalcontent.api.tesco.com%2Fv2%2Fmedia%2Fmyproduct-quality=
+%2F0442a4a1-5e7d-4a0d-9fc0-e52506e962a2%2F20250211_112959.jpg-9939be72-5dee=
+-4789-b465-9bcb795e60a9.jpeg/1/01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4=
+ca9e39348-000000/Dvm2DllEaoTr2fnYlxU1RwqEZtbbGAL9hgv5MuLNSCM=3D391" shash=
+=3D"Ca2kDU/l3gUGu/BrlqQxUcW8lZOEQut1U8Ez1dLeR5mWLGPzXmYec7AayVGcSP+cqGvvnGz=
+XzXPEObxti7+FRtHPieRue1jSGzbDbsX5pnLZ2ElpsICNCPRJ3q5J7kRoXzMTKrXEZPZ4y6Ds/y=
+7BT8H6Hc95TtMTqLLJpGfRzZk=3D" class=3D"image-url"><img src=3D"https://digit=
+alcontent.api.tesco.com/v2/media/myproduct-quality/0442a4a1-5e7d-4a0d-9fc0-=
+e52506e962a2/20250211_112959.jpg-9939be72-5dee-4789-b465-9bcb795e60a9.jpeg?=
+w=3D180&amp;h=3D180" alt=3D"https://digitalcontent.api.tesco.com/v2/media/m=
+yproduct-quality/0442a4a1-5e7d-4a0d-9fc0-e52506e962a2/20250211_112959.jpg-9=
+939be72-5dee-4789-b465-9bcb795e60a9.jpeg" width=3D"120px" height=3D"120px">
+</a><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.t=
+esco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252F3d0b213a-a4d3-49ff-add9=
+-ff1975a8117d%252F20250211_112947.jpg-a233c839-1952-4c50-bc37-2732a96ffc8d.=
+jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2Fg=
+ch1HlyVRZ5CeEfrew39J-UrLuH92aV9jCNqaEjJW4w%3D391&amp;data=3D05%7C02%7CTom.K=
+oningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638748705335809803%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DuwM%2FOOKMcq%2BEKPNSz%2BNMUvE7fHQwbZMb=
+%2FZUFYN3yD%2FU%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesc=
+o.com/CL0/https:%2F%2Fdigitalcontent.api.tesco.com%2Fv2%2Fmedia%2Fmyproduct=
+-quality%2F3d0b213a-a4d3-49ff-add9-ff1975a8117d%2F20250211_112947.jpg-a233c=
+839-1952-4c50-bc37-2732a96ffc8d.jpeg/1/01020194f4cae606-f6e5a3ca-e61e-44e3-=
+a007-1f4ca9e39348-000000/gch1HlyVRZ5CeEfrew39J-UrLuH92aV9jCNqaEjJW4w=3D391"=
+ shash=3D"CmiRiQhbGMeiNitrcvmGQSoQ4dH5AXKyOaqClDKAo3dTMRvS+08u2cOQqglw6TvhA=
+cIJDtABqQJr2uyKituw2QpKyuO9jGc5yJI3pzcJ4T+qQjszCQdq6ZfxagTeBZaaytXtRB+KEtnW=
+4MpPWn5rGs5Arc0mL7ys9Omx3bgAANI=3D" class=3D"image-url"><img src=3D"https:/=
+/digitalcontent.api.tesco.com/v2/media/myproduct-quality/3d0b213a-a4d3-49ff=
+-add9-ff1975a8117d/20250211_112947.jpg-a233c839-1952-4c50-bc37-2732a96ffc8d=
+.jpeg?w=3D180&amp;h=3D180" alt=3D"https://digitalcontent.api.tesco.com/v2/m=
+edia/myproduct-quality/3d0b213a-a4d3-49ff-add9-ff1975a8117d/20250211_112947=
+.jpg-a233c839-1952-4c50-bc37-2732a96ffc8d.jpeg" width=3D"120px" height=3D"1=
+20px">
+</a><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.t=
+esco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252Fd4c3cb4d-b037-40e1-8bfe=
+-dcafd1b1bc60%252F20250211_112911.jpg-6984189c-b223-4b1d-8de4-893ce2714453.=
+jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2F3=
+d5anvG6pF5JPcHvsYB6Wl35SNI3FJETujjKU3Gkijw%3D391&amp;data=3D05%7C02%7CTom.K=
+oningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638748705335833913%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DTeL6JgdUZ0CJ8aQRYtjtQO9I5iKvkOW%2BCSr8=
+FJo59HA%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesco.com/CL=
+0/https:%2F%2Fdigitalcontent.api.tesco.com%2Fv2%2Fmedia%2Fmyproduct-quality=
+%2Fd4c3cb4d-b037-40e1-8bfe-dcafd1b1bc60%2F20250211_112911.jpg-6984189c-b223=
+-4b1d-8de4-893ce2714453.jpeg/1/01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4=
+ca9e39348-000000/3d5anvG6pF5JPcHvsYB6Wl35SNI3FJETujjKU3Gkijw=3D391" shash=
+=3D"nEDDcyJUYkXKggiDufNF0nvyzAR+SdP85qaaBMZau8zbJT7RWM3yBkt19C5cq+rEaOWziG/=
+0wVFUDVwJVWdcZ5zJY0jGvQMhVEZQmGfjouPQpfqbcnFBOsF69x0IM6ATMszPKCYV2Ko/qVtM2K=
+QxSSvZaluFwLs5elRltJg0FqU=3D" class=3D"image-url"><img src=3D"https://digit=
+alcontent.api.tesco.com/v2/media/myproduct-quality/d4c3cb4d-b037-40e1-8bfe-=
+dcafd1b1bc60/20250211_112911.jpg-6984189c-b223-4b1d-8de4-893ce2714453.jpeg?=
+w=3D180&amp;h=3D180" alt=3D"https://digitalcontent.api.tesco.com/v2/media/m=
+yproduct-quality/d4c3cb4d-b037-40e1-8bfe-dcafd1b1bc60/20250211_112911.jpg-6=
+984189c-b223-4b1d-8de4-893ce2714453.jpeg" width=3D"120px" height=3D"120px">
+</a><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.t=
+esco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252Fef330bdf-b31c-4a89-8133=
+-f0a382c29b6a%252F20250211_112855.jpg-141ed508-c3e2-4ce0-b5a4-4424d4fe64fa.=
+jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2FZ=
+RH-0DrZ-Z-m_XJDaG8HS8sXJ6bj6ChIh-37E7-cNBk%3D391&amp;data=3D05%7C02%7CTom.K=
+oningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638748705335852578%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D3n1vW6DbO%2FztvqOC%2BuVTrYmpFEzBidRxZW=
+KOspbk1dc%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesco.com/=
+CL0/https:%2F%2Fdigitalcontent.api.tesco.com%2Fv2%2Fmedia%2Fmyproduct-quali=
+ty%2Fef330bdf-b31c-4a89-8133-f0a382c29b6a%2F20250211_112855.jpg-141ed508-c3=
+e2-4ce0-b5a4-4424d4fe64fa.jpeg/1/01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1=
+f4ca9e39348-000000/ZRH-0DrZ-Z-m_XJDaG8HS8sXJ6bj6ChIh-37E7-cNBk=3D391" shash=
+=3D"U2wDDXQEFgCBXFIHCSF7CKfnrgu3Cf3a3p2Uuyyj3I6oGxLXFOibIvc+wTeaJ6Y8XsTuH+F=
+VavzcnW71RT//WLgxkMfZibJCHDQKzgmZlIgwA1A3NDSbuzLkHw466Q0mM6K6+59Eam23J7n26V=
+7tS4JRfkKmpOnN3mV10r2k8ic=3D" class=3D"image-url"><img src=3D"https://digit=
+alcontent.api.tesco.com/v2/media/myproduct-quality/ef330bdf-b31c-4a89-8133-=
+f0a382c29b6a/20250211_112855.jpg-141ed508-c3e2-4ce0-b5a4-4424d4fe64fa.jpeg?=
+w=3D180&amp;h=3D180" alt=3D"https://digitalcontent.api.tesco.com/v2/media/m=
+yproduct-quality/ef330bdf-b31c-4a89-8133-f0a382c29b6a/20250211_112855.jpg-1=
+41ed508-c3e2-4ce0-b5a4-4424d4fe64fa.jpeg" width=3D"120px" height=3D"120px">
+</a><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Fclick.mail.tesco.com%2FCL0%2Fhttps%3A%252F%252Fdigitalcontent.api.t=
+esco.com%252Fv2%252Fmedia%252Fmyproduct-quality%252F543aabe5-46e8-4603-9d2f=
+-346527bbe1ea%252F1739273674714341020982154604668.jpg-aacee4a6-1e10-4407-8f=
+ba-a68aa569ce64.jpeg%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e=
+39348-000000%2FkmtpyMO-71kyFmyyLZFuRXMNMpm9wf9bZm-2mL1yzr8%3D391&amp;data=
+=3D05%7C02%7CTom.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7=
+C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638748705335873622%7CUnknown%7C=
+TWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkF=
+OIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3D2HiyNBMhZq4oZMi1SscV=
+ggLEZRh9J9Sbq%2BKXTGSuk4E%3D&amp;reserved=3D0" originalsrc=3D"https://click=
+.mail.tesco.com/CL0/https:%2F%2Fdigitalcontent.api.tesco.com%2Fv2%2Fmedia%2=
+Fmyproduct-quality%2F543aabe5-46e8-4603-9d2f-346527bbe1ea%2F173927367471434=
+1020982154604668.jpg-aacee4a6-1e10-4407-8fba-a68aa569ce64.jpeg/1/01020194f4=
+cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000/kmtpyMO-71kyFmyyLZFuRXMN=
+Mpm9wf9bZm-2mL1yzr8=3D391" shash=3D"r2WmX0OQw/HkhOrsO1qBE2+uttwNpFwWqu8ciha=
+lXyoS0N31FuatNxBSeELFwA0LorcykYWiIjNuBdiw9hBSzwV3L1ry8yboUxNsMj/dxrpgv9FBxv=
+WmVqvbYizziNGoYyK6gDfBXzP3WMHDQjKOyTWpDjwiKHGMgXo/BX8q9ro=3D" class=3D"imag=
+e-url"><img src=3D"https://digitalcontent.api.tesco.com/v2/media/myproduct-=
+quality/543aabe5-46e8-4603-9d2f-346527bbe1ea/173927367471434102098215460466=
+8.jpg-aacee4a6-1e10-4407-8fba-a68aa569ce64.jpeg?w=3D180&amp;h=3D180" alt=3D=
+"https://digitalcontent.api.tesco.com/v2/media/myproduct-quality/543aabe5-4=
+6e8-4603-9d2f-346527bbe1ea/1739273674714341020982154604668.jpg-aacee4a6-1e1=
+0-4407-8fba-a68aa569ce64.jpeg" width=3D"120px" height=3D"120px">
+</a>
+<h3></h3>
+<br>
+<table cellpadding=3D"1" cellspacing=3D"0" role=3D"presentation" width=3D"1=
+00%" class=3D"mt10">
+<thead>
+<tr>
+<th class=3D"table-cell table-key-cell" style=3D"background: #e5e5e5;">Acti=
+oned by</th>
+<th class=3D"table-cell table-key-cell" style=3D"background: #e5e5e5;">Dist=
+ributed to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"table-cell table-value-cell">Brian Carr</td>
+<td class=3D"table-cell table-value-cell">Direct Produce Supplies Plc =96 T=
+echnical UK, Nick Laister, bigamed@gmail.com, QA DPS</td>
+</tr>
+<tr>
+<td class=3D"table-cell table-value-cell">Belfast Depot </td>
+<td class=3D"table-cell table-value-cell">Tesco =96 Mike Corbett and GoodsI=
+n </td>
+</tr>
+</tbody>
+</table>
+<p class=3D"regards">Regards, </p>
+<h3>Quality Assessment Team</h3>
+<div></div>
+<div>
+<table width=3D"100%" class=3D"footer-table">
+<tbody>
+<tr>
+<td width=3D"50%" class=3D"footer-link-cell"><a href=3D"https://gbr01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.mail.tesco.com%2FCL0=
+%2Fhttps%3A%252F%252Ftoolkit.tesco.com%252Fsign-in%252F%2523%252Fterms-cond=
+itions%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2=
+Fr7O49dEKlJLyHLbAzCpBelR6t8TxSql-eM4ZpDGQMuM%3D391&amp;data=3D05%7C02%7CTom=
+.Koningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640d=
+d9ec3ddedf46edbc9%7C0%7C0%7C638748705335897149%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DsLkCgUSzg1RSxDlqLSZgTTR28JbdX1TOu%2B=
+59iv84RJA%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesco.com/=
+CL0/https:%2F%2Ftoolkit.tesco.com%2Fsign-in%2F%23%2Fterms-conditions/1/0102=
+0194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000/r7O49dEKlJLyHLbAzC=
+pBelR6t8TxSql-eM4ZpDGQMuM=3D391" shash=3D"CB4r2MOCPQ43viv3s1BQzoqN9lhHq0JlO=
+O9caWr4I1H+PheKSbSx5WWAw88w6BmKb5hOqnz8WjH6eUsq4EYBRrZny6I0rRAVzkPvaEGvo73m=
+v5ih8gG5wpZxI0IVjCEsn6Ke4v21na5OEXrC5nruU7WRwsKx6D3vWN9DzDesl9U=3D" target=
+=3D"_blank">Terms
+ &amp; Conditions <img class=3D"hide" src=3D"https://digitalcontent.api.tes=
+co.com/v1/media/emails/Tesco+Mobile/chevron.png" width=3D"12px" height=3D"2=
+0px">
+</a></td>
+<td width=3D"50%" class=3D"footer-link-cell"><a href=3D"https://gbr01.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fclick.mail.tesco.com%2FCL0=
+%2Fhttps%3A%252F%252Ftoolkit.tesco.com%252Fsign-in%252F%2523%252Fprivacy-po=
+licy%2F1%2F01020194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000%2FL=
+x2n90rvMhMV7BbMS_bc4zUOTz18-ke4abhBjxCF_JE%3D391&amp;data=3D05%7C02%7CTom.K=
+oningen%40dpsltd.com%7C4fd6cb00582a46b7ddd308dd4a902fcb%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638748705335921055%7CUnknown%7CTWFpbGZsb3d8eyJFbX=
+B0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUI=
+joyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DLFLUSNwedenxLMLfo%2Bx%2B2%2FA5W8uIooTJ=
+hpP47Uf6cSU%3D&amp;reserved=3D0" originalsrc=3D"https://click.mail.tesco.co=
+m/CL0/https:%2F%2Ftoolkit.tesco.com%2Fsign-in%2F%23%2Fprivacy-policy/1/0102=
+0194f4cae606-f6e5a3ca-e61e-44e3-a007-1f4ca9e39348-000000/Lx2n90rvMhMV7BbMS_=
+bc4zUOTz18-ke4abhBjxCF_JE=3D391" shash=3D"SuWBYLfWVu1cWuy12J8Gx1TBiXv9iZgac=
+lG73gvAsqTBCli1J1gSZ6YuFfwafSW4z42SCrlJyYMXUNCWHqUofMZ4LCqRiTiq9Goo+tJxKVfB=
+OIQuohKo6Ds/Kh/i2l4xLjQ5yse3AUTx4S15sxYmAMAC0EQFybGZ8r87P0lZIcs=3D" target=
+=3D"_blank">Privacy
+<img class=3D"hide" src=3D"https://digitalcontent.api.tesco.com/v1/media/em=
+ails/Tesco+Mobile/chevron.png" width=3D"12px" height=3D"20px">
+</a></td>
+</tr>
+</tbody>
+</table>
+<p class=3D"copyright">=A9 2017 Tesco.com. All rights reserved. </p>
+</div>
+<img alt=3D"" src=3D"http://click.mail.tesco.com/CI0/01020194f4cae606-f6e5a=
+3ca-e61e-44e3-a007-1f4ca9e39348-000000/3OKukVMu92fGxEymQ4YRzOEueBjgWxk95i27=
+ffbLhvo=3D391" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>
+
+--_000_01020194f4cae606f6e5a3cae61e44e3a0071f4ca9e39348000000e_--

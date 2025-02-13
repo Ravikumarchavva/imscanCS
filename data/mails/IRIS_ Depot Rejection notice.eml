@@ -1,0 +1,614 @@
+Received: from LO0P123MB5846.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:282::11)
+ by CWLP123MB4769.GBRP123.PROD.OUTLOOK.COM with HTTPS; Tue, 16 Jan 2024
+ 08:52:19 +0000
+Received: from CWLP265CA0488.GBRP265.PROD.OUTLOOK.COM (2603:10a6:400:18a::11)
+ by LO0P123MB5846.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:282::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7181.29; Tue, 16 Jan
+ 2024 08:52:17 +0000
+Received: from CW2PEPF000056B9.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:400:18a:cafe::54) by CWLP265CA0488.outlook.office365.com
+ (2603:10a6:400:18a::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7181.29 via Frontend
+ Transport; Tue, 16 Jan 2024 08:52:17 +0000
+Received: from mail179-29.suw41.mandrillapp.com (198.2.179.29) by
+ CW2PEPF000056B9.mail.protection.outlook.com (10.167.240.4) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7181.14 via Frontend Transport; Tue, 16 Jan 2024 08:52:17 +0000
+Received: from pmta12.mandrill.prod.suw01.rsglab.com (localhost [127.0.0.1])
+	by mail179-29.suw41.mandrillapp.com (Mailchimp) with ESMTP id 4TDjSJ2DKXz7lmZ1D
+	for <technical@offltd.com>; Tue, 16 Jan 2024 08:52:16 +0000 (GMT)
+Received: from [20.26.185.64] by mandrillapp.com id 1b8e068aff1f48a9b131ef79da163740; Tue, 16 Jan 2024 08:52:16 +0000
+From: Co-op <mail@coop-mail.ubxlink.com>
+To: "Technical (EFC)" <technical@efcltd.com>
+Subject: IRIS: Depot Rejection notice
+Thread-Topic: IRIS: Depot Rejection notice
+Thread-Index: AQHaSFlQv7HXuYwbZk+KVnRzrDqcyg==
+Date: Tue, 16 Jan 2024 08:52:16 +0000
+Message-ID: <30611104.20240116085216.65a643c0429085.04591749@mail179-29.suw41.mandrillapp.com>
+X-MS-Exchange-Organization-AuthSource: CW2PEPF000056B9.GBRP265.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id: 0d179769-00c6-4770-d814-08dc1670714b
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: Pass (protection.outlook.com: domain of mandrillapp.com
+ designates 198.2.179.29 as permitted sender) receiver=protection.outlook.com;
+ client-ip=198.2.179.29; helo=mail179-29.suw41.mandrillapp.com; pr=C
+x-ms-exchange-organization-originalclientipaddress: 198.2.179.29
+x-ms-exchange-organization-originalserveripaddress: 10.167.240.4
+x-ms-publictraffictype: Email
+authentication-results: spf=pass (sender IP is 198.2.179.29)
+ smtp.mailfrom=mandrillapp.com; dkim=pass (signature was verified)
+ header.d=mandrillapp.com;dmarc=bestguesspass action=none
+ header.from=coop-mail.ubxlink.com;compauth=pass reason=109
+x-ms-office365-filtering-correlation-id: 0d179769-00c6-4770-d814-08dc1670714b
+x-ms-traffictypediagnostic: CW2PEPF000056B9:EE_|LO0P123MB5846:EE_|CWLP123MB4769:EE_
+x-forefront-antispam-report: CIP:198.2.179.29;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail179-29.suw41.mandrillapp.com;PTR:mail179-29.suw41.mandrillapp.com;CAT:NONE;SFS:(13230031)(4636009)(451199024)(1690799017)(26005)(956004)(336012)(83380400001)(42882007)(83170400001)(166002)(356005)(7596003)(7636003)(8676002)(1096003)(450100002)(18074004)(5660300002)(15650500001)(6862004)(33964004)(9686003)(76236004)(103116003)(16799955002)(19627405001);DIR:INB
+x-microsoft-antispam: BCL:0
+x-ms-exchange-crosstenant-originalarrivaltime: 16 Jan 2024 08:52:17.0524 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9
+x-ms-exchange-crosstenant-network-message-id: 0d179769-00c6-4770-d814-08dc1670714b
+x-ms-exchange-transport-crosstenantheadersstamped: LO0P123MB5846
+x-eopattributedmessage: 0
+x-eoptenantattributedmessage: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9:0
+x-ms-exchange-transport-endtoendlatency: 00:00:02.8512037
+x-ms-exchange-processed-by-bccfoldering: 15.20.7181.022
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource: CW2PEPF000056B9.GBRP265.PROD.OUTLOOK.COM
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed;	d=coop-mail.ubxlink.com;
+ s=mandrill; t=1705395136; x=1705655636;	i=mail@coop-mail.ubxlink.com;
+	bh=GU4i+txfj0gHNcb3d6U1MWthQhxNjajlBnvsBy5y3X4=;
+	h=From:Subject:To:Feedback-ID:Message-Id:Date:MIME-Version:
+	 Content-Type:CC:Date:Subject:From;
+	b=OJvxpI6igV/ETAY5Ee+7YVRyB92ltSzKxdTAC3d8lNfsEOI1zF/SS1YEd+SBKLYv/
+	 PnWHkGhpH3ByKzLlv7OgnBXHGANEp2ZvXC0EtA88fXzR8A6WP3C2XS/KflfvZfFfXH
+	 GteSN8ICW2hcCdQPXbzP3Ny6XJPoXsUH36egEjmM=
+feedback-id: 30611104:30611104.20240116:md
+x-ms-exchange-atpmessageproperties: SA|SL
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420123)
+X-Microsoft-Antispam-Message-Info: =?Windows-1252?Q?e6JJv8gVx6xoT1kvyESFdcv7zzeIsPwPlQr7VTOwceohwEGkThZP0EcQ?=
+ =?Windows-1252?Q?ZAzM16v+oZdfGqkDv3CV8qo7qNOtpczugwUISKLLjFFAD1o+00BY+Zx8?=
+ =?Windows-1252?Q?wEij0X5r+5uCRKDgJRTp2NauvE8++MH4AjqTgzFkbSjQhPfB3W/eVflU?=
+ =?Windows-1252?Q?t8jSI4J4p+MBkrqn0WsJM9i26tZUh3FcwoiELO5dU7VHA1lH0u5/2ZBK?=
+ =?Windows-1252?Q?oZTs30o3tXmd7OevJc9M3w8Myuf36JOnqNn/rRMF9QH+3tPiX0/InJZq?=
+ =?Windows-1252?Q?bXlhQcoOb7/mWK3+q4MrZtIN13dTmhdBadreuF1QA7hyZC3mrrDCgxZm?=
+ =?Windows-1252?Q?hF0WzlMX7h+eJfroA0kjFavegMvNNvyqPYW/DOCF5S/pmzbVQFpmBSxC?=
+ =?Windows-1252?Q?NTDoJgn1fGa6NY47kbgkneam8n0YnK66OQZ5LwWXwx/rc5hMhSnNGr6S?=
+ =?Windows-1252?Q?AnnT5ocU2r+6kSD+tj37by5aOlPXXS/VYQ8w6srbwO+6vGcKmbMIg0sc?=
+ =?Windows-1252?Q?RYec+6lzIUg2Xc2pA+gMApdhn3/ahMLyAbhZGbvTtSi58HTnsBRyODHK?=
+ =?Windows-1252?Q?zC4a+qofbkNt18757x7jaX0xfwaYnpfFTQ59g1ob9BaIfqFrSzekT7ie?=
+ =?Windows-1252?Q?UOX6dkCDGawk4fU58t9WB1I0Ik2D+vIYKNpan6gt+5ULUKwLhM3x43R0?=
+ =?Windows-1252?Q?z5VQeYw1tp6oDaiXR4YeFOADIclS0irmRWB73VDW7qiXrbUtVmUYHvU5?=
+ =?Windows-1252?Q?WlYXw5OBQgsJIf317hYxN8StOyNiI4pluvvhfH7Q63APeW5NExBxMY6B?=
+ =?Windows-1252?Q?WyrbC23foDDTJNXqcsam8BHJlaUJunzgCrtGznb8zNMUV6LPxa5FLZ7C?=
+ =?Windows-1252?Q?zMGywXM6a7WgSX5PrTfoa2ZlWYOqyOlOvU0Fi0XmVk4qwFx2dL8RKgpK?=
+ =?Windows-1252?Q?JTEoYYxuAQn6hLB+7SqpF3EunPdLt9M/xStFfSP3TzXnmdKggw8+1DkX?=
+ =?Windows-1252?Q?ammqNQP/hHFupe+30tnZeSNx0WYDf6cXcoRPGqGIVOdYqnzNuviOSDa3?=
+ =?Windows-1252?Q?uqZnxDngHQ5elQDRHi0XBsAChaLpZMC78ItdnlvL+3ymaPg+LzfTAjuG?=
+ =?Windows-1252?Q?JZrJefoUgdK5UhtFSB+XzG6u2HQrOPFEpCgKaf+69CsGti65AUs2drd9?=
+ =?Windows-1252?Q?JpE3vuaTDjTnNHAvQBn5pp0CiG1dOJFo8XJubb+PmaLMoR/I5Gv47Q8Y?=
+ =?Windows-1252?Q?LDGM8tfc0nlTkbbDSvVOE+2Xdv9MZwk2KBj76SkAqlg2bP7UqU/aR1aH?=
+ =?Windows-1252?Q?2J72SkNYAww108wVHai8f+JKbCi4S88PcGCJGynvinrFgDB+DQ5fKHKK?=
+ =?Windows-1252?Q?ZjRkQ9MIV6jN+pWwGsKvou+6b2NFmHsob57+9PJTWn9uhJjyH+M5uVkd?=
+ =?Windows-1252?Q?mYW3Qmbq8h4M3tAm/N/Ffle4AK0OZDXUvixRjdgFYraxhM58V5gbOKEi?=
+ =?Windows-1252?Q?vKJwA2U+k7sgIdqw91yLsm5BAdsEXwSsX0g5KKMeph+uNHu2Z5ooN07G?=
+ =?Windows-1252?Q?IDn6ggt7UloMdsQFuxFBuq8zazx+IRRGB4mhXd/+pBKn51m/ZcJWov6n?=
+ =?Windows-1252?Q?kHXqUQx4JJFoM/1eup5OG1T0Z8rYotTIdupah8eV3LJB1A59l8yJQA9l?=
+ =?Windows-1252?Q?wkZLR84e4gGtO/zJf1hnxQ0Q56vuBn2+T8aCkCK2AUAJ0WKfwJSOISh5?=
+ =?Windows-1252?Q?QbHmL/aFGZI8bHqTvRARIibFi0sE4asMpJT0neJgXg0hkDMRMvJ/dfSM?=
+ =?Windows-1252?Q?KypWSldth/ZZdPnwZApH4sX4YCBLxKMs2VsqrM1fUD20HNdmD+Ekhd9H?=
+ =?Windows-1252?Q?X2mqdgWnvCEJdch7lKYZBAIgqUCSz+2duzX1N1Cxr+xhaOKszlsNJUkB?=
+ =?Windows-1252?Q?1rnzBdO2oTmG//rFtG7m3IC1LPZA2tN9Jfze0Ea18IP+8t1tIaEpjCq7?=
+ =?Windows-1252?Q?EpfA7hMPBl2H8eyFhBWnYOIc3J14NaDjyJURhC3Y9E/IMKQof7V4Touf?=
+ =?Windows-1252?Q?T54D/d9fyMd3fBzoRtJiKbLXEKKykELxcDJpKHd/hLCagTRixOKXiu8j?=
+ =?Windows-1252?Q?NPo=3D?=
+Content-Language: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_306111042024011608521665a643c042908504591749mail17929su_"
+X-Message-Flag: Flag for follow up
+MIME-Version: 1.0
+
+--_000_306111042024011608521665a643c042908504591749mail17929su_
+Content-Type: text/plain; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+
+Communication from IRIS
+
+ <https://coop.ubxlink.com/assets/images/brand-logos/coop-logo.png>
+
+
+Dear Orsi Barko,
+
+Today on Jan 16, 2024 at Avonmouth depot, I have REJECTED 1 case(s) of NSL =
+0079065, 79065, 4450914 product Co-op Organic Lemons Pack for these reasons=
+:
+
+*       Appearance: Breakdown - Rots
+
+This Red/rejection is based on an assessment of the product against its cur=
+rent Coop Retail Technical Specification where certain attributes did not c=
+omply with the agreed tolerances.
+
+In this instance we feel there should no charge.
+
+Please be aware that in future instances there may be a charge as stipulate=
+d in our charges matrix.
+
+Co-op=92s standard Terms and Conditions can be found in the Documents secti=
+on of coopsupplierhub.com. The details of charges for Depot Quality Rejecti=
+ons are set out on the Charges Matrix, also available from the Documents se=
+ction of coopsupplierhub.com. If you require any assistance in accessing th=
+ese documents, please contact: supplierengagement@coop.co.uk
+
+Access details of the rejection including pictures<https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2Fclick=
+%2F30611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoici1UakVIclA0enFuTzhnb1c5bDctZE=
+doay00IiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwc=
+zpcXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvI1xcXC92aWV3XFxcL1Rlc3RcXFwvZjJlYzBk=
+MzctYzkxOC00ODBjLTliYTUtZmY5NGUyYzNiYTFiXFxcL2RldGFpbHNcIixcImlkXCI6XCIxYjh=
+lMDY4YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjM3NDE1ZmY5Zj=
+M0ZDJiMDg1MGYyMGFhNmNjZTRkYWUxMjM3ZDlmNmZcIl19In0&data=3D05%7C02%7Cdorota.k=
+witowska%40efcltd.com%7C0d17976900c64770d81408dc1670714b%7C0a6ac99f713640dd=
+9ec3ddedf46edbc9%7C0%7C0%7C638409919401536273%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%=
+7C&sdata=3Dk%2BjUIUXZ1LFeF0Jj%2B3Q%2BzEINwlCCLWaknnjJ%2BWKn4d4%3D&reserved=
+=3D0>
+
+Please ensure future product intended for coop is reviewed prior to dispatc=
+h with this particular issue in mind.
+
+Rejected Stock Option
+
+CONTACT THE DEPOT GOODS IN NUMBER TODAY TO INFORM OF YOUR PREFERRED OPTION
+
+1.      Collect the Stock using your own Haulier
+2.      Arrange to Have a Coop Primary deliver the stock back to you
+3.      Arrange Our Depot Management to Destroy the Stock on site
+4.      Allow our Depot Management to make the stock available to Fairshare=
+ =96 a national charity supporting communities to relieve food poverty. Fai=
+rshare is at the centre of 2 of the most urgent issues facing the UK =96 Fo=
+od Poverty and Food Waste.
+
+How Do You Raise A Query or Concern?
+
+1.      Please contact Depot QC referenced in your assessment link directly=
+ if you would like further clarification such as;
+
+   *    Make a request for more info/photos
+   *    Detailed Findings
+
+2.      Contact your Co-op Technical Manager if you would like to query the=
+ specification itself and their contact details are available on MyCore.
+3.      If you have any other questions, please contact: supplierengagement=
+@coop.co.uk
+
+Thanks
+
+Bediah Araz
+
+Tel: 01454636511
+
+Depot tel: 01454 635458
+
+Test ID: 114990
+
+Supplier organisation: Ethical Food Company Ltd - ISS
+
+M.Code: M081(I)
+
+Please note, you will need to sign up or log into IRIS to review details. S=
+ee 'Helpful Links' below for more information.
+
+  _____
+
+Helpful Links
+
+*       If you haven't done so already, click here<https://gbr01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2Fclick=
+%2F30611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoicmFqcnRRd2pJWkI5dmlneENBRzgzbU=
+VqVTBVIiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwc=
+zpcXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvI1xcXC9zaWdudXBcIixcImlkXCI6XCIxYjhl=
+MDY4YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjM3NDE1ZmY5ZjM=
+0ZDJiMDg1MGYyMGFhNmNjZTRkYWUxMjM3ZDlmNmZcIl19In0&data=3D05%7C02%7Cdorota.kw=
+itowska%40efcltd.com%7C0d17976900c64770d81408dc1670714b%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638409919401536273%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&sdata=3Dp4guzuu5k8FCSdhAoa8VksbpNn2OKB4FK98ISflFLi8%3D&reserved=3D0> to s=
+ign up to IRIS
+*       I already have an account, click here<https://gbr01.safelinks.prote=
+ction.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2Fclick%2F30=
+611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoiUEszQUkwbE5wYTZvS2RScVhyb21PWHlZYVV=
+zIiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXF=
+wvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvbG9naW5cIixcImlkXCI6XCIxYjhlMDY4YWZmMWY0O=
+GE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjIwNTZmMDBmMTY1NzM0YzBlMjk1=
+MDczZDFlNmY0OTlkNDdjNTE5YjFcIl19In0&data=3D05%7C02%7Cdorota.kwitowska%40efc=
+ltd.com%7C0d17976900c64770d81408dc1670714b%7C0a6ac99f713640dd9ec3ddedf46edb=
+c9%7C0%7C0%7C638409919401692588%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=3DcFO=
+6ewEbUgEVPGVNcw5f%2FzX6aqzMWZG4QMiTxushcEo%3D&reserved=3D0> to log in to IR=
+IS
+
+
+=A9 IRIS 2024.
+You are receiving this communication from the Co-op because you registered =
+as a supplier on IRIS for Ethical Food Company Ltd - Von Herzen. If this is=
+ incorrect please contact Support on support@supply-pilot.com.
+ <https://mandrillapp.com/track/open.php?u=3D30611104&id=3D1b8e068aff1f48a9=
+b131ef79da163740>
+
+--_000_306111042024011608521665a643c042908504591749mail17929su_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <317CECFB7D8818488DC2A6C07811CBCD@GBRP123.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype HTML><html style=3D"font-family:arial, sans-serif;font-size:14px;=
+"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style>
+			html, td, th {
+				font-family: arial, sans-serif;
+				font-size: 14px;
+			}
+
+			body {
+				padding: 0;
+				margin: 0;
+			}
+
+			.p, .h1, .h2, .legal {
+				font-family: arial, sans-serif;
+				display: block;
+				padding: 0 !important;
+				margin: 0 0 15px 0 !important;
+			}
+
+			.h1 {
+				padding: 0;
+				margin: 0 0 15px 0;
+				font-size: 19px;
+				color: #7a9c6c;
+			}
+
+			.h2 {
+				font-size: 17px;
+			}
+
+			.p {
+				font-size: 15px;
+				line-height: 17px;
+			}
+
+			.legal {
+				font-size: 11px;
+				line-height: 15px;
+				margin-bottom: 0px !important;
+				color: dimgray;
+				text-align: center;
+			}
+
+			.page {
+				width: 100%;
+				text-align: center;
+				font-family: arial, sans-serif;
+				background-color: #f3f3ff;
+			=09
+					background-image: url(https://coop.ubxlink.com/assets/images/affinity-=
+bg-left-bottom.svg);
+			=09
+				background-repeat: no-repeat;
+				background-position: bottom left;
+			}
+
+			table {
+				border-collapse: collapse
+			}
+
+			table.header .bar  {
+				padding: 30px 0;
+			}
+
+			table.header .bar td {
+				line-height: 60px;
+				background-color: #1DB2DB;
+				height: 60px;
+			}
+
+			table.header .logo {
+                background-color: #1DB2DB;
+				border-radius: 2px;
+				padding: 15px;
+				text-align: center;
+			}
+
+			.bordered {
+				border: 1px solid #DDD;
+				background: #FFFFFF;
+			}
+
+			table.header img {
+				max-width: 100px;
+				max-height: 60px;
+			}
+
+			.container {
+				padding: 15px;
+				text-align: left;
+			=09
+					background-image: url(https://coop.ubxlink.com/assets/images/affinity-=
+bg-right-top.svg);
+			=09
+				background-repeat: no-repeat;
+				background-position: top right;
+			}
+
+			.container-inner {
+				border-collapse: collapse;
+				width: 600px;
+				max-width: 100%;
+				text-align: left;
+			}
+
+			td.content {
+				padding:24px;
+				font-family:arial, sans-serif;
+				font-size: 14px;
+				padding-bottom: 160px;
+				border-radius: 2px;
+			}
+
+			@media only screen and (max-width: 480px) {
+				body, table, td, p, a, li, blockquote {
+					-webkit-text-size-adjust: none !important
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				body {
+					width: 100% !important;
+					min-width: 100% !important
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				td[class=3Dcontainer] {
+					width: 100% !important
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				table[class=3Dcontainer-inner] {
+					width: 100% !important
+				}
+			}
+		</style>
+</head>
+<body style=3D"padding:0;margin:0;">
+<table class=3D"page" cellspacing=3D"0" cellpadding=3D"15" width=3D"100%" a=
+lign=3D"center" style=3D"width:100%;text-align:center;font-family:arial, sa=
+ns-serif;background-color:#f3f3ff;background-image:url(https://coop.ubxlink=
+.com/assets/images/affinity-bg-left-bottom.svg);background-repeat:no-repeat=
+;background-position:bottom left;border-collapse:collapse;">
+<tbody>
+<tr>
+<td class=3D"container" align=3D"center" style=3D"font-family:arial, sans-s=
+erif;font-size:14px;padding:15px;text-align:left;background-image:url(https=
+://coop.ubxlink.com/assets/images/affinity-bg-right-top.svg);background-rep=
+eat:no-repeat;background-position:top right;">
+<table class=3D"container-inner" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"border-collapse:collapse; width:600px; max-width:100%;=
+ text-align:left;">
+<tbody>
+<tr>
+<td style=3D"padding:0 0 14px 0;text-align:left;font-family:arial, sans-ser=
+if;font-size:14px;" colspan=3D"3">
+<div class=3D"legal" style=3D"font-family:arial, sans-serif;margin-bottom:0=
+px ;text-align:left;font-size:11px;line-height:12px;display:block;padding:0=
+ ;margin:0 0 15px 0 ;color:dimgray;">
+Communication from IRIS </div>
+</td>
+</tr>
+<tr>
+<td style=3D"font-family:arial, sans-serif;font-size:14px;">
+<table class=3D"header" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" =
+width=3D"100%" style=3D"border-collapse:collapse;">
+<tbody>
+<tr>
+<td class=3D"bar" width=3D"60" valign=3D"middle" style=3D"font-family:arial=
+, sans-serif;font-size:14px;padding:30px 0;">
+<table cellspacing=3D"0" cellpadding=3D"0" align=3D"left" width=3D"100%" st=
+yle=3D"border-collapse:collapse;">
+<tbody>
+<tr>
+<td width=3D"100%" style=3D"font-family:arial, sans-serif;font-size:14px;li=
+ne-height:60px;background-color:#1DB2DB;height:60px;">
+&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"logo" width=3D"100" style=3D"font-family:arial, sans-serif;fon=
+t-size:14px;background-color:#1DB2DB;border-radius:2px;padding:15px;text-al=
+ign:center;">
+<img src=3D"https://coop.ubxlink.com/assets/images/brand-logos/coop-logo.pn=
+g" alt=3D"IRIS" style=3D"max-width:100px;max-height:60px;">
+</td>
+<td class=3D"bar" valign=3D"middle" style=3D"font-family:arial, sans-serif;=
+font-size:14px;padding:30px 0;">
+<table cellspacing=3D"0" cellpadding=3D"0" align=3D"left" width=3D"100%" st=
+yle=3D"border-collapse:collapse;">
+<tbody>
+<tr>
+<td width=3D"100%" style=3D"font-family:arial, sans-serif;font-size:14px;li=
+ne-height:60px;background-color:#1DB2DB;height:60px;">
+&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3" height=3D"30" style=3D"font-family:arial, sans-serif;font=
+-size:14px;">
+&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"content bordered" width=3D"100%" style=3D"font-family:arial, s=
+ans-serif;font-size:14px;border:1px solid #DDD;background:#FFFFFF;padding:2=
+4px;padding-bottom:160px;border-radius:2px;">
+<div style=3D"font-family:arial, sans-serif; font-size: 14px;">
+<p><strong>Dear Orsi Barko,</strong></p>
+<p>Today on <strong>Jan 16, 2024</strong> at <strong>Avonmouth</strong> dep=
+ot, I have REJECTED
+<strong>1</strong> case(s) of NSL <strong>0079065, 79065, 4450914</strong> =
+product
+<strong>Co-op Organic Lemons Pack</strong> for these reasons:</p>
+<ul>
+<li><strong>Appearance</strong>: Breakdown - Rots</li></ul>
+<p>This Red/rejection is based on an assessment of the product against its =
+current Coop Retail Technical Specification where certain attributes did no=
+t comply with the agreed tolerances.</p>
+<p>In this instance we feel there should <strong>no charge</strong>.</p>
+<p>Please be aware that in future instances there may be a charge as stipul=
+ated in our charges matrix.</p>
+<p>Co-op=92s standard Terms and Conditions can be found in the Documents se=
+ction of coopsupplierhub.com. The details of charges for Depot Quality Reje=
+ctions are set out on the Charges Matrix, also available from the Documents=
+ section of coopsupplierhub.com. If
+ you require any assistance in accessing these documents, please contact: s=
+upplierengagement@coop.co.uk</p>
+<div style=3D"text-align: center; padding: 20px 0;"><a href=3D"https://gbr0=
+1.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ft=
+rack%2Fclick%2F30611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoici1UakVIclA0enFuTz=
+hnb1c5bDctZEdoay00IiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsX=
+CI6XCJodHRwczpcXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvI1xcXC92aWV3XFxcL1Rlc3Rc=
+XFwvZjJlYzBkMzctYzkxOC00ODBjLTliYTUtZmY5NGUyYzNiYTFiXFxcL2RldGFpbHNcIixcIml=
+kXCI6XCIxYjhlMDY4YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIj=
+M3NDE1ZmY5ZjM0ZDJiMDg1MGYyMGFhNmNjZTRkYWUxMjM3ZDlmNmZcIl19In0&amp;data=3D05=
+%7C02%7Cdorota.kwitowska%40efcltd.com%7C0d17976900c64770d81408dc1670714b%7C=
+0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638409919401536273%7CUnknown%7CT=
+WFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%=
+3D%7C3000%7C%7C%7C&amp;sdata=3Dk%2BjUIUXZ1LFeF0Jj%2B3Q%2BzEINwlCCLWaknnjJ%2=
+BWKn4d4%3D&amp;reserved=3D0" originalsrc=3D"https://mandrillapp.com/track/c=
+lick/30611104/coop.ubxlink.com?p=3DeyJzIjoici1UakVIclA0enFuTzhnb1c5bDctZEdo=
+ay00IiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwczp=
+cXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvI1xcXC92aWV3XFxcL1Rlc3RcXFwvZjJlYzBkMz=
+ctYzkxOC00ODBjLTliYTUtZmY5NGUyYzNiYTFiXFxcL2RldGFpbHNcIixcImlkXCI6XCIxYjhlM=
+DY4YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjM3NDE1ZmY5ZjM0=
+ZDJiMDg1MGYyMGFhNmNjZTRkYWUxMjM3ZDlmNmZcIl19In0" shash=3D"RpevDPdzYpoKq0khN=
+5V81LFjXGEk9CqZcC/m9NqiTH1Y3uv5voGz1kaP4UbPBjI8I0WR1mZab/22O/TdNkEL9epuNLYB=
+V7um7YFPhDZIYIMgIcT8Ym01XYQMVa7oEHlLbVGaCd6hEklISIxz3VvtdlYNnWqEKFdXDujuakF=
+b/7Y=3D" style=3D"text-decoration: none; background: orange; padding: 15px =
+25px; color: white;">Access
+ details of the rejection including pictures</a> </div>
+<p>Please ensure future product intended for coop is reviewed prior to disp=
+atch with this particular issue in mind.</p>
+<p><u>Rejected Stock Option</u></p>
+<p><strong>CONTACT THE DEPOT GOODS IN NUMBER TODAY TO INFORM OF YOUR PREFER=
+RED OPTION</strong></p>
+<ol style=3D"list-style-type: lower-roman;">
+<li>Collect the Stock using your own Haulier</li><li>Arrange to Have a Coop=
+ Primary deliver the stock back to you</li><li>Arrange Our Depot Management=
+ to Destroy the Stock on site</li><li>Allow our Depot Management to make th=
+e stock available to Fairshare =96 a national charity supporting communitie=
+s to relieve food poverty. Fairshare is at the centre of 2 of the most urge=
+nt issues facing the UK =96 Food Poverty and Food Waste.</li></ol>
+<p><u>How Do You Raise A Query or Concern?</u></p>
+<ol>
+<li>Please contact Depot QC referenced in your assessment link directly if =
+you would like further clarification such as;
+<ul>
+<li>Make a request for more info/photos</li><li>Detailed Findings</li></ul>
+</li><li>Contact your Co-op Technical Manager if you would like to query th=
+e specification itself and their contact details are available on MyCore.</=
+li><li>If you have any other questions, please contact: supplierengagement@=
+coop.co.uk</li></ol>
+<p>Thanks</p>
+<p>Bediah Araz</p>
+<p><strong>Tel:</strong> 01454636511</p>
+<p><strong>Depot tel:</strong> 01454 635458</p>
+<p><strong>Test ID:</strong> 114990 </p>
+<p><strong>Supplier organisation:</strong> Ethical Food Company Ltd - ISS</=
+p>
+<p><strong>M.Code:</strong> M081(I) </p>
+<p style=3D"font-size: 10px">Please note, you will need to sign up or log i=
+nto IRIS to review details. See 'Helpful Links' below for more information.=
+</p>
+<hr style=3D"background-color: #000000; color: #000000; border-color: #0000=
+00;">
+<p><strong>Helpful Links</strong></p>
+<ul>
+<li>If you haven't done so already, <a href=3D"https://gbr01.safelinks.prot=
+ection.outlook.com/?url=3Dhttps%3A%2F%2Fmandrillapp.com%2Ftrack%2Fclick%2F3=
+0611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoicmFqcnRRd2pJWkI5dmlneENBRzgzbUVqVT=
+BVIiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcX=
+FwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvI1xcXC9zaWdudXBcIixcImlkXCI6XCIxYjhlMDY4=
+YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjM3NDE1ZmY5ZjM0ZDJ=
+iMDg1MGYyMGFhNmNjZTRkYWUxMjM3ZDlmNmZcIl19In0&amp;data=3D05%7C02%7Cdorota.kw=
+itowska%40efcltd.com%7C0d17976900c64770d81408dc1670714b%7C0a6ac99f713640dd9=
+ec3ddedf46edbc9%7C0%7C0%7C638409919401536273%7CUnknown%7CTWFpbGZsb3d8eyJWIj=
+oiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7=
+C&amp;sdata=3Dp4guzuu5k8FCSdhAoa8VksbpNn2OKB4FK98ISflFLi8%3D&amp;reserved=
+=3D0" originalsrc=3D"https://mandrillapp.com/track/click/30611104/coop.ubxl=
+ink.com?p=3DeyJzIjoicmFqcnRRd2pJWkI5dmlneENBRzgzbUVqVTBVIiwidiI6MSwicCI6Int=
+cInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2Nvb3AudWJ4bG=
+luay5jb21cXFwvI1xcXC9zaWdudXBcIixcImlkXCI6XCIxYjhlMDY4YWZmMWY0OGE5YjEzMWVmN=
+zlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjM3NDE1ZmY5ZjM0ZDJiMDg1MGYyMGFhNmNjZTRk=
+YWUxMjM3ZDlmNmZcIl19In0" shash=3D"BC58yZsMd7BmqsDJRxtdvxDZgigIph8CxX+xHnzaE=
+epkYR/VVEDqhXKoxIQ0ISAXfUuYG4b0QIKjKlpxRmScz4ck51L5uypSOUul/SSaU8YHIy1F3x0u=
+tFFBtkEyL6IVO9NMIb86x5j/M6vyTMAqp7At7tYzMVWyQVxEINCVkq0=3D">
+click here</a> to sign up to IRIS</li><li>I already have an account, <a hre=
+f=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fma=
+ndrillapp.com%2Ftrack%2Fclick%2F30611104%2Fcoop.ubxlink.com%3Fp%3DeyJzIjoiU=
+EszQUkwbE5wYTZvS2RScVhyb21PWHlZYVVzIiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxc=
+InZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvbG9naW5=
+cIixcImlkXCI6XCIxYjhlMDY4YWZmMWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1=
+wiOltcIjIwNTZmMDBmMTY1NzM0YzBlMjk1MDczZDFlNmY0OTlkNDdjNTE5YjFcIl19In0&amp;d=
+ata=3D05%7C02%7Cdorota.kwitowska%40efcltd.com%7C0d17976900c64770d81408dc167=
+0714b%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638409919401692588%7CUnk=
+nown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJX=
+VCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DcFO6ewEbUgEVPGVNcw5f%2FzX6aqzMWZG4QM=
+iTxushcEo%3D&amp;reserved=3D0" originalsrc=3D"https://mandrillapp.com/track=
+/click/30611104/coop.ubxlink.com?p=3DeyJzIjoiUEszQUkwbE5wYTZvS2RScVhyb21PWH=
+lZYVVzIiwidiI6MSwicCI6IntcInVcIjozMDYxMTEwNCxcInZcIjoxLFwidXJsXCI6XCJodHRwc=
+zpcXFwvXFxcL2Nvb3AudWJ4bGluay5jb21cXFwvbG9naW5cIixcImlkXCI6XCIxYjhlMDY4YWZm=
+MWY0OGE5YjEzMWVmNzlkYTE2Mzc0MFwiLFwidXJsX2lkc1wiOltcIjIwNTZmMDBmMTY1NzM0YzB=
+lMjk1MDczZDFlNmY0OTlkNDdjNTE5YjFcIl19In0" shash=3D"gDEWO2lLZH7h3dAdxD7TbzFd=
+/zr0XPX5+mMCt9OJ2owvp3MLH3n5B7CEu6Tw22ceXMLmc/2uGFSRpLDzVIuzVoIej8MkuF7lud4=
+nlzZgxgr/DuI/Nc3b6mEvBFu+9NY/bgS4zSCH6/z4RB2+xyizd5hqnIvSlO39FzZSZjEDDIg=3D=
+">
+click here</a> to log in to IRIS</li></ul>
+</div>
+<div style=3D"display:none;">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:24px 0;font-family:arial, sans-serif;font-size:14px;">
+<div class=3D"legal" style=3D"margin-bottom:0px ;text-align:center;font-siz=
+e:11px;line-height:12px;font-family:arial, sans-serif;display:block;padding=
+:0 ;margin:0 0 15px 0 ;color:dimgray;">
+=A9 IRIS 2024. <br>
+You are receiving this communication from the Co-op because you registered =
+as a supplier on IRIS for Ethical Food Company Ltd - Von Herzen. If this is=
+ incorrect please contact Support on support@supply-pilot.com.
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<img src=3D"https://mandrillapp.com/track/open.php?u=3D30611104&amp;id=3D1b=
+8e068aff1f48a9b131ef79da163740" height=3D"1" width=3D"1" alt=3D"">
+</body>
+</html>
+
+--_000_306111042024011608521665a643c042908504591749mail17929su_--

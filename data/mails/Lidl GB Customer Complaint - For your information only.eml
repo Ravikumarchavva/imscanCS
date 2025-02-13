@@ -1,0 +1,606 @@
+Received: from LOYP123MB3326.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:117::9)
+ by CWLP123MB4868.GBRP123.PROD.OUTLOOK.COM with HTTPS; Fri, 21 Jun 2024
+ 15:54:04 +0000
+Received: from CWLP265CA0325.GBRP265.PROD.OUTLOOK.COM (2603:10a6:401:57::25)
+ by LOYP123MB3326.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:117::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7698.21; Fri, 21 Jun
+ 2024 15:54:03 +0000
+Received: from CW2PEPF000056BC.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:401:57:cafe::98) by CWLP265CA0325.outlook.office365.com
+ (2603:10a6:401:57::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7677.36 via Frontend
+ Transport; Fri, 21 Jun 2024 15:54:03 +0000
+Received: from eu-smtp-inbound-delivery-1.mimecast.com (195.130.217.221) by
+ CW2PEPF000056BC.mail.protection.outlook.com (10.167.240.7) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7677.15
+ via Frontend Transport; Fri, 21 Jun 2024 15:54:03 +0000
+Received: from mailwsout-c714.transactional-mail-d.com
+ (mailwsout-c714.transactional-mail-d.com [185.215.217.15]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.3,
+ cipher=TLS_AES_256_GCM_SHA384) id uk-mta-188-eJ2juRkrNoGeLd8skwJg1g-1; Fri,
+ 21 Jun 2024 16:54:01 +0100
+Received: from mailwsout05.mailws.mucre1.retloc (localhost [127.0.0.1])
+	by mailwsout05.transactional-mail-d.com (Postfix) with ESMTP id 4W5MNS6cYzzPkhj
+	for <technical@freshproducepartners.com>; Fri, 21 Jun 2024 17:54:00 +0200 (CEST)
+From: Lidl GB Customer Quality <customer.quality@lidl.co.uk>
+To: FPP Technical <FPP.technical@fpp-ltd.com>
+Subject: Lidl GB Customer Complaint - For your information only
+Thread-Topic: Lidl GB Customer Complaint - For your information only
+Thread-Index: AQHaw/M+HYogp4oKc0+kj/wZhvhqPw==
+Date: Fri, 21 Jun 2024 15:54:00 +0000
+Message-ID: <20240621-155400.229242d4-95d0-4ee3-81f7-e5cb9a9a32d6#47c7015b#8feeb453@retarus.com>
+Reply-To: Lidl GB Customer Quality <customer.quality@lidl.co.uk>
+X-MS-Exchange-Organization-AuthSource: CW2PEPF000056BC.GBRP265.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id: 3f5853b5-83c4-49db-64c3-08dc920a5fb4
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: Fail (protection.outlook.com: domain of lidl.co.uk does not
+ designate 195.130.217.221 as permitted sender)
+ receiver=protection.outlook.com; client-ip=195.130.217.221;
+ helo=eu-smtp-inbound-delivery-1.mimecast.com
+x-ms-exchange-organization-originalclientipaddress: 195.130.217.221
+x-ms-exchange-organization-originalserveripaddress: 10.167.240.7
+x-ms-publictraffictype: Email
+x-mailer: Retarus Mail4A
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198)
+X-Microsoft-Antispam-Message-Info: =?Windows-1252?Q?11/+iwWloecyQ+pEWP3b1qpYhY873aN090hTDRgsn6zMRIWMX4YIUxie?=
+ =?Windows-1252?Q?iApJz1g7hf8fM3qrUe2BMfV0ON369bDwgw/UtkFAnCAVNNSUU/G18Pu6?=
+ =?Windows-1252?Q?Sjb36WU07v49BBwlLEoaaA3zZqXbvHdy0lO/iGN1HdbXX9W72SqPenNW?=
+ =?Windows-1252?Q?TgGilY6yy27FP6Svug1zeeAzp2Co4kM0PGThgqi92I2C8UqJAgj6XJRG?=
+ =?Windows-1252?Q?WXEZUgCVOgmh26cmqMUHQXVANqXJ+DwkAg+bCAky3eczKv7vqvmT386f?=
+ =?Windows-1252?Q?dw3Ad4VsTgfhcUXKPGUC92UFMyn6++fuYB+nf2T79jY6I16sHjzCzA6/?=
+ =?Windows-1252?Q?HETFi7rz1OT5zVx7W9FoGmhu42enkxVFRkatdSQxN+Sh/HRU0kHaAZkK?=
+ =?Windows-1252?Q?fh1SZj9AHCLTrOd8M+9iKtWs6QgasXEkflBiZl+r0bAZF2pPaK92oUr3?=
+ =?Windows-1252?Q?thbRfbJ1EmctWIMWVO9IUkFyYy2ue5lSct7Oda3EdNxjx7vhiBDnEXNA?=
+ =?Windows-1252?Q?KYUo+O5XvexwmISNttpkwZvr5umEfpjoQj99N69Ns8/mAIIOnSI/ERpb?=
+ =?Windows-1252?Q?Jz0VsEVV2rsEnThXBeAfmFFXQ0VC2GFceXgumZMjaVcH/SAOMPPLK2bF?=
+ =?Windows-1252?Q?JGsMcVlNfy8kafy/XycOTdIHIO066TZuoY1t7Rt82gMRXGy8uM2BA2pR?=
+ =?Windows-1252?Q?HDKD8q6oSq/cZlVja4b2TRQBkUCFLerBNFz6DIuSNQbEa/B5JKD/yU9t?=
+ =?Windows-1252?Q?XEdElO6s2SYk334S7lMHYJbQalE/9Amfc8pQTfEYqYsJkWJklRKa8Bao?=
+ =?Windows-1252?Q?T5DJzu5TX0XW5C0N2vVIGw/h+HwHP0k27sIfmOD3v1GUqbVbvZJZjV/d?=
+ =?Windows-1252?Q?9XHIGfSWZj8SJR2SlApP+W/oHIbFzM6jPEuAGNOm+rpa0CWtgAR+WeTx?=
+ =?Windows-1252?Q?BaI2yxTUCi/RP6ErWpaZnKUVeb9XiiS+v1NAEBAn8CR1uULH2MHtpk4l?=
+ =?Windows-1252?Q?3E7Kc7wMxpOCy8cb+9DEvaD/+CwzDYW+iSTfKj2WvRyNZvEXiWHroTpQ?=
+ =?Windows-1252?Q?W5TLUNEsVf8Cl85vThlq6lEFHvv6K5wjhFI4FyDtBUiPVkHsgnQ3iejf?=
+ =?Windows-1252?Q?Toiv5I+ehx9jAseoiTM+I+ko1ZYSGRq9xG6IxI0Wu3kwWh1Q9TZZU2xd?=
+ =?Windows-1252?Q?0cRG0V50+nSZ8fFn9g0NqYwmPg05uOudt5SvJiLeDLT4qwoknizSp9J+?=
+ =?Windows-1252?Q?Fd7WMNmvZXhTg4N7o3ztC+zgRkKnlifpkxJFrPTqLzkmMpcAmdL39qC9?=
+ =?Windows-1252?Q?/15elDSad1HvfJfYSbcm0bW+fxG9SBi66FjaIo7OL+1ldW58nZKjuMD0?=
+ =?Windows-1252?Q?NNZ0ZQBl3hl53T1y5d7Ylk96b6Qx1wuFMED0ZQegve+8F3d3vSLtOhMs?=
+ =?Windows-1252?Q?4IAij17sTY4j6IhfWbeM0sgsN1C/CmS2YliJtk+HGB4F0qVlMsjeTph+?=
+ =?Windows-1252?Q?NrIyJ1uKqSc0VziUM2xdFDHetJMB/4mu0HvLLz/AD43gpaVr7kThRDgR?=
+ =?Windows-1252?Q?6RsV0/zq+zQVgGc7w8N3243RfOMZTEpmQersS//uLseLlcl2lc7W2w5B?=
+ =?Windows-1252?Q?gKij8bb061GQfTp81NrQ5sN70YQHqcxWN8LdcfFQEE88toxqLcjV0Jgk?=
+ =?Windows-1252?Q?0F40ohkQKuMrKKlS9vdcZmRfCdOLOQ6by2hSvyvDeChqumO2QflB3oHi?=
+ =?Windows-1252?Q?J2ZCKQMwziC4HyVSBbPL/IFK58oZHk1zZRdyxjUwOIMK6b3/oMTRRihS?=
+ =?Windows-1252?Q?CMyrQtXGTbF9FGFhW//TS1t/0W2fjM1rzZ5UtLmcshRC9dO1NacNwbpl?=
+ =?Windows-1252?Q?M+yNcp91sUd30oXIbk07O0/GUNuNm1JX6cBgs3P8S1FxYy/OQJ/ijHA2?=
+ =?Windows-1252?Q?X/62rXXnl2rsQ3mlKZujsrWuEmkPfI4afzkqaxTH0J5aIFgDQnqUkjaV?=
+ =?Windows-1252?Q?DIB7xCIbhiqKIzLr9kRWstSB70LyvmF5tZo3V4HxbeLvo+R3uQc=3D?=
+Content-Language: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_20240621155400229242d495d04ee381f7e5cb9a9a32d647c7015b8_"
+MIME-Version: 1.0
+
+--_000_20240621155400229242d495d04ee381f7e5cb9a9a32d647c7015b8_
+Content-Type: text/plain; charset="WINDOWS-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Furl.uk=
+.m.mimecastprotect.com%2Fs%2FHtj4CBP78t70q7Liz1XTh%3Fdomain%3Dlidl.co.uk&da=
+ta=3D05%7C02%7CKegan.Stubbs%40fpp-ltd.com%7C3f5853b583c449db64c308dc920a5fb=
+4%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638545820449983012%7CUnknown=
+%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6=
+Mn0%3D%7C0%7C%7C%7C&sdata=3DW13OnPiBNQpPxm1G3%2BAQ3XBQVSuqBjaOkhN7rqvCt7I%3=
+D&reserved=3D0>
+21 June 2024
+
+Our Ref: 103927724
+Dear Sir or Madam
+
+
+
+Please be aware we have received a customer complaint regarding a product y=
+ou supply - see the details below.
+
+Please note, this is for your information only and no action is required at=
+ this time. However, it is still your responsibility to trend your own comp=
+laints.
+
+
+If you believe this to be a wider issue and not an isolated incident, we re=
+quest you immediately inform us by contacting the qualityassurance@lidl.co.=
+uk<https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Furl.=
+uk.m.mimecastprotect.com%2Fs%2FuzEZCDQ7YT5wp58t5Lqke%3Fdomain%3Dlidl.co.uk&=
+data=3D05%7C02%7CKegan.Stubbs%40fpp-ltd.com%7C3f5853b583c449db64c308dc920a5=
+fb4%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C638545820449995633%7CUnkno=
+wn%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVC=
+I6Mn0%3D%7C0%7C%7C%7C&sdata=3Dsi5SGWB2krnIR57Yx5EhGsYKgVGx6V6elHKsG%2BCoUk8=
+%3D&reserved=3D0> address. If we don=92t receive a notification at the abov=
+e address, we will assume there are no issues regarding product safety or q=
+uality.
+
+Product information: 0080398 Ready to Eat Peaches Peaches 4-Pk
+Type of complaint: 3.1.2 Sensory Issue
+Details: //20.06.2024
+Customer had a problem with Lidl's Peaches, which were mouldy. Agent was ab=
+le to solve the problem by sending a voucher for =A37.39.
+BBD/UBD:
+Batch code: L230643 W3237
+Reason for complaint: Mould
+Article Number: 0080398
+Product Family: 10.40
+Date of Purchase: 20/06/2024
+Store: GB1526
+RDC: LUTON RDC
+
+
+
+Yours sincerely,
+For and on behalf of Lidl Great Britain Limited
+
+
+Hayley Coven
+
+customer.quality@lidl.co.uk
+Quality Assurance Team
+ <http://f.chtah.com/i/16/2099070104/2018_09_Lidl_Newsletter_01.gif>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ref:00D58000000K3E6.5006N00000w4FOX:ref
+
+
+--_000_20240621155400229242d495d04ee381f7e5cb9a9a32d647c7015b8_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <6AF63C6C2298F44590CF3395557E2707@GBRP123.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:sch=
+emas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"=
+><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<meta http-equiv=3D"PRAGMA" content=3D"NO-CACHE">
+<meta http-equiv=3D"Expires" content=3D"Mon, 01 Jan 1990 12:00:00 GMT">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0, minimum-scale=
+=3D1.0, maximum-scale=3D1.0" name=3D"viewport">
+<meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible">
+<meta content=3D"telephone=3Dno" name=3D"format-detection">
+<meta content=3D"date=3Dno" name=3D"format-detection">
+<meta content=3D"address=3Dno" name=3D"format-detection">
+<meta content=3D"email=3Dno" name=3D"format-detection">
+<style type=3D"text/css">
+<!--
+
+            #outlook a {
+            padding: 0;
+            }
+            body {
+            margin:0 !important;
+            padding:0 !important;
+            -webkit-text-size-adjust:100% !important;
+            -ms-text-size-adjust:100% !important;
+            -webkit-font-smoothing:antialiased !important;
+            }
+            .ReadMsgBody {
+            width: 100%;
+            }
+            .ExternalClass {
+            width: 100%;
+            }
+            .ExternalClass * {
+            line-height: 110%;
+            }
+            table td {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            font-size:0px;
+            }
+            th {
+            padding:0;
+            margin:0;
+            font-weight:normal;
+            font-size:0px;
+            }
+            img {
+            font-size:12px;
+            }
+            @-ms-viewport {
+            width: device-width;
+            }
+            div[style*=3D"margin: 16px 0"] {
+            margin: 0 !important;
+            font-size: 100% !important;
+            }
+            a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+            }
+            button {
+            margin:0;
+            padding:0;
+            }
+            /*custom css button hover*/
+            .btn:hover {
+            background-color:#85b554;
+            color:#fff !important;
+            }
+            .btn:hover [td]{border:none !important}
+            .im{
+            color:#555555 !important;
+            }
+            .adj-pad{
+            padding-top:26px;
+            }
+            sup{
+            font-size:14px;
+            }
+            .foot sup{
+                font-size:11px;
+            }
+       =20
+-->
+</style><style type=3D"text/css">
+<!--
+
+            @media only screen and (min-device-width:320px) and (max-device=
+-width:1024px) {
+            a[href^=3D"tel"], a[href^=3D"sms"], a {
+            color:inherit;
+            cursor:default;
+            text-decoration:none;
+            }
+            }
+            @media only screen and (max-width:480px) {
+            /*custom css mobile*/
+            .head_img{
+            margin-top: 20px;
+            }
+            .align{
+            text-align:center;
+            }
+            .mpad{
+            padding:25px 0 0 0 !important;
+            }
+            .adj-pad{
+            padding-top:0;
+            }
+            .expad{
+            padding-top:18px;
+            }
+            /*GMAIL TARGETING*/
+            u ~ div .wrapper {
+            width:100vw !important;
+            min-width:100vw !important;
+            }
+            u + .gmail .gmail-nav {
+            display:block !important;
+            max-height:none !important;
+            visibility:visible !important;
+            }
+            u + .gmail #navcontainer {
+            display:none !important;
+            max-height:0 !important;
+            visibility:hidden !important
+            }
+            u + .gmail .nav-pad {
+            padding-bottom:0px !important
+            }
+            /*OUTLOOK APP TARGETING*/
+            .outlook-overflow-scaling .gmail-nav {
+            display:block !important;
+            max-height:none !important;
+            visibility:visible !important
+            }
+            .outlook-overflow-scaling #navcontainer {
+            display:none !important;
+            max-height:0 !important;
+            visibility:hidden !important
+            }
+            /*STANDARD CSS*/
+            .fluid {
+            width:100% !important;
+            }
+            .scale {
+            width:100% !important;
+            height:auto !important;
+            }
+            .drop {
+            width:100% !important;
+            display:block !important;
+            }
+            .hide {
+            width:0 !important;
+            display:none !important;
+            }
+            .mobile {
+            display:block !important;
+            max-height:none !important;
+            overflow:visible !important;
+            }
+            .hero {
+            background:url(Files/Hello_Lidlers_BigOn_mob.jpg) no-repeat !im=
+portant;
+            background-image:url(Files/Hello_Lidlers_BigOn_mob.jpg) !import=
+ant;
+            background-size:cover !important;
+            height:auto !important;
+            padding-bottom:15% !important;
+            background-position:center !important;
+            }
+            .font14 {
+            font-size:14px !important;
+            line-height:18px !important;
+            }
+            .padlr10 {
+            padding-left:10px !important;
+            padding-right:10px !important;
+            }
+            .padlr20 {
+            padding-left:20px !important;
+            padding-right:20px !important;
+            }
+            .padlr25 {
+            padding-left:25px !important;
+            padding-right:25px !important;
+            }
+            .padlr30 {
+            padding-left:30px !important;
+            padding-right:30px !important;
+            }
+            .padtb10 {
+            padding-top:10px !important;
+            padding-bottom:10px !important;
+            }
+            .padtb20 {
+            padding-top:20px !important;
+            padding-bottom:20px !important;
+            }
+            .padtb30 {
+            padding-top:30px !important;
+            padding-bottom:30px !important;
+            }
+            .padtb40 {
+            padding-top:40px !important;
+            padding-bottom:40px !important;
+            }
+            .padtb50 {
+            padding-top:50px !important;
+            padding-bottom:50px !important;
+            }
+            .padt10 {
+            padding-top:10px !important;
+            }
+            .padt20 {
+            padding-top:20px !important;
+            }
+            .padt30 {
+            padding-top:30px !important;
+            }
+            .padb10 {
+            padding-bottom:10px !important;
+            }
+            .padb20 {
+            padding-bottom:20px !important;
+            }
+            .padb25 {
+            padding-bottom:25px !important;
+            }
+            .padb30 {
+            padding-bottom:30px !important;
+            }
+            .nopadt {
+            padding-top:0 !important;
+            }
+            .nopadb {
+            padding-bottom:0 !important;
+            }
+            .nopadl {
+            padding-left:0 !important;
+            }
+            .nopadr {
+            padding-right:0 !important;
+            }
+            .browser_bg {
+            background-color: #f2f2f2 !important;
+            }
+            /*MOBILE NAV MENU*/
+            #navcontainer {
+            position:relative;
+            display:block !important;
+            max-height:auto !important;
+            visibility:visible !important;
+            background-color:#ffffff;
+            }
+            #menucontainer {
+            position:relative;
+            overflow:hidden;
+            background-color:#ffffff;
+            }
+            #navcontainer .navmenu {
+            margin-left:-480px;
+            -ms-transition:margin-left .5s ease-in-out;
+            -webkit-transition:margin-left .5s ease-in-out;
+            width:100vw;
+            overflow:hidden !important;
+            }
+            #label-navcheckbox {
+            width:29px;
+            height:54px;
+            display:block !important;
+            background-image:url('http://f.chtah.com/i/16/2099070104/2018_0=
+9_Lidl_Newsletter_Mob_02.jpg');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:29px 21px;
+            }
+            #navcheckbox:checked ~ .navmenu {
+            margin-left:0;
+            }
+            .menu-top {
+            width:100% !important;
+            display:block;
+            background-color:#ffffff;
+            }
+            .menu-top table {
+            height:55px !important;
+            }
+            .nav-pad {
+            padding-bottom:55px !important;
+            }
+            }
+       =20
+-->
+</style>
+</head>
+<body bgcolor=3D"#ffffff" bottommargin=3D"0" class=3D"gmail" leftmargin=3D"=
+0" rightmargin=3D"0" style=3D"background-color:#ffffff;" topmargin=3D"0">
+<div style=3D"display:none; font-size:1px; color:#768591; line-height:1px; =
+font-family:Arial, Helvetica, sans-serif; max-height:0px; max-width:0px; op=
+acity:0; overflow:hidden; mso-hide:all;">
+</div>
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"wrapper" width=3D"600px">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"padding:20px 0 20px 0; background-color:#ffff=
+ff"><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FHtj4CBP78t70q7Liz1XTh%3Fdomain%3=
+Dlidl.co.uk&amp;data=3D05%7C02%7CKegan.Stubbs%40fpp-ltd.com%7C3f5853b583c44=
+9db64c308dc920a5fb4%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%7C6385458204=
+49983012%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTi=
+I6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DW13OnPiBNQpPxm1G3%2BAQ3XB=
+QVSuqBjaOkhN7rqvCt7I%3D&amp;reserved=3D0" originalsrc=3D"https://url.uk.m.m=
+imecastprotect.com/s/Htj4CBP78t70q7Liz1XTh?domain=3Dlidl.co.uk" shash=3D"g/=
+n1vAs1XRMiH4h9fpoigwUeuJrpDyQhs2OhJOe/YQydOlaLjzMR3PC6fNr+Jtr2oYAYxcPZgTzDk=
+HUoer7VFWlLiSXsFCA+mXsk8RCErbfmlKE8FZHCtOar/MYXxXfj0SHw1VQQ0pd3n+uAG7ixAYwB=
+B0FcVD/FQprHeH6iz9s=3D"><img alt=3D"Lidl Big on Quality Lidl on Price" bord=
+er=3D"0" height=3D"186" src=3D"https://lidleu.my.salesforce.com/file-asset-=
+public/LidlBigOnQualityv2png?oid=3D00D58000000K3E6" style=3D"display:block;=
+ margin:0 auto;" title=3D"Lidl Big on quality Lidl on Price" width=3D"179">=
+</a></td>
+</tr>
+<tr>
+<td align=3D"left" style=3D"padding:30px 0;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"fluid padl=
+r25" style=3D"width:600px;" width=3D"600">
+<tbody>
+<tr>
+<td align=3D"right" class=3D"align" style=3D"font-family:Arial, Helvetica, =
+sans-serif; font-size:18px;  line-height:30px; padding:0 0 20px 0;">
+21 June 2024<br>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"align" style=3D"font-family:Arial, Helvetica, s=
+ans-serif; font-size:18px;  line-height:30px; padding:0 0 20px 0;">
+Our Ref: 103927724<br>
+Dear Sir or Madam <br>
+<br>
+<p><span style=3D"font-size: 11pt;"><span style=3D""><span style=3D""><span=
+ style=3D"font-size: 9.5pt;"><span style=3D""><span style=3D"color: black;"=
+>Please be aware we have received a customer complaint regarding a product =
+you supply - see the details below.<br>
+<br>
+Please note, this is for your information only and no action is required at=
+ this time.<strong> However, it is still your responsibility to trend your =
+own complaints.
+<br>
+</strong></span></span></span></span></span></span></p>
+<p><span style=3D"font-size: 11pt;"><span style=3D""><span style=3D""><span=
+ style=3D"font-size: 9.5pt;"><span style=3D""><span style=3D"color: black;"=
+><strong>If you believe this to be a wider issue and not an isolated incide=
+nt, we request you immediately inform us by
+ contacting the <a href=3D"https://gbr01.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FuzEZCDQ7YT5wp58t5Lqk=
+e%3Fdomain%3Dlidl.co.uk&amp;data=3D05%7C02%7CKegan.Stubbs%40fpp-ltd.com%7C3=
+f5853b583c449db64c308dc920a5fb4%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7C0%=
+7C638545820449995633%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2=
+luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3Dsi5SGWB2krnIR=
+57Yx5EhGsYKgVGx6V6elHKsG%2BCoUk8%3D&amp;reserved=3D0" originalsrc=3D"https:=
+//url.uk.m.mimecastprotect.com/s/uzEZCDQ7YT5wp58t5Lqke?domain=3Dlidl.co.uk"=
+ shash=3D"hZwj+tfEhecf7hGF02ZbGdvRBOVLNxbFe1VYA48+e511najnrcUw+EhvCTJQ5lsdC=
+mbiKyzjqX2MckW3/0MVtUPOi0QMsLai/GAVhv3lylTQESn5tY6t0Fa731vJkdkCSUNqO5hUPORU=
+Qky6xy3AzDzUQlrI+4kJeC0PITTN4nY=3D" style=3D"color: blue; text-decoration: =
+underline;" target=3D"_blank">
+qualityassurance@lidl.co.uk</a> address. If we don=92t receive a notificati=
+on at the above address, we will assume there are no issues regarding produ=
+ct safety or quality.</strong><br>
+<br>
+Product information:</span></span></span><span style=3D"font-size: 9.5pt;">=
+<span style=3D"">
+<strong>0080398 Ready to Eat Peaches Peaches 4-Pk </strong><br>
+<span style=3D"color: black;">Type of complaint: </span><strong>3.1.2 Senso=
+ry Issue</strong><br>
+<span style=3D"color: black;">Details:<strong> </strong></span><strong>//20=
+.06.2024<br>
+Customer had a problem with Lidl's Peaches, which were mouldy. Agent was ab=
+le to solve the problem by sending a voucher for =A37.39.</strong></span></=
+span><br>
+<span style=3D"font-size: 9.5pt;"><span style=3D""><span style=3D"color: bl=
+ack;">BBD/UBD:&nbsp;
+<strong></strong><br>
+Batch code: <strong>L230643 W3237</strong><br>
+Reason for complaint: <strong>Mould</strong></span></span></span></span></s=
+pan></span><span id=3D"j_id0:j_id2"><strong></strong><br>
+Article Number: <strong>0080398 </strong></span><span style=3D"font-size: 1=
+1pt;"><span style=3D""><span style=3D""><span style=3D"font-size: 9.5pt;"><=
+span style=3D""><strong></strong><br>
+Product Family: <strong>10.40</strong><br>
+Date of Purchase: <strong>20/06/2024 </strong><br>
+Store: <strong>GB1526</strong><br>
+RDC: <strong>LUTON RDC</strong></span></span></span></span></span></p>
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"align" style=3D"font-family:Arial, Helvetica, s=
+ans-serif; font-size:18px;  line-height:26px; padding:0 0 20px 0;">
+Yours sincerely, <br>
+For and on behalf of Lidl Great Britain Limited <br>
+<br>
+<br>
+Hayley Coven<br>
+<br>
+customer.quality@lidl.co.uk<br>
+<b>Quality Assurance Team</b> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class=3D"hide">
+<td align=3D"center" bgcolor=3D"#ffffff">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:640p=
+x;" width=3D"640">
+<tbody>
+<tr>
+<td height=3D"1" style=3D"line-height:0px; font-size:0px;"><img border=3D"0=
+" height=3D"1" src=3D"http://f.chtah.com/i/16/2099070104/2018_09_Lidl_Newsl=
+etter_01.gif" style=3D"max-height:1px; min-height:1px; display:block; width=
+:640px; min-width:640px;" width=3D"640"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"display:none; white-space:nowrap; font:15px courier; color:#f=
+fffff;">
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+<p style=3D"margin:0; color:white;">ref:00D58000000K3E6.5006N00000w4FOX:ref=
+ </p>
+</body>
+</html>
+
+--_000_20240621155400229242d495d04ee381f7e5cb9a9a32d647c7015b8_--

@@ -1,0 +1,541 @@
+Received: from LO4P123MB6928.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:348::8)
+ by CWLP123MB4769.GBRP123.PROD.OUTLOOK.COM with HTTPS; Tue, 27 Aug 2024
+ 06:09:51 +0000
+Received: from CWLP265CA0370.GBRP265.PROD.OUTLOOK.COM (2603:10a6:401:5e::22)
+ by LO4P123MB6928.GBRP123.PROD.OUTLOOK.COM (2603:10a6:600:348::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7897.25; Tue, 27 Aug
+ 2024 06:09:44 +0000
+Received: from CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+ (2603:10a6:401:5e:cafe::a4) by CWLP265CA0370.outlook.office365.com
+ (2603:10a6:401:5e::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7897.26 via Frontend
+ Transport; Tue, 27 Aug 2024 06:09:44 +0000
+Received: from eu-smtp-inbound-delivery-1.mimecast.com (195.130.217.221) by
+ CW2PEPF000056BD.mail.protection.outlook.com (10.167.240.20) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7918.13
+ via Frontend Transport; Tue, 27 Aug 2024 06:09:44 +0000
+Received: from a7-23.smtp-out.eu-west-1.amazonses.com
+ (a7-23.smtp-out.eu-west-1.amazonses.com [54.240.7.23]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.3,
+ cipher=TLS_AES_256_GCM_SHA384) id uk-mta-266-cQQ60k3CPfKKbHInVgB-_w-1; Tue,
+ 27 Aug 2024 07:09:41 +0100
+From: "quality@food-surveys.com" <quality@food-surveys.com>
+To: "Technical (EFC)" <technical@efcltd.com>
+Subject: Ocado Quality Notification - Warning
+Thread-Topic: Ocado Quality Notification - Warning
+Thread-Index: AQHa+Ee6JxVzYFD29kGmUZNabnSzqA==
+Date: Tue, 27 Aug 2024 06:09:41 +0000
+Message-ID: <0102019192744cf8-69724436-89ba-4581-b104-ece650e33aff-000000@eu-west-1.amazonses.com>
+X-MS-Exchange-Organization-AuthSource: CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-Exchange-Organization-Network-Message-Id: e6e720bf-63ab-4387-f3e8-08dcc65ed889
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: None (protection.outlook.com: ses.food-surveys.com does not
+ designate permitted sender hosts)
+x-ms-exchange-organization-originalclientipaddress: 195.130.217.221
+x-ms-exchange-organization-originalserveripaddress: 10.167.240.20
+x-ms-publictraffictype: Email
+authentication-results: spf=none (sender IP is 195.130.217.221)
+ smtp.mailfrom=ses.food-surveys.com; dkim=fail (signature did not verify)
+ header.d=food-surveys.com;dmarc=fail action=none
+ header.from=food-surveys.com;compauth=softpass reason=201
+x-ms-office365-filtering-correlation-id: e6e720bf-63ab-4387-f3e8-08dcc65ed889
+x-ms-traffictypediagnostic: CW2PEPF000056BD:EE_|LO4P123MB6928:EE_|CWLP123MB4769:EE_
+x-forefront-antispam-report: CIP:195.130.217.221;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:eu-smtp-inbound-delivery-1.mimecast.com;PTR:eu-smtp-delivery-1.mimecast.com;CAT:NONE;SFTY:9.25;SFS:(13230040)(32142699015)(12012899012);DIR:INB;SFTY:9.25
+x-microsoft-antispam: BCL:0;ARA:13230040|32142699015|12012899012
+x-ms-exchange-crosstenant-originalarrivaltime: 27 Aug 2024 06:09:44.1600 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9
+x-ms-exchange-crosstenant-network-message-id: e6e720bf-63ab-4387-f3e8-08dcc65ed889
+x-ms-exchange-transport-crosstenantheadersstamped: LO4P123MB6928
+arc-message-signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=dkim.mimecast.com; s=201903; t=1724738983;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=HHi1q2PGjvSAe4/2WXNX18QPd29H6+giyc22G7UWBSs=;
+	b=Y3tWjk9dsbMiQX5IaBqiaiVNlbcQjWWRnmIOGiRZdKbZk2OOGppv7ezCSQKi2Qyo9C+Wd0
+	IZsppNsCUuiw0V9Fmznxy/oYRyyykwvfcBjBY0ZYfuec7ZRdC5fuXgLUClxW/05g7qY6Bt
+	WpNNiGTGqXyBJrfCn1vCljiO9xTL5/ISofFcTOEvpXfGTPpAb3zStNBr1gllDyJiTRVkAb
+	z3t52rs6lBEA8xrT5Ej3yVbz1BcdqoccDYIY1idq1kiwEeLJddBIXTBmZF2uaU82f85BCE
+	19Cd3bL0EQsSioEh3ZrsOrjFv6PGvddETrGDglljcoWugqjSCCN5bjkT3QwDtg==
+arc-seal: i=1; s=201903; d=dkim.mimecast.com; t=1724738983; a=rsa-sha256;
+	cv=none;
+	b=B9XsTKopihTGH/TZtcQJ3oGgEkyJbiDBOzeiIjDOsGIPxqQ80gA2mlaOZ5VOqxlGYMs6j2
+	1rAXORPyNTF+qljhQlYv6qT/SZOgs4NoPzTVBv60FC9mhvrmFgPfwnAQi45D1jB3buQjzQ
+	bDwSvQCeMI71aqdEFdcnbqWC/FA/hx0OKNbiSlU9nU/bH9CAsP9QJN/zC5PI5A8wCCJnbb
+	2tbpKSHysyJyIivu7lL3C5kkbXxPx9tCYiyCHVi9g8hZvhWfFYo+ueCM0RkCtoeq6b2Dzc
+	4pp0kKl7p06l7yBhjcnbcOXWq68xMBd5JmvlWBQm9iJdq0XQkCY915olJ3cWIA==
+arc-authentication-results: i=1;	relay.mimecast.com;	dkim=pass
+ header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc
+ header.b=gbsAfJ1Y;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=IPMiAtwh;	dmarc=pass
+ (policy=none) header.from=food-surveys.com;	spf=none (relay.mimecast.com:
+ domain of
+ 0102019192744cf8-69724436-89ba-4581-b104-ece650e33aff-000000@ses.food-surveys.com
+ has no SPF policy when checking 54.240.7.23)
+ smtp.mailfrom=0102019192744cf8-69724436-89ba-4581-b104-ece650e33aff-000000@ses.food-surveys.com
+x-mc-unique: cQQ60k3CPfKKbHInVgB-_w-1
+x-eopattributedmessage: 0
+authentication-results-original: relay.mimecast.com;	dkim=pass
+ header.d=food-surveys.com header.s=ydzxhbrynxrsx65uk2biulhajt2sh7hc
+ header.b=gbsAfJ1Y;	dkim=pass header.d=amazonses.com
+ header.s=uku4taia5b5tsbglxyj6zym32efj7xqv header.b=IPMiAtwh;	dmarc=pass
+ (policy=none) header.from=food-surveys.com;	spf=none (relay.mimecast.com:
+ domain of
+ 0102019192744cf8-69724436-89ba-4581-b104-ece650e33aff-000000@ses.food-surveys.com
+ has no SPF policy when checking 54.240.7.23)
+ smtp.mailfrom=0102019192744cf8-69724436-89ba-4581-b104-ece650e33aff-000000@ses.food-surveys.com
+x-mimecast-spam-score: 0
+x-eoptenantattributedmessage: 0a6ac99f-7136-40dd-9ec3-ddedf46edbc9:0
+x-ms-exchange-transport-endtoendlatency: 00:00:06.9250147
+x-ms-exchange-processed-by-bccfoldering: 15.20.7897.019
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource: CW2PEPF000056BD.GBRP265.PROD.OUTLOOK.COM
+x-mimecast-impersonation-protect: Policy=Reply-To-Mismatch and Threat
+ Dictionary;Similar Internal Domain=false;Similar Monitored External
+ Domain=false;Custom External Domain=false;Mimecast External
+ Domain=false;Newly Observed Domain=false;Internal User Name=false;Custom
+ Display Name List=false;Reply-to Address Mismatch=false;Targeted Threat
+ Dictionary=false;Mimecast Threat Dictionary=false;Custom Threat
+ Dictionary=false;External=true
+dkim-signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1724738981;
+	h=Date:From:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:To:Subject:Feedback-ID;
+	bh=eqwu0n6B1cugh6zbC/Gjgv9mP2rxQWWTUraAaszTRHo=;
+	b=IPMiAtwhFxb9wYezy2kUa6rBWMO/Sk+NF5nuc0L/Vd2cXFEqvZXzNSMvsL0Q59WB
+	Ojyfxb4uC4/1oGSKXS+VlRL6kuD37bt7PhHiVhgq9AlfHLQnU+qIZi6182I2DHDLcRZ
+	xq8+U6HSCLdpw1hDFqyRPoymc4t8Hokg9haqM2Bg=
+x-ses-outgoing: 2024.08.27-54.240.7.23
+feedback-id: ::1.eu-west-1.sCdqOIaTc10uCGhAgc95tjfCNfrI+wrHV6VXcDaT2v8=:AmazonSES
+x-ms-exchange-atpmessageproperties: SA|SL
+X-Microsoft-Antispam-Mailbox-Delivery: ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198)
+X-Microsoft-Antispam-Message-Info: =?Windows-1252?Q?0BS/SHgdCkamgO/1S81tfVC3+MODhtSUE7DzTZdDeSEeXcfWQWj9bBiE?=
+ =?Windows-1252?Q?PAZvCwOHkfmz2qy49n5+rEgMYDemTvEwovkkKKlaQ9WFqr3YGwfdM+YN?=
+ =?Windows-1252?Q?cn7OLELDKT3qbyuYN0OMc9klgTyCaUm2kAdd8WCQGi+HZ92n1bDDRt5B?=
+ =?Windows-1252?Q?wZERkLPJgLPm1CdpfLcE/hhDAJB4pPfjOfSZ9IiEoNtO9i8/QPonHwoU?=
+ =?Windows-1252?Q?YDUcR83jaZLiWYlP9tzBPeW/+u3tmIDrGEcZbykHCMMPO2Qp5IZ8Hakq?=
+ =?Windows-1252?Q?QyXW66VJvOJbYhi3au6k33oE5YjgmvGOXjXmO8BBAXCRF7Fl7wU40bon?=
+ =?Windows-1252?Q?MSVk03DlKJOid3ZFF0UdQlu40+mFAnEykZhZekXcuos005+rZBlf8hhO?=
+ =?Windows-1252?Q?dvagepq0izU+/Drimitz+Qu+XKkkotaZ7pqE8T3ZamzATdhuwb7bUf7v?=
+ =?Windows-1252?Q?T158y/8VODztTeXngOogx+PbneA2iqBvPGEjTp+f79F2nEZEPzxHM8P9?=
+ =?Windows-1252?Q?dDUZM3+6cFD7F8KPBSZXXao3u2/8tO0M1snY6VE8B4Hqc5lkSytcRDhs?=
+ =?Windows-1252?Q?QfnyQld2J8HItI2ZtWy9eJTBCvbe5wFBB+SXmokYGgJKfb4Jt95TAL4i?=
+ =?Windows-1252?Q?K+ZV+V4eF1rtV8gBT6cstYdtZQvLk1uE5QG6fgVXqbMqPJJdiKArhDEn?=
+ =?Windows-1252?Q?rRNOQpBkRIdCLBGBs1agXacpR+vXh4D2pZj7fHq65Zvchz+4VesR9huX?=
+ =?Windows-1252?Q?Bh5TIe0QCq578m/32Rj5D2/A0SnntCSCpKNjeZD20OROWz4oCVY9bjee?=
+ =?Windows-1252?Q?meTybpGuIW34Gl4eqi80YZWmmmrdn7xY0CXizQpWL0kE6vJCbhaHWKsg?=
+ =?Windows-1252?Q?lYLyW3ONUF5FusrC7lXjVOB05fPU9VuaBmy4MicqoGRMLvktGOz6qaCw?=
+ =?Windows-1252?Q?YyBflMuEKoyvWefCC7+r6CMooblkbEOupm0hnEzJ+l9kCrwCMKxAaMeX?=
+ =?Windows-1252?Q?0B/W6+ngGl05lQoyAtaNh9fMhFMqMgr8X8lH+4nflSP/Zf2zgo4gI5h8?=
+ =?Windows-1252?Q?+oTBSP1GhnJmsvaBWKxqlw0WDs8+few0cec59t9Z9ahbsVw7uEsWpCdv?=
+ =?Windows-1252?Q?31+AJgWqUG/VrB79ZUEjXQl8eoTjvI6DfTCG6h09/Y7wTI6bWF7kK0Fb?=
+ =?Windows-1252?Q?UHalywBfd6sfYq+dqoB86oJHUffuTNOIKiGxQA5OKLDagua255mggdmE?=
+ =?Windows-1252?Q?/DIZ3LuJ3f2Zs4A/PVm8891KOutrv5SBZf1Q/Jw4zhqqNBYNBGh26GIB?=
+ =?Windows-1252?Q?BcaBdGwh2xVmdQUP4VV2pSMPZA23YDoJCddRvb45PVqxuB2LYxtAkRC3?=
+ =?Windows-1252?Q?tdU0/kyWbShyjyM6BEylEG5aQsRDXhPbRs3uNeFX+vFWfbinLdw8uBl7?=
+ =?Windows-1252?Q?nDbARXf7ZfJ46/aBzg3dW92vphFDzOmKl+HH5VFmATtqkvbgt9Fzk5cC?=
+ =?Windows-1252?Q?n1U5DJQeEdwh+8F155LWyy3ly8dEOA5fsdh5As4jAyfMmunzwbioiuVM?=
+ =?Windows-1252?Q?Gbd+OXj4sl5RsllnYdVGY+PfdxYTjdpE5YY4UIAs+Vx3i4f5to6pkUYq?=
+ =?Windows-1252?Q?EKqRwK8trBxfQ3yB62y6/vJ3ad6F+ns3Y7pxRyoviORN1kxYJnEqtgX2?=
+ =?Windows-1252?Q?vCFxTXQ1AMNEHCNAj03tH5iACoYBTclq9A5N9Bz42CgLEvYOt5IVXezm?=
+ =?Windows-1252?Q?7WKKgdmTJSO3hNQnKdMBPMxd+p8r7g4e160MZtyZnEVcT2yqKk3Av9A0?=
+ =?Windows-1252?Q?7aSP/MDkz8o8mXf83KxBTbvBElkWQQ1kQhyMf5DtdmT+Kt4SBhr1PBOY?=
+ =?Windows-1252?Q?uV5kLpYLPa1lft9BxtdE4imCq/3jXFIVnGD4G/vVOot7tIKqGrCqeQTk?=
+ =?Windows-1252?Q?Yz3euWSigvN1SyElXA+90cUBEDI/blMYREqS383O+tI4xZWiCc1VDQGm?=
+ =?Windows-1252?Q?UFWJsC4VV1EqtSsZsdNDdkW3+gppwmvnOuXrRsyKlO7GMumPk6TuNX1t?=
+ =?Windows-1252?Q?re5NXw+JXE0rtaMJA/93Re9D2fall3c1mnyn4yUQ8BhNq7ws6A6f8+An?=
+ =?Windows-1252?Q?PznpgXXGkvIj6dY7k7zdUYpeBRuUdu/WKiNsvuiqeTOZB77WAL1nj5FO?=
+ =?Windows-1252?Q?w1DK1huuZUlVa0nWN4bRxKZqMktkNUnUzsgYqngiwmwUdxnQghzJLJCD?=
+ =?Windows-1252?Q?2DYAoR6/n2nual2dOrA4+FQPm0NyeQ3Vz3jxX6RaweEkMgvtbjf+6vkh?=
+ =?Windows-1252?Q?cFALRw=3D=3D?=
+Content-Language: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_0102019192744cf86972443689ba4581b104ece650e33aff000000e_"
+MIME-Version: 1.0
+
+--_000_0102019192744cf86972443689ba4581b104ece650e33aff000000e_
+Content-Type: text/plain; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+
+        Some people who received this message don't often get email from qu=
+ality@food-surveys.com. Learn why this is important<https://aka.ms/LearnAbo=
+utSenderIdentification>
+
+
+Dear ETHICAL FOOD COMPANY LTD
+
+On behalf of Ocado Retail Limited, please find below the inbound product qu=
+ality report for a recent delivery into Erith CFC (Kent, DA8 1DE)
+
+While the product was found within tolerance, there were a number of issues=
+ found resulting in a =91warning=92 result. ORL Product Technical will cont=
+inue to monitor quality for this SKU and take appropriate action if any tre=
+nding is observed.
+
+Please use this report and the flagged issues as a continuous improvement t=
+ool to ensure products are being delivered to the QAS.
+
+Ocado Product Quality Notification - Warning
+
+ID       111
+Notification Type        Warning
+Date / Time      27/08/2024 06:57
+Inspector        R. Howard
+Location         Erith CFC (Kent, DA8 1DE)
+Category         TOMATOES
+Product SKU      629903011: Ocado Organic Tomatoes on the Vine
+Focus Product    No
+Supplier         ETHICAL FOOD COMPANY LTD
+Traceability     Date Code: 2024-09-03
+
+Delivery Size (trays x units)    10 x 16
+Trays Sampled    3
+Units OOS (OOS / Sampled)        1/48
+Unit Compliance Percent  97.9%
+Units Removed / Destructively Tested     1
+Details  1x Rot- Progressive defect not acceptable to customers. No QAS ava=
+ilable.
+Outcome  N/A
+Units Rejected   N/A
+Rejection Level  None
+
+Image Links:
+
+*       View Image 1<https://gbr01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FW_cMCPzpMiKG4E8FzfBux7The%=
+3Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7Cdorota.kwitowska%40efcltd.co=
+m%7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0=
+%7C0%7C638603357914191341%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3Dzs5N3eFWiOgu=
+LbgN%2FuNSyF8fxyqLYWdX%2BfiaOctDpdY%3D&reserved=3D0>
+*       View Image 2<https://gbr01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FXbizCQ6qNUkA6jMhPhJuGWyTn%=
+3Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7Cdorota.kwitowska%40efcltd.co=
+m%7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0=
+%7C0%7C638603357914225237%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3D3JsrBtWkh8Ap=
+UbtidDKQ6qX%2Bjxeaq6846I4u9dOc6IM%3D&reserved=3D0>
+*       View Image 3<https://gbr01.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fruy8CRPrMtvmrqjUPizu1Xmqr%=
+3Fdomain%3Dfslreporting.co.uk&data=3D05%7C02%7Cdorota.kwitowska%40efcltd.co=
+m%7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0=
+%7C0%7C638603357914249112%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQI=
+joiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=3D8VYAAJLT%2B0=
+gXdIHNhKpa%2BRGe0xheht%2BP2E%2FoyrqfE94%3D&reserved=3D0>
+
+
+--_000_0102019192744cf86972443689ba4581b104ece650e33aff000000e_
+Content-Type: text/html; charset="Windows-1252"
+Content-ID: <C14C3A3CE1FB3B48A9BC53997CDE8B3D@GBRP123.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: revert !=
+important; white-space: revert !important; width: revert !important; word-b=
+reak: revert !important; word-spacing: revert !important; writing-mode: rev=
+ert !important; zoom: revert !important; cellpadding: 0 !important; border:=
+ 0 !important; cellspacing: 0 !important; display: table !important; width:=
+ 100% !important; table-layout: fixed !important; border-collapse: seperate=
+ !important; float: none !important; border-spacing: 0px 0px !important; " =
+align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: revert !important; white-space: revert !important; width: revert !import=
+ant; word-break: revert !important; word-spacing: revert !important; writin=
+g-mode: revert !important; zoom: revert !important; display: block !importa=
+nt; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+revert !important; white-space: revert !important; width: revert !important=
+; word-break: revert !important; word-spacing: revert !important; writing-m=
+ode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: revert !important; white-space: revert !important; width: revert !=
+important; word-break: revert !important; word-spacing: revert !important; =
+writing-mode: revert !important; zoom: revert !important; padding: 7px 2px =
+7px 2px !important; background-color: #A6A6A6 !important; valign: middle !i=
+mportant; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: revert !important; white-space: revert !import=
+ant; width: revert !important; word-break: revert !important; word-spacing:=
+ revert !important; writing-mode: revert !important; zoom: revert !importan=
+t; width: 100% !important; background-color: #EAEAEA !important; padding: 7=
+px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Sego=
+e WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fon=
+t-weight: normal !important; color: #212121 !important; text-align: left !i=
+mportant; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ revert !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+Some people who received this message don't often get email from quality@fo=
+od-surveys.com.
+<a href=3D"https://aka.ms/LearnAboutSenderIdentification">Learn why this is=
+ important</a>
+</div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: revert !important; white-space: =
+revert !important; width: revert !important; word-break: revert !important;=
+ word-spacing: revert !important; writing-mode: revert !important; zoom: re=
+vert !important; width: 75px !important; background-color: #EAEAEA !importa=
+nt; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, S=
+egoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !i=
+mportant; font-weight: normal !important; color: #212121 !important; text-a=
+lign: left !important; word-wrap: break-word !important; align: left !impor=
+tant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p>Dear ETHICAL FOOD COMPANY LTD</p>
+<p>On behalf of Ocado Retail Limited, please find below the inbound product=
+ quality report for a recent delivery into Erith CFC (Kent, DA8 1DE)</p>
+<p>While the product was found within tolerance, there were a number of iss=
+ues found resulting in a =91warning=92 result. ORL Product Technical will c=
+ontinue to monitor quality for this SKU and take appropriate action if any =
+trending is observed.
+</p>
+<p>Please use this report and the flagged issues as a continuous improvemen=
+t tool to ensure products are being delivered to the QAS.</p>
+<p><strong>Ocado Product Quality Notification - Warning</strong></p>
+<table>
+<tbody>
+<tr>
+<td><strong>ID</strong></td>
+<td>111</td>
+</tr>
+<tr>
+<td><strong>Notification Type</strong></td>
+<td>Warning</td>
+</tr>
+<tr>
+<td><strong>Date / Time</strong></td>
+<td>27/08/2024 06:57</td>
+</tr>
+<tr>
+<td><strong>Inspector</strong></td>
+<td>R. Howard</td>
+</tr>
+<tr>
+<td><strong>Location</strong></td>
+<td>Erith CFC (Kent, DA8 1DE)</td>
+</tr>
+<tr>
+<td><strong>Category</strong></td>
+<td>TOMATOES</td>
+</tr>
+<tr>
+<td><strong>Product SKU</strong></td>
+<td>629903011: Ocado Organic Tomatoes on the Vine</td>
+</tr>
+<tr>
+<td><strong>Focus Product</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Supplier</strong></td>
+<td>ETHICAL FOOD COMPANY LTD</td>
+</tr>
+<tr>
+<td><strong>Traceability</strong></td>
+<td>Date Code: 2024-09-03<br>
+</td>
+</tr>
+<tr>
+<td><strong>Delivery Size</strong> <small>(trays x units)</small></td>
+<td>10 x 16</td>
+</tr>
+<tr>
+<td><strong>Trays Sampled</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Units OOS</strong> <small>(OOS / Sampled)</small></td>
+<td>1/48</td>
+</tr>
+<tr>
+<td><strong>Unit Compliance Percent</strong></td>
+<td>97.9%</td>
+</tr>
+<tr>
+<td><strong>Units Removed / Destructively Tested</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Details</strong></td>
+<td>1x Rot- Progressive defect not acceptable to customers. No QAS availabl=
+e.</td>
+</tr>
+<tr>
+<td><strong>Outcome</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Units Rejected</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Rejection Level</strong></td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>Image Links:</p>
+<ul>
+<li><a href=3D"https://gbr01.safelinks.protection.outlook.com/?url=3Dhttps%=
+3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FW_cMCPzpMiKG4E8FzfBux7The%3Fdoma=
+in%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cdorota.kwitowska%40efcltd.com%=
+7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3ddedf46edbc9%7C0%7=
+C0%7C638603357914191341%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjo=
+iV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3Dzs5N3eFWiO=
+guLbgN%2FuNSyF8fxyqLYWdX%2BfiaOctDpdY%3D&amp;reserved=3D0" originalsrc=3D"h=
+ttps://url.uk.m.mimecastprotect.com/s/W_cMCPzpMiKG4E8FzfBux7The?domain=3Dfs=
+lreporting.co.uk" shash=3D"VXcWdO0r48RnkaOkERciwCvx3EIyTbAxqUp9HvFc2rYEK5ny=
+jomX3lafxloTmgalGwD71efwRbdVuSAbCszylxMXVwBttLoLi7mHx7dgpzSZ/PCWmRcppFkJFAA=
+AmoP+j6zgnu59kBzaJUy+5GXrPlb8/dpHp6GZWY4SvtDziQg=3D">View
+ Image 1</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2FXbizCQ6qNUkA6jM=
+hPhJuGWyTn%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cdorota.kwitow=
+ska%40efcltd.com%7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638603357914225237%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3D3JsrBtWkh8ApUbtidDKQ6qX%2Bjxeaq6846I4u9dOc6IM%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://url.uk.m.mimecastprotect.com/s/XbizCQ6qNUkA6jMhPhJuGW=
+yTn?domain=3Dfslreporting.co.uk" shash=3D"fd6+HB3CxECJXBkP10eft5YkKS8oF0GPT=
+dE28NK0X2oeHNBCZNNPqDM3gJbinsuEpVlxKIRBMUeVlIy3cfl6YYZF+7iPJWl9c8z/uCijUcUU=
+3S2CCv2qdCius081t8QtbpegFx5qoEY2gMPYz27nPslZ5/3mg3hBYNCGXSOIv9w=3D">View
+ Image 2</a></li><li><a href=3D"https://gbr01.safelinks.protection.outlook.=
+com/?url=3Dhttps%3A%2F%2Furl.uk.m.mimecastprotect.com%2Fs%2Fruy8CRPrMtvmrqj=
+UPizu1Xmqr%3Fdomain%3Dfslreporting.co.uk&amp;data=3D05%7C02%7Cdorota.kwitow=
+ska%40efcltd.com%7Ce6e720bf63ab4387f3e808dcc65ed889%7C0a6ac99f713640dd9ec3d=
+dedf46edbc9%7C0%7C0%7C638603357914249112%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;s=
+data=3D8VYAAJLT%2B0gXdIHNhKpa%2BRGe0xheht%2BP2E%2FoyrqfE94%3D&amp;reserved=
+=3D0" originalsrc=3D"https://url.uk.m.mimecastprotect.com/s/ruy8CRPrMtvmrqj=
+UPizu1Xmqr?domain=3Dfslreporting.co.uk" shash=3D"rbftcY36T+LYNRnNTO9l2dCsLw=
+7bMyC3WAL0XI1yxcLFZ1kjLDGaOrD35JKg74b5FFVEmNgBPcbrCwFyoy1FxODTeqWrpz5UR0z85=
+Dh6m1xNUYBupvbearJ4chetNwKxP9m2x8lh5dgIQWnYTNYqPnJgJoIWHDsUS13hYnnvO0k=3D">=
+View
+ Image 3</a></li></ul>
+</div>
+</body>
+</html>
+
+--_000_0102019192744cf86972443689ba4581b104ece650e33aff000000e_--
