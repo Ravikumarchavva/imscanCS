@@ -1,0 +1,20 @@
+{
+    "ID": 1807,
+    "NotificationType": "High / Rejection",
+    "DateTime": "2024-09-18 10:28:00",
+    "Location": "Depot - Waltham Point (Essex, EN9 3BZ)",
+    "Category": "Produce - Citrus",
+    "Product": "SO Organic Easy Peelers min 500g",
+    "FocusProduct": "No",
+    "Supplier": "O01661",
+    "Traceability": "887/040/008",
+    "DateCode": "2024-09-23",
+    "DeliverySize": "29 x 8",
+    "CasesSampled": 10,
+    "CasesRejected": 29,
+    "UnitsRejected": 232,
+    "RejectionLevel": "Full",
+    "Details": "22 x Heavy scarring (plate 8), multiple packs also contain greening (levels 6 / 7) and early signs of rind breakdown (plate 3). 27.5% affected, spec states reject if combined non-progressive defects are over 10%",
+    "ActionTaken": "Rejected",
+    "ContactsInformed": "sainsburys@food-surveys.com, Agata.Pytko@sainsburys.co.uk, michelle.calvert@sainsburys.co.uk, sarah.blanford@sainsburys.com, technical@efcltd.com"
+}

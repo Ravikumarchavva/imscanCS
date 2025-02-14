@@ -1,0 +1,20 @@
+{
+    "ID": 111,
+    "NotificationType": "Warning",
+    "DateTime": "2024-08-27 06:57:00",
+    "Location": "Erith CFC (Kent, DA8 1DE)",
+    "Category": "TOMATOES",
+    "Product": "629903011: Ocado Organic Tomatoes on the Vine",
+    "FocusProduct": null,
+    "Supplier": "ETHICAL FOOD COMPANY LTD",
+    "Traceability": "Date Code: 2024-09-03",
+    "DateCode": "2024-09-03",
+    "DeliverySize": "10 x 16",
+    "CasesSampled": 3,
+    "CasesRejected": null,
+    "UnitsRejected": null,
+    "RejectionLevel": "None",
+    "Details": "1x Rot- Progressive defect not acceptable to customers. No QAS available.",
+    "ActionTaken": null,
+    "ContactsInformed": null
+}
