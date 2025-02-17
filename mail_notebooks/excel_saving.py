@@ -16,7 +16,7 @@ def update_excel_from_json(data):
     columns = [
         "ID", "NotificationType", "DateTime", "Location", "Category", "Product", 
         "FocusProduct", "Supplier", "CountryOfOrigin", "Variety", "Grower", 
-        "PackagingCodes", "Traceability", "DateCode", "DeliverySize", 
+        "PackagingCodes", "DateCode", "DeliverySize", 
         "CasesSampled", "CasesRejected", "UnitsRejected", "RejectionLevel", 
         "Details", "ActionTaken", "ContactsInformed"
     ]
