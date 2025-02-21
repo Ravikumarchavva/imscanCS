@@ -1,0 +1,173 @@
+{
+    "line_items": [
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "5.886,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "18.393,75"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "2.340,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "7.312,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "3.060,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "9.562,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "3.564,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "11.137,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "7.146,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "22.331,25"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "1.224,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "3.825"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "6.120,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "19.125"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "6.120,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "19.125"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "3.060,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "9.562,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "1.530,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "4.781,25"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "10.710,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "33.468,75"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "3.060,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "9.562,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "3.924,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "12.262,5"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "7.650,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "23.906,25"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "4.590,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "14.343,75"
+        },
+        {
+            "product_code": "11001533",
+            "description": "RASPBERRY FRA CAR 18X250 GEN VD DES K62H40 NG PAP",
+            "quantity": "1.530,00",
+            "price_per_unit": "12,50",
+            "vat_percent": null,
+            "total_price": "4.781,25"
+        }
+    ],
+    "total_amount": {
+        "total_items": 3973,
+        "total_tax": "0,00",
+        "total_price": "223.481,25"
+    },
+    "due_date": "2023-12-09",
+    "payment_date": null,
+    "invoice_date": "2023-11-09",
+    "invoice_number": "500019353",
+    "purchase_order": null,
+    "reference_numbers": [
+        "141800-141801-141802-141803-141804-141805-141799-141966-141974-142010",
+        "-141929-142097-142198-142200"
+    ],
+    "locale": null,
+    "country": "United Kingdom",
+    "currency": "EUR",
+    "payment_details": {
+        "iban": "GB68EBUR23122876803326",
+        "swift": "EBURGBA1XXX",
+        "bic": null,
+        "account_number": null
+    },
+    "vat_number": "GB328693957",
+    "supplier_name": "Surexport UK LTD",
+    "taxes_details": [
+        {
+            "rate": "0,00",
+            "amount": "0,00"
+        }
+    ],
+    "total_amount_including_taxes": "223.481,25",
+    "total_net_amount_excluding_taxes": null,
+    "customer_address": "57-63 CHURCH ROAD\nSW19 5SB WIMBLEDON\nUnited Kingdom",
+    "shipping_address": null,
+    "billing_address": null,
+    "customer_company_registrations": {
+        "vat_number": "GB125476511"
+    },
+    "customer_name": "DPSLTD",
+    "supplier_address": "Great Queen Street 16\nWC2B 5AH London"
+}
