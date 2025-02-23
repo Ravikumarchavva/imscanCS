@@ -7,26 +7,18 @@
             "price_per_unit": "5.25",
             "vat_percent": null,
             "total_price": "29,106.00"
-        },
-        {
-            "product_code": null,
-            "description": null,
-            "quantity": "5,544",
-            "price_per_unit": null,
-            "vat_percent": null,
-            "total_price": "29,106.00"
         }
     ],
     "remaining_details": {
         "invoice_number": "5424",
-        "invoice_date": "20/08/2023",
+        "invoice_date": "2023-08-20",
         "payment_date": null,
-        "due_date": "31-12-2024",
-        "total_items": 2,
+        "due_date": null,
+        "total_items": 1,
         "total_tax": null,
         "tax_rate": null,
         "supplier_name": "Dot Fruits, S.R.L.",
-        "supplier_address": "Catalina, Ban\u00ed, Rep\u00fablica Dominicana",
+        "supplier_address": "Catalina, Ban\u00ed, Rep\u00fablica Dominicana\nTels.: (829)-341-4429/(809)-756-2359\nE-mail: Dotfruits@hotmail.com",
         "supplier_vat_number": "1-3026640-9",
         "customer_name": "Direct Produce Supplies LTD",
         "customer_address": null,
@@ -35,9 +27,9 @@
         "swift": null,
         "bic": null,
         "account_number": null,
-        "purchase_order": null,
-        "reference_numbers": null,
-        "country": null,
+        "purchase_order": "PO139090",
+        "reference_numbers": "RC\nGP\n27/09/23",
+        "country": "Rep\u00fablica Dominicana",
         "currency": "US$"
     }
 }

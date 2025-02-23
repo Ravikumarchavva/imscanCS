@@ -2,13 +2,16 @@ python-dotenv
 fastapi
 uvicorn
 python-multipart
-transformers
 pdfplumber
-torch
-bitsandbytes
-accelerate
 polars
 pandas
+
+#ai
+torch
+transformers
+accelerate
+vllm
+bitsandbytes
 
 # Optional
 ipython

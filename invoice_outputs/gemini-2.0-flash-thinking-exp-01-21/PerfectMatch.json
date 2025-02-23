@@ -2,11 +2,11 @@
     "line_items": [
         {
             "product_code": null,
-            "description": "K37F/40mm Punnets + \"100% PAPER\" Black Soak Pad x 950\npcs w2\nDDT 82303766 - 13/06/23 x 192 ctns\nDDT 82305223 - 02/08/23 x 96 ctns",
+            "description": "K37F/40mm Punnets + \"100% PAPER\" Black Soak Pad x 950 pcs w2\nDDT 82303766 - 13/06/23 x 192 ctns\nDDT 82305223 - 02/08/23 x 96 ctns",
             "quantity": "288.00",
             "price_per_unit": "45.39",
             "vat_percent": "20.00",
-            "total_price": "2,614.46"
+            "total_price": "13,072.32"
         }
     ],
     "remaining_details": {
@@ -16,7 +16,7 @@
         "due_date": null,
         "total_items": 1,
         "total_tax": "2,614.46",
-        "tax_rate": null,
+        "tax_rate": "20.00",
         "supplier_name": "Infia UK Limited",
         "supplier_address": "Beech Gate\nPeterborough Road\nWhittlesey\nCambridgeshire\nPE7 1PD",
         "supplier_vat_number": "700088278",
@@ -25,11 +25,11 @@
         "customer_company_vat_number": null,
         "iban": "GB20 BARC 2022 7550 7848 34",
         "swift": "BARCGB22",
-        "bic": null,
+        "bic": "BARCGB22",
         "account_number": "50784834",
-        "purchase_order": null,
-        "reference_numbers": null,
-        "country": null,
+        "purchase_order": "12183",
+        "reference_numbers": "MK69, BERRY004",
+        "country": "England",
         "currency": "\u00a3"
     }
 }
